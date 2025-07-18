@@ -77,7 +77,7 @@ public class Ciudad implements Comparable<Ciudad> {
         } else {
             nom = palabras[0].substring(0, 1).toUpperCase() + palabras[1].substring(0, 1);
         }
-        nom += "-" + contadorNomenclatura;
+        nom += contadorNomenclatura;
         contadorNomenclatura += 1;
         return nom;
     }
@@ -88,7 +88,7 @@ public class Ciudad implements Comparable<Ciudad> {
          */
         double cons = 0;
         int poblacionProm = calcularPobPromedio(mes);
-        
+        cons = poblacionProm * cantM3ConsXDia;
         return cons;
     }
 
