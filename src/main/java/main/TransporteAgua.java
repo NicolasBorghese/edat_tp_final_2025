@@ -1,4 +1,4 @@
-package clases;
+package main;
 import java.util.Scanner;
 public class TransporteAgua {
     // Colores ANSI

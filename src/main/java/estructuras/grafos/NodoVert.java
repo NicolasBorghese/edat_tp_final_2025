@@ -1,4 +1,4 @@
-package clases.estructuras.grafos;
+package estructuras.grafos;
 
 public class NodoVert {
     private Object elemento;

@@ -1,4 +1,4 @@
-import clases.estructuras.grafos.Grafo;
+import estructuras.grafos.Grafo;
 
 public class testGrafo {
     public static void main(String[] args) {

@@ -6,7 +6,7 @@ Sol Juliana Grant Reyes, Legajo FAI-4808
 
  */
 
-package clases.estructuras.lineales.dinamicas;
+package estructuras.lineales.dinamicas;
 
 public class Lista {
     private Nodo cabecera;
