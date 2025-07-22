@@ -27,6 +27,19 @@ public class OpcionesDeMenu {
                         }
                 };
                 break;
+            case "cargaDeDatosInicial":
+                menu = new String[][]{
+                        {
+                            "CARGA INICIAL DE DATOS"
+                        },
+                        {
+                            "0. Salir.",
+                                "1. Utilizar los últimos registros de datos",
+                                "2. Utilizar la carga inicial de datos",
+                                "3. Iniciar programa sin cargar datos"
+                        }
+                };
+                break;
                 default:
                     /*menu = new String[][]{{},{}};*/
         }
