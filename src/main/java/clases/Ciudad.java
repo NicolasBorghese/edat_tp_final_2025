@@ -12,9 +12,9 @@ public class Ciudad implements Comparable<Ciudad> {
     private double cantM3ConsXDia;
     private Map<YearMonth, Integer> poblacionPorFecha;
 
-    public Ciudad(String nombre, int numCiudad,double superficie, double consumoDiario) {
+    public Ciudad(String nombre, String nomenclatura,double superficie, double consumoDiario) {
         this.nombre = nombre;
-        this.nomenclatura = crearNomenclatura(numCiudad);
+        this.nomenclatura = nomenclatura;
         this.superficie = superficie;
         this.cantM3ConsXDia = consumoDiario;
         this.poblacionPorFecha = new TreeMap<>();
@@ -73,7 +73,6 @@ public class Ciudad implements Comparable<Ciudad> {
     }
 
     private String crearNomenclatura(int numCiudad) {
-        int numNomenclatura = 3000 + numCiudad;
         String nom = "";
         String[] palabras = nombre.toUpperCase().split(" ");
         if (palabras.length == 1) {
@@ -81,7 +80,7 @@ public class Ciudad implements Comparable<Ciudad> {
         } else {
             nom = palabras[0].substring(0, 1).toUpperCase() + palabras[1].substring(0, 1);
         }
-        nom += numNomenclatura;
+        nom += numCiudad;
         return nom;
     }
 
