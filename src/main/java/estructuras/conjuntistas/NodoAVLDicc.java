@@ -1,4 +1,4 @@
-package clases.estructuras.conjuntistas;
+package estructuras.conjuntistas;
 
 public class NodoAVLDicc {
     // La clave se utiliza para buscar

@@ -1,5 +1,5 @@
-package clases.estructuras.conjuntistas;
-import clases.estructuras.lineales.dinamicas.*;
+package estructuras.conjuntistas;
+import estructuras.lineales.dinamicas.*;
 public class ArbolAVL {
     private NodoAVLDicc raiz;
 
