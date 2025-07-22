@@ -15,7 +15,7 @@ public class Imprimir {
 
     private static final int ANCHO_MENU = 60;
 
-    public static int menuPrincipal(String nombreMenu) {
+    public static int menuDeOpciones(String nombreMenu) {
 
         String titulo = OpcionesDeMenu.obtenerMenu(nombreMenu)[0][0];
         String[] opciones = OpcionesDeMenu.obtenerMenu(nombreMenu)[1];
@@ -57,7 +57,7 @@ public class Imprimir {
     }
 
     public static void errorOpcionExcedeRango(int cantOpciones){
-        System.out.println(ERROR + "La opción debe estar entre 0 y " + cantOpciones + "." + RESET);
+        System.out.println(ERROR + "La opción debe estar entre 0 y " + (cantOpciones - 1) + "." + RESET);
         System.out.print(BOLD + "Seleccione una opción: " + RESET);
     }
 
