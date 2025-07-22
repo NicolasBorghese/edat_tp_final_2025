@@ -1,5 +1,5 @@
-package estructuras.conjuntistas;
-import estructuras.lineales.Lista;
+package clases.estructuras.conjuntistas;
+import clases.estructuras.lineales.dinamicas.*;
 public class ArbolAVL {
     private NodoAVLDicc raiz;
 
@@ -384,6 +384,10 @@ public class ArbolAVL {
 
     public boolean vacio() {
         return this.raiz == null;
+    }
+
+    public void vaciar(){
+        raiz = null;
     }
 
     @Override
