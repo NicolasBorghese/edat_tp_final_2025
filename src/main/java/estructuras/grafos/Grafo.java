@@ -1,7 +1,7 @@
-package clases.estructuras.grafos;
+package estructuras.grafos;
 
-import clases.estructuras.lineales.dinamicas.Cola;
-import clases.estructuras.lineales.dinamicas.Lista;
+import estructuras.lineales.dinamicas.Cola;
+import estructuras.lineales.dinamicas.Lista;
 
 // Grafo Dirigido, Etiquetado, NO permite ciclos, con listas de Adyacencia.
 public class Grafo {

@@ -5,7 +5,7 @@ Santiago Alzuguren, Legajo FAI-4691
 Sol Juliana Grant Reyes, Legajo FAI-4808
  */
 
-package clases.estructuras.lineales.dinamicas;
+package estructuras.lineales.dinamicas;
 public class Nodo {
     private Object elem;
     private Nodo enlace;

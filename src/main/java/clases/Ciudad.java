@@ -1,6 +1,6 @@
 package clases;
 
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.Map;
 import java.time.Month;
 import java.time.YearMonth;
@@ -10,21 +10,14 @@ public class Ciudad implements Comparable<Ciudad> {
     private String nomenclatura;
     private double superficie;
     private double cantM3ConsXDia;
-    private static int contadorNomenclatura = 3000;
-
     private Map<YearMonth, Integer> poblacionPorFecha;
 
-    public Ciudad(String nombre, double superficie, double consumoDiario) {
+    public Ciudad(String nombre, String nomenclatura,double superficie, double consumoDiario) {
         this.nombre = nombre;
+        this.nomenclatura = nomenclatura;
         this.superficie = superficie;
-        this.nomenclatura = crearNomenclatura();
         this.cantM3ConsXDia = consumoDiario;
-
-        /*
-         * Podría implementarse un TreeMap, porque serviria más adelante para hacer
-         * graficos/tablas porque ordena cronologicamente.
-         */
-        poblacionPorFecha = new HashMap<>();
+        this.poblacionPorFecha = new TreeMap<>();
     }
 
     public String getNombre() {
@@ -47,9 +40,12 @@ public class Ciudad implements Comparable<Ciudad> {
         return poblacionPorFecha.get(fecha);
     }
 
-    /*
-     * Hay 2 métodos para cargar datos. Uno que no puede sobreescribir (solo carga).
-     * y otro que si sobreescribe (para modificar).
+    /**
+     * Si no hay un registro en la fecha indicada, entonces agrega un registro
+     * con la cantidad de poblacion para esa fecha
+     * @param fecha YearMoth
+     * @param cantPoblacion int
+     * @return boolean
      */
     public boolean agregarPoblacion(YearMonth fecha, int cantPoblacion) {
         boolean agregado = false;
@@ -60,6 +56,13 @@ public class Ciudad implements Comparable<Ciudad> {
         return agregado;
     }
 
+    /**
+     * Si existe un registro para la fecha indicada entonces sobreescribe la cantidad
+     * de poblacion para esa fecha
+     * @param fecha
+     * @param cantPoblacion
+     * @return boolean
+     */
     public boolean modificarPoblacion(YearMonth fecha, int cantPoblacion) {
         boolean modificado = false;
         if (poblacionPorFecha.get(fecha) != null) {
@@ -69,7 +72,7 @@ public class Ciudad implements Comparable<Ciudad> {
         return modificado;
     }
 
-    private String crearNomenclatura() {
+    private String crearNomenclatura(int numCiudad) {
         String nom = "";
         String[] palabras = nombre.toUpperCase().split(" ");
         if (palabras.length == 1) {
@@ -77,8 +80,7 @@ public class Ciudad implements Comparable<Ciudad> {
         } else {
             nom = palabras[0].substring(0, 1).toUpperCase() + palabras[1].substring(0, 1);
         }
-        nom += contadorNomenclatura;
-        contadorNomenclatura += 1;
+        nom += numCiudad;
         return nom;
     }
 

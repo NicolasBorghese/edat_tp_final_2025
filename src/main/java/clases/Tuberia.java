@@ -7,16 +7,16 @@ public class Tuberia {
     private double diametro;
     private String estado;
 
-    public Tuberia(Ciudad ciudadOrigen, Ciudad ciudadDestino, double caudalMinimo, double caudalMaximo,
+    public Tuberia(String nomenclatura, double caudalMinimo, double caudalMaximo,
             double diametro) {
-        nomenclatura = crearNomenclatura(ciudadOrigen, ciudadDestino);
+        nomenclatura = nomenclatura;
         this.caudalMinimo = caudalMinimo;
         this.caudalMaximo = caudalMaximo;
         this.diametro = diametro;
         this.estado = "ACTIVO";
     }
 
-    private String crearNomenclatura(Ciudad cOri, Ciudad cDest) {
+    public String crearNomenclatura(Ciudad cOri, Ciudad cDest) {
         String nom = "";
         nom = cOri.getNomenclatura();
         nom += "-" + cDest.getNomenclatura();

@@ -1,4 +1,4 @@
-package clases.estructuras.grafos;
+package estructuras.grafos;
 // NodoAdy son los arcos.
 public class NodoAdy{
     private NodoVert destino;
