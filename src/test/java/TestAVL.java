@@ -1,6 +1,6 @@
-package clases.estructuras.conjuntistas.Test;
 
-import clases.estructuras.conjuntistas.ArbolAVL;
+
+import estructuras.conjuntistas.ArbolAVL;
 
 public class TestAVL {
     public static void main(String[] args) {
