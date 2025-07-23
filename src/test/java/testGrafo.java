@@ -11,13 +11,19 @@ public class TestGrafo {
 
     public static void main(String[] args) {
         Grafo grafo = new Grafo();
+        Grafo grafo2 = new Grafo();
         Grafo aux = new Grafo();
         cargar(grafo);
+        cargarNuevo(grafo2);
         System.out.println(BOLD + GREEN + "Verificados: " + RESET);
-
+        // Recorridos.
         System.out.println(CYAN + "Recorridos: " + RESET);
         System.out.println("Lista en profundidad: " + BOLD + CYAN + grafo.listarEnProfundidad('C') + RESET);
         System.out.println("Lista en anchura: " + BOLD + CYAN + grafo.listarEnAnchura('B') + RESET);
+        System.out.println(
+                "Camino más corto del grafo2 de A a E: " + BOLD + CYAN + grafo2.caminoMasCorto('A', 'E') + RESET);
+        System.out.println(
+                "Camino más liviano del grafo2 de a a E: " + BOLD + CYAN + grafo2.caminoMasLiviano('A', 'E') + RESET);
         // Insercion.
         System.out.println(CYAN + "Inserción: " + RESET);
         System.out.println("Insertar un elemento: " + GREEN + aux.insertarVertice(1) + RESET);
@@ -77,9 +83,26 @@ public class TestGrafo {
 
     }
 
-    public static void eliminar(Grafo grafo) {
-        grafo.eliminarVertice('H');
-        grafo.eliminarVertice('G');
+    public static void cargarNuevo(Grafo grafo) {
+        grafo.insertarVertice('E');
+        grafo.insertarVertice('D');
+        grafo.insertarVertice('C');
+        grafo.insertarVertice('B');
+        grafo.insertarVertice('I');
+        grafo.insertarVertice('H');
+        grafo.insertarVertice('G');
+        grafo.insertarVertice('F');
+        grafo.insertarVertice('A');
+
+        grafo.insertarArco('A', 'B', 1000);
+        grafo.insertarArco('B', 'C', 100);
+        grafo.insertarArco('C', 'D', 200);
+        grafo.insertarArco('D', 'E', 400);
+        grafo.insertarArco('B', 'F', 200);
+        grafo.insertarArco('F', 'G', 200);
+        grafo.insertarArco('G', 'H', 600);
+        grafo.insertarArco('H', 'I', 500);
+        grafo.insertarArco('I', 'E', 1);
     }
 
 }
