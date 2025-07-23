@@ -14,11 +14,14 @@ public class Grafo {
     public boolean insertarVertice(Object nuevoVertice) {
         // Inserta un vertice NUEVO en el grafo.
         boolean insertado = false;
-        NodoVert aux = this.ubicarVertice(nuevoVertice);
-        if (aux == null) {
-            this.inicio = new NodoVert(nuevoVertice, this.inicio);
-            insertado = true;
+        if (nuevoVertice != null) {
+            NodoVert aux = this.ubicarVertice(nuevoVertice);
+            if (aux == null) {
+                this.inicio = new NodoVert(nuevoVertice, this.inicio);
+                insertado = true;
+            }
         }
+
         return insertado;
     }
 
@@ -152,10 +155,10 @@ public class Grafo {
         return existe;
     }
 
-    public Lista listarEnProfundidad() {
+    public Lista listarEnProfundidad(Object elemento) {
         Lista visitados = new Lista();
         // Define un vértice para empezar a recorrer.
-        NodoVert aux = this.inicio;
+        NodoVert aux = ubicarVertice(elemento);
         while (aux != null) {
             if (visitados.localizar(aux.getElemento()) < 0) {
                 // Si el vértice no fue visitado aún, avanza en profundidad.
@@ -181,9 +184,9 @@ public class Grafo {
         }
     }
 
-    public Lista listarEnAnchura() {
+    public Lista listarEnAnchura(Object elemento) {
         Lista visitados = new Lista();
-        NodoVert aux = this.inicio;
+        NodoVert aux = ubicarVertice(elemento);
         while (aux != null) {
             if (visitados.localizar(aux.getElemento()) < 0) {
                 listarEnAnchuraAux(aux, visitados);
@@ -204,7 +207,7 @@ public class Grafo {
             while (ady != null) {
                 NodoVert vert = ady.getVertice();
                 if (visitados.localizar(vert.getElemento()) < 0) {
-                    visitados.insertar(vert, visitados.longitud() + 1);
+                    visitados.insertar(vert.getElemento(), visitados.longitud() + 1);
                     col.poner(vert);
                 }
                 ady = ady.getSigAdyacente();
