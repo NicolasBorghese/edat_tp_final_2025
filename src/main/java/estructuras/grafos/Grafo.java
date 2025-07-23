@@ -263,4 +263,74 @@ public class Grafo {
         return this.inicio == null;
     }
 
+    public Lista caminoMasCorto(Object origen, Object destino) {
+        NodoVert vOrigen = ubicarVertice(origen);
+        NodoVert vDestino = ubicarVertice(destino);
+        Lista caminoMasCorto = new Lista();
+        if (vOrigen != null && vDestino != null) {
+            Lista caminoActual = new Lista();
+            caminoMasCortoAux(vOrigen, vDestino, caminoActual, caminoMasCorto);
+        }
+        return caminoMasCorto;
+    }
+
+    private void caminoMasCortoAux(NodoVert actual, NodoVert destino, Lista caminoActual, Lista caminoMasCorto) {
+        caminoActual.insertar(actual.getElemento(), caminoActual.longitud() + 1);
+        if (actual.getElemento().equals(destino.getElemento())) {
+            if (caminoMasCorto.esVacia() || caminoMasCorto.longitud() > caminoActual.longitud()) {
+                caminoMasCorto.vaciar();
+                for (int i = 1; i <= caminoActual.longitud(); i++) {
+                    caminoMasCorto.insertar(caminoActual.recuperar(i), i);
+                }
+            }
+        } else {
+            NodoAdy ady = actual.getPrimerAdy();
+            while (ady != null) {
+                if (caminoActual.localizar(ady.getVertice().getElemento()) < 0) {
+                    caminoMasCortoAux(ady.getVertice(), destino, caminoActual, caminoMasCorto);
+                }
+                ady = ady.getSigAdyacente();
+            }
+        }
+        caminoActual.eliminar(caminoActual.longitud());
+    }
+
+    public Lista caminoMasLiviano(Object origen, Object destino) {
+        NodoVert vOrigen = ubicarVertice(origen);
+        NodoVert vDestino = ubicarVertice(destino);
+        Lista caminoMasLiviano = new Lista();
+        if (vOrigen != null && vDestino != null) {
+            Lista caminoActual = new Lista();
+            int[] pesoMin = { Integer.MAX_VALUE };
+            caminoMasLivianoAux(vOrigen, vDestino, caminoActual, caminoMasLiviano, -1, pesoMin);
+        }
+        return caminoMasLiviano;
+    }
+
+    private void caminoMasLivianoAux(NodoVert actual, NodoVert destino, Lista caminoActual, Lista caminoMasLiviano,
+            int pesoActual, int[] pesoMin) {
+        caminoActual.insertar(actual.getElemento(), caminoActual.longitud() + 1);
+        if (actual.getElemento().equals(destino.getElemento())) {
+            if (pesoActual < pesoMin[0]) {
+                pesoMin[0] = pesoActual;
+                caminoMasLiviano.vaciar();
+                for (int i = 1; i <= caminoActual.longitud(); i++) {
+                    caminoMasLiviano.insertar(caminoActual.recuperar(i), i);
+                }
+            }
+        } else {
+            NodoAdy ady = actual.getPrimerAdy();
+            while (ady != null) {
+                if (caminoActual.localizar(ady.getVertice().getElemento()) < 0) {
+                    int etiqueta = (int) ady.getEtiqueta();
+                    // Esto solo es útil para el ejercicio del agua, en otro caso tengo que ir
+                    // sumando las etiquetas.
+                    int nuevoPeso = (pesoActual == -1) ? etiqueta : Math.min(pesoActual, etiqueta);
+                    caminoMasLivianoAux(ady.getVertice(), destino, caminoActual, caminoMasLiviano, nuevoPeso, pesoMin);
+                }
+                ady = ady.getSigAdyacente();
+            }
+        }
+        caminoActual.eliminar(caminoActual.longitud());
+    }
 }
