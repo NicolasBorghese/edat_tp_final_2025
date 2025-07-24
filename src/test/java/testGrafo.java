@@ -57,6 +57,7 @@ public class TestGrafo {
         System.out.println("Grafo no Vacio es Vacio? " + GREEN + grafo.vacio() + RESET);
 
         System.out.println(BOLD + BLUE + "Testeando: " + RESET);
+        System.out.println("ToString: " + BOLD + CYAN + grafo.toString() + RESET);
     }
 
     public static void cargar(Grafo grafo) {

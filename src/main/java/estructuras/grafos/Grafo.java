@@ -333,4 +333,38 @@ public class Grafo {
         }
         caminoActual.eliminar(caminoActual.longitud());
     }
+
+    @Override
+    public String toString() {
+        String cadena = "Grafo Vacío";
+        if (this.inicio != null) {
+            cadena = toStringAux(this.inicio, "");
+        }
+        return cadena;
+    }
+
+    private String toStringAux(NodoVert vert, String cadena) {
+        if (vert != null) {
+            cadena += "Vertice: " + vert.getElemento().toString() + " -> ";
+            NodoAdy ady = vert.getPrimerAdy();
+
+            if (ady == null) {
+                cadena += " - ";
+            } else {
+                while (ady != null) {
+                    cadena += ady.getVertice().getElemento().toString();
+                    if (ady.getEtiqueta() != null) {
+                        cadena += " (" + ady.getEtiqueta().toString() + ")";
+                    }
+                    ady = ady.getSigAdyacente();
+                    if (ady != null) {
+                        cadena += ", ";
+                    }
+                }
+            }
+            cadena += "\n";
+            cadena = toStringAux(vert.getSigVertice(), cadena);
+        }
+        return cadena;
+    }
 }
