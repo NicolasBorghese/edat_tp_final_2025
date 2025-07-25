@@ -16,6 +16,8 @@ public class TransporteAgua {
         Scanner sc = new Scanner(System.in);
         int opcion;
 
+        Imprimir.portada();
+
         // Controlar carga inicial de datos
         opcion = controlarOpcionDeMenu("cargaDeDatosInicial", sc);
         controlCargaDeDatosInicial(opcion);
@@ -61,7 +63,6 @@ public class TransporteAgua {
     };
 
     /**
-     * Mientras la opción elegida sea distinto de 0 realizará la operación indicada
      * Controla las operaciones de la carga de datos inicial
      * @param opcion
      */
@@ -81,7 +82,6 @@ public class TransporteAgua {
     }
 
     /**
-     * Mientras la opción elegida sea distinto de 0 realizará la operación indicada
      * Controla las operaciones del menú principal
      * @param opcion
      */
