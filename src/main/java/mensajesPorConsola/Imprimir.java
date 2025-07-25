@@ -12,6 +12,7 @@ public class Imprimir {
     public static final String PRINCIPAL_1 = Estilos.BLUE;
     public static final String PRINCIPAL_2 = Estilos.CYAN;
     public static final String YELLOW = Estilos.YELLOW;
+    public static final String PURPLE = Estilos.PURPLE;
 
     private static final int ANCHO_MENU = 60;
 
@@ -63,5 +64,103 @@ public class Imprimir {
 
     public static void finDeEjecucion(){
         System.out.println(BOLD + YELLOW + "El programa ha finalizado" + RESET);
+    }
+
+    /**
+     * Font: ANSI -> ANSI Shadow
+     */
+    public static void portada(){
+        String[] art = {
+                BOLD + PURPLE +
+                        "███████╗██████╗  █████╗ ████████╗                          ",
+                "██╔════╝██╔══██╗██╔══██╗╚══██╔══╝                          ",
+                "█████╗  ██║  ██║███████║   ██║                             ",
+                "██╔══╝  ██║  ██║██╔══██║   ██║                             ",
+                "███████╗██████╔╝██║  ██║   ██║                             ",
+                "╚══════╝╚═════╝ ╚═╝  ╚═╝   ╚═╝                             ",
+                "                                                           ",
+                "████████╗██████╗  █████╗ ██████╗  █████╗      ██╗ ██████╗ ",
+                "╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗     ██║██╔═══██╗",
+                "   ██║   ██████╔╝███████║██████╔╝███████║     ██║██║   ██║",
+                "   ██║   ██╔══██╗██╔══██║██╔══██╗██╔══██║██   ██║██║   ██║",
+                "   ██║   ██║  ██║██║  ██║██████╔╝██║  ██║╚█████╔╝╚██████╔╝",
+                "   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚════╝  ╚═════╝ ",
+                "                                                           ",
+                "███████╗██╗███╗   ██╗ █████╗ ██╗                           ",
+                "██╔════╝██║████╗  ██║██╔══██╗██║                           ",
+                "█████╗  ██║██╔██╗ ██║███████║██║                           ",
+                "██╔══╝  ██║██║╚██╗██║██╔══██║██║                           ",
+                "██║     ██║██║ ╚████║██║  ██║███████╗                      ",
+                "╚═╝     ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝                      " + RESET
+        };
+
+        for (String line : art) {
+            System.out.println(line);
+        }
+        integrantes();
+    }
+
+    /**
+     * Font: Outline -> big
+     */
+    public static void portada1(){
+        System.out.println(
+                " ______ _____       _______                          \n" +
+                        "|  ____|  __ \\   /\\|__   __|                         \n" +
+                        "| |__  | |  | | /  \\  | |                            \n" +
+                        "|  __| | |  | |/ /\\ \\ | |                            \n" +
+                        "| |____| |__| / ____ \\| |                            \n" +
+                        "|______|_____/_/    \\_\\_| ____              _  ____  \n" +
+                        "|__   __|  __ \\     /\\   |  _ \\   /\\       | |/ __ \\ \n" +
+                        "   | |  | |__) |   /  \\  | |_) | /  \\      | | |  | |\n" +
+                        "   | |  |  _  /   / /\\ \\ |  _ < / /\\ \\ _   | | |  | |\n" +
+                        "   | |  | | \\ \\  / ____ \\| |_) / ____ \\ |__| | |__| |\n" +
+                        " __|_|_ |_|__\\_\\/_/    \\_\\____/_/    \\_\\____/ \\____/ \n" +
+                        "|  ____|_   _| \\ | |   /\\   | |                      \n" +
+                        "| |__    | | |  \\| |  /  \\  | |                      \n" +
+                        "|  __|   | | | . ` | / /\\ \\ | |                      \n" +
+                        "| |     _| |_| |\\  |/ ____ \\| |____                  \n" +
+                        "|_|    |_____|_| \\_/_/    \\_\\______|                 "
+        );
+        integrantes();
+    }
+
+    /**
+     * Font: Outline -> Doom
+     */
+    public static void portada2(){
+        String[] art = {
+                BOLD + PURPLE + "                     ___________  ___ _____",
+                "                    |  ___|  _  \\/ _ \\_   _|",
+                "                    | |__ | | | / /_\\ \\| |",
+                "                    |  __|| | | |  _  || |",
+                "                    | |___| |/ /| | | || |",
+                "                    \\____/|___/ \\_| |_/\\_/",
+                "         ___________  ___  ______  ___     ___  _____ ",
+                "        |_   _| ___ \\/ _ \\ | ___ \\/ _ \\   |_  ||  _  |",
+                "          | | | |_/ / /_\\ \\| |_/ / /_\\ \\    | || | | |",
+                "          | | |    /|  _  || ___ \\  _  |    | || | | |",
+                "          | | | |\\ \\| | | || |_/ / | | |/\\__/ /\\ \\_/ /",
+                "          \\_/ \\_| \\_\\_| |_/\\____/\\_| |_/\\____/  \\___/ ",
+                "                ______ _____ _   _   ___   _",
+                "                |  ___|_   _| \\ | | / _ \\ | |",
+                "                | |_    | | |  \\| |/ /_\\ \\| |",
+                "                |  _|   | | | . ` ||  _  || |",
+                "                | |    _| |_| |\\  || | | || |____ ",
+                "                \\_|    \\___/\\_| \\_/\\_| |_/\\_____/" + RESET
+        };
+
+        for (String line : art) {
+            System.out.println(line);
+        }
+        integrantes();
+    }
+
+    public static void integrantes(){
+        System.out.println();
+        System.out.println(BOLD + YELLOW + "Alzuguren Santiago FAI-4691" + RESET);
+        System.out.println(BOLD + YELLOW + "Borghese Nicolas FAI-997" + RESET);
+        System.out.println(BOLD + YELLOW + "Piacentini Gonzalo FAI-2514" + RESET);
+        System.out.println();
     }
 }
