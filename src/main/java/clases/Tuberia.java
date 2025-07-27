@@ -8,12 +8,12 @@ public class Tuberia {
     private String estado;
 
     public Tuberia(String nomenclatura, double caudalMinimo, double caudalMaximo,
-            double diametro) {
-        nomenclatura = nomenclatura;
+            double diametro, String estado) {
+        this.nomenclatura = nomenclatura;
         this.caudalMinimo = caudalMinimo;
         this.caudalMaximo = caudalMaximo;
         this.diametro = diametro;
-        this.estado = "ACTIVO";
+        this.estado = estado;
     }
 
     public String crearNomenclatura(Ciudad cOri, Ciudad cDest) {
@@ -69,5 +69,14 @@ public class Tuberia {
 
     public void setEnRep() {
         this.estado = "EN REPARACION";
+    }
+
+    public String toString(){
+        String respuesta = "";
+        respuesta += "[Caudal mínimo: "+this.caudalMinimo
+                +" - Caudal maximo: "+this.caudalMaximo
+                +" - Diametro: "+ this.diametro
+                +" - Estado: "+this.estado+"]";
+        return respuesta;
     }
 }

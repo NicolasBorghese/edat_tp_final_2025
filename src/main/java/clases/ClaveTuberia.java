@@ -6,9 +6,9 @@ public class ClaveTuberia {
     private String nom1;
     private String nom2;
 
-    public ClaveTuberia(Ciudad cOrigen, Ciudad cDestino) {
-        this.nom1 = cOrigen.getNomenclatura();
-        this.nom2 = cDestino.getNomenclatura();
+    public ClaveTuberia(String nomenclaturaC1, String nomenclaturaC2) {
+        this.nom1 = nomenclaturaC1;
+        this.nom2 = nomenclaturaC2;
     }
 
     @Override
@@ -19,7 +19,7 @@ public class ClaveTuberia {
                 iguales = false;
             } else {
                 ClaveTuberia otra = (ClaveTuberia) o;
-                if (!this.nom1.equals(otra.nom1) || this.nom2.equals(otra.nom2)) {
+                if (!this.nom1.equals(otra.nom1) || !this.nom2.equals(otra.nom2)) {
                     iguales = false;
                 }
             }

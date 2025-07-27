@@ -272,7 +272,6 @@ public class ArbolAVL {
     private void listarAux(NodoAVLDicc nodo, Lista lista) {
         if (nodo != null) {
             listarAux(nodo.getIzquierdo(), lista);
-
             lista.insertar(nodo.getObjeto(), lista.longitud() + 1);
             listarAux(nodo.getDerecho(), lista);
         }

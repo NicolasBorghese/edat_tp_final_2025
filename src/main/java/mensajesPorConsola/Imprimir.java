@@ -11,8 +11,8 @@ public class Imprimir {
     public static final String ERROR = Estilos.RED;
     public static final String PRINCIPAL_1 = Estilos.BLUE;
     public static final String PRINCIPAL_2 = Estilos.CYAN;
-    public static final String YELLOW = Estilos.YELLOW;
-    public static final String PURPLE = Estilos.PURPLE;
+    public static final String PORTADA = Estilos.PURPLE;
+    public static final String DESTACADO = Estilos.YELLOW;
 
     private static final int ANCHO_MENU = 60;
 
@@ -52,26 +52,26 @@ public class Imprimir {
         return "║ " + texto + " ".repeat(ANCHO_MENU - texto.length() - 1) + "║";
     }
 
-    public static void errorOpcionNoEsEntero(){
+    public static void errorOpcionNoEsEntero() {
         System.out.println(ERROR + "Por favor, ingrese un número válido." + RESET);
         System.out.print(BOLD + "Seleccione una opción: " + RESET);
     }
 
-    public static void errorOpcionExcedeRango(int cantOpciones){
+    public static void errorOpcionExcedeRango(int cantOpciones) {
         System.out.println(ERROR + "La opción debe estar entre 0 y " + (cantOpciones - 1) + "." + RESET);
         System.out.print(BOLD + "Seleccione una opción: " + RESET);
     }
 
-    public static void finDeEjecucion(){
-        System.out.println(BOLD + YELLOW + "El programa ha finalizado" + RESET);
+    public static void finDeEjecucion() {
+        System.out.println(BOLD + DESTACADO + "El programa ha finalizado" + RESET);
     }
 
     /**
      * Font: ANSI -> ANSI Shadow
      */
-    public static void portada(){
+    public static void portada() {
         String[] art = {
-                BOLD + PURPLE +
+                BOLD + PORTADA +
                         "███████╗██████╗  █████╗ ████████╗                          ",
                 "██╔════╝██╔══██╗██╔══██╗╚══██╔══╝                          ",
                 "█████╗  ██║  ██║███████║   ██║                             ",
@@ -103,7 +103,7 @@ public class Imprimir {
     /**
      * Font: Outline -> big
      */
-    public static void portada1(){
+    public static void portada1() {
         System.out.println(
                 " ______ _____       _______                          \n" +
                         "|  ____|  __ \\   /\\|__   __|                         \n" +
@@ -128,9 +128,9 @@ public class Imprimir {
     /**
      * Font: Outline -> Doom
      */
-    public static void portada2(){
+    public static void portada2() {
         String[] art = {
-                BOLD + PURPLE + "                     ___________  ___ _____",
+                BOLD + PORTADA + "                     ___________  ___ _____",
                 "                    |  ___|  _  \\/ _ \\_   _|",
                 "                    | |__ | | | / /_\\ \\| |",
                 "                    |  __|| | | |  _  || |",
@@ -156,11 +156,11 @@ public class Imprimir {
         integrantes();
     }
 
-    public static void integrantes(){
+    public static void integrantes() {
         System.out.println();
-        System.out.println(BOLD + YELLOW + "Alzuguren Santiago FAI-4691" + RESET);
-        System.out.println(BOLD + YELLOW + "Borghese Nicolas FAI-997" + RESET);
-        System.out.println(BOLD + YELLOW + "Piacentini Gonzalo FAI-2514" + RESET);
+        System.out.println(BOLD + DESTACADO + "Alzuguren Santiago FAI-4691" + RESET);
+        System.out.println(BOLD + DESTACADO + "Borghese Nicolas FAI-997" + RESET);
+        System.out.println(BOLD + DESTACADO + "Piacentini Gonzalo FAI-2514" + RESET);
         System.out.println();
     }
 }

@@ -1,5 +1,7 @@
 package manipuladorDeRegistros;
 
+import estructuras.lineales.dinamicas.Lista;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
@@ -9,14 +11,47 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+
+
 public class ManipuladorDeRegistros {
+
+    /**
+     * Abre, lee y devuelve los contenidos de un archivo como String
+     * @param ruta La ruta del archivo para abrir y leer
+     * @return Una Lista donde cada elemento es un arreglo que contiene los campos de una tupla
+     */
+    public static Lista obtenerRegistros(String ruta) {
+
+        Lista listaGeneral = new Lista();
+        int posicion = 1;
+
+        try {
+            FileReader fileReader = new FileReader(ruta);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+            String linea;
+            while ((linea = bufferedReader.readLine()) != null) {// Leo hasta que me quede sin líneas
+                String[] tupla =  linea.split(";");
+                listaGeneral.insertar(tupla, posicion);
+                posicion++;
+            }
+
+            bufferedReader.close();
+        } catch (FileNotFoundException ex) {    // Posible error en el constructor de FileReader
+            System.err.println(ex.getMessage() + "no se encontró el archivo o no puede ser abierto para lectura");
+        } catch (IOException ex) {              // Posible error en bufferedReader.readLine
+            System.err.println(ex.getMessage() + "error de lectura");
+        }
+
+        return listaGeneral;
+    }
 
     /**
      * Abre, lee y devuelve los contenidos de un archivo como String
      * @param ruta La ruta del archivo para abrir y leer
      * @return Un String con los contenidos del archivo. Si surge un error devuelve una cadena vacía.
      */
-    public static String[] obtenerRegistrosPorTupla(String ruta) {
+    public static String[] obtenerContenidosPorTupla(String ruta) {
         StringBuilder contenidos = new StringBuilder();
 
         try {
@@ -41,12 +76,13 @@ public class ManipuladorDeRegistros {
     /**
      * Lee una colección de registros, una ruta de archivo y se encarga de sobreescribir ese archivo
      * con los nuevos registros generados
-     * @param ruta
-     * @param nuevosRegistros String[][]
+     * @param ruta - Dirección del archivo donde se deben escribir los nuevos registros
+     * @param nuevosRegistros - Arreglo bidimensional donde cada columna es un campo y cada fila es una tupla
+     * @param continuarRegistro - Si es true continúa registrando datos sin borrar los anteriores, si es false sobrescribe los anteriores
      */
-    public static void escribirRegistrosPorTupla(String ruta, String[][] nuevosRegistros) {
+    public static void escribirRegistros(String ruta, String[][] nuevosRegistros, boolean continuarRegistro) {
         try {
-            FileWriter fr = new FileWriter(ruta);
+            FileWriter fr = new FileWriter(ruta, continuarRegistro);
 
             String data = "";
             for (int i = 0; i < nuevosRegistros.length; i++) {
@@ -71,7 +107,7 @@ public class ManipuladorDeRegistros {
      *
      * @param nuevoRegistro String[]
      */
-    public static void registrarEnLogs(String[] nuevoRegistro) {
+    public static void registrarEnLog(String[] nuevoRegistro) {
         try {
             String rutaLogs = "src/main/java/logs/logs.txt";
 
