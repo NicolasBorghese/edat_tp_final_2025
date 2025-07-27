@@ -9,7 +9,7 @@ public class Tuberia {
 
     public Tuberia(String nomenclatura, double caudalMinimo, double caudalMaximo,
             double diametro) {
-        nomenclatura = nomenclatura;
+        this.nomenclatura = nomenclatura;
         this.caudalMinimo = caudalMinimo;
         this.caudalMaximo = caudalMaximo;
         this.diametro = diametro;
@@ -21,6 +21,18 @@ public class Tuberia {
         nom = cOri.getNomenclatura();
         nom += "-" + cDest.getNomenclatura();
         return nom;
+    }
+
+    public String getCiudadOrigen(){
+        String[] partes = this.nomenclatura.split("-");
+        String cOrigen = partes[1];
+        return cOrigen;
+    }
+
+    public String getCiudadDestino(){
+        String[] partes = this.nomenclatura.split("-");
+        String cDestino = partes[2];
+        return cDestino;
     }
 
     public String getNomenclatura() {
