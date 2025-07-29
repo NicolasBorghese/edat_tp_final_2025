@@ -11,6 +11,10 @@ public class ClaveTuberia {
         this.nom2 = cDestino.getNomenclatura();
     }
 
+   public ClaveTuberia(String nomCiudadOrigen, String nomCiudadDestino){
+        this.nom1 = nomCiudadOrigen;
+        this.nom2 = nomCiudadDestino;
+    }
     public String getNomCOrigen(){
         return this.nom1;
     }

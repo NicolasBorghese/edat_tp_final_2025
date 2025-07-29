@@ -21,8 +21,17 @@ public class ControladorTuberia {
         return alta;
     }
 
-    public static boolean baja(Grafo grafo, Tuberia tuberia) {
+    public static boolean baja(Grafo grafo, HashMap<ClaveTuberia, Tuberia> hash, Tuberia tuberia) {
         boolean baja = false;
+        ClaveTuberia clave = new ClaveTuberia(tuberia.getCiudadOrigen(), tuberia.getCiudadDestino());
+        if (grafo.eliminarVertice(tuberia.getCiudadOrigen()) && grafo.eliminarVertice(tuberia.getCiudadDestino())) {
+            if (grafo.existeArco(tuberia.getCiudadOrigen(), tuberia.getCiudadDestino(), tuberia.getCaudalMaximo())
+                    && hash.containsKey(clave)) {
+                grafo.eliminarArco(tuberia.getCiudadOrigen(), tuberia.getCiudadDestino());
+                hash.remove(clave);
+                baja = true;
+            }
+        }
         return baja;
     }
 }
