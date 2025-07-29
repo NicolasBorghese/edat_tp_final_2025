@@ -92,9 +92,6 @@ public class Ciudad implements Comparable<Ciudad> {
     }
 
     public double calcularAprovisionamiento(Month mes) {
-        /*
-         * ANOTACION: Faltaría calcular por lo de las tuberías (todavía no está hecho).
-         */
         double cons = 0;
         int poblacionProm = calcularPobPromedio(mes);
         cons = poblacionProm * cantM3ConsXDia;
