@@ -6,15 +6,11 @@ public class ClaveTuberia {
     private String nom1;
     private String nom2;
 
-    public ClaveTuberia(String nomenclaturaC1, String nomenclaturaC2) {
-        this.nom1 = nomenclaturaC1;
-        this.nom2 = nomenclaturaC2;
-    }
-
    public ClaveTuberia(String nomCiudadOrigen, String nomCiudadDestino){
         this.nom1 = nomCiudadOrigen;
         this.nom2 = nomCiudadDestino;
     }
+
     public String getNomCOrigen(){
         return this.nom1;
     }

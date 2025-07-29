@@ -23,7 +23,7 @@ public class Tuberia {
         this.caudalMinimo = caudalMinimo;
         this.caudalMaximo = caudalMaximo;
         this.diametro = diametro;
-        this.estado = 'ACTIVO';
+        this.estado = "ACTIVO";
     }
 
     public String crearNomenclatura(Ciudad cOri, Ciudad cDest) {

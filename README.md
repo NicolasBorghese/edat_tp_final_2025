@@ -4,7 +4,7 @@
 <h1>RED DE DISTRIBUCIÓN DE AGUA 2025</h1>
 
 <div>
-      
+
 <img src="imagenes/portada.jpeg"/>
 
 </div>

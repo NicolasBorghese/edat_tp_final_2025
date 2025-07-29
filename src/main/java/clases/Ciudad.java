@@ -49,10 +49,10 @@ public class Ciudad implements Comparable<Ciudad> {
     // MODIFICADORES
     public void setPoblacionPorFecha(TreeMap<YearMonth, Integer> poblacionPorFecha) {
         this.poblacionPorFecha = poblacionPorFecha;
-  
+    }
+
     public void setConsumoDiarioProm(double nuevoConsumo) {
         this.cantM3ConsXDia = nuevoConsumo;
-
     }
 
     /**
