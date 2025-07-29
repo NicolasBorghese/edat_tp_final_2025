@@ -35,31 +35,32 @@ public class Grafo {
     }
 
     public boolean eliminarVertice(Object vertAEliminar) {
-        // Para eliminar el vertice voy a tener que eliminar todos los arcos que apunte
-        // a él.
+        // Retorna True si elimina el vertice False caso contrario.
         boolean eliminado = false;
         NodoVert actual = this.inicio;
         NodoVert anterior = null;
-        // Acá busco el Vertice.
-        while (actual != null && !actual.getElemento().equals(vertAEliminar)) {
-            anterior = actual;
-            actual = actual.getSigVertice();
-        }
-        if (actual != null) {
-            // Si lo encontré, elimino todos los arcos que apunten al vértice.
-            NodoVert aux = this.inicio;
-            while (aux != null) {
-                eliminarVerticeAux(aux, vertAEliminar);
-                aux = aux.getSigVertice();
-            }
-            // Elimino el vertice
-            if (anterior == null) {
-                // En caso de que sea el primer vertice.
-                inicio = actual.getSigVertice();
+        while (actual != null) {
+            // Recorre el Grafo y va eliminando los arcos.
+            eliminarVerticeAux(actual, vertAEliminar);
+            if (!eliminado && actual.getElemento().equals(vertAEliminar)) {
+                // Elimina el vertice.
+                if (anterior == null) {
+                    this.inicio = actual.getSigVertice();
+                } else {
+                    anterior.setSigVertice(actual.getSigVertice());
+                }
+                eliminado = true;
+                // Sigo recorriendo para eliminar el resto de arcos.
+                if (anterior == null) {
+                    actual = this.inicio;
+                } else {
+                    actual = anterior.getSigVertice();
+                }
             } else {
-                anterior.setSigVertice(actual.getSigVertice());
+                anterior = actual;
+                actual = actual.getSigVertice();
             }
-            eliminado = true;
+
         }
         return eliminado;
     }
