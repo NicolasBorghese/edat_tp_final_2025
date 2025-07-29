@@ -2,18 +2,31 @@ package mensajesPorConsola;
 
 public class OpcionesDeMenu {
 
-    public static String[][] obtenerMenu(String nombreMenu){
+    public static String[][] obtenerMenu(String nombreMenu) {
 
         String[][] menu = new String[0][0];
 
-        switch (nombreMenu){
+        switch (nombreMenu) {
+            case "cargaDeDatosInicial":
+                menu = new String[][]{
+                        {
+                                "CARGA INICIAL DE DATOS"
+                        },
+                        {
+                                "0. Salir.",
+                                "1. Utilizar los últimos registros de datos",
+                                "2. Utilizar la carga inicial de datos",
+                                "3. Iniciar programa sin cargar datos"
+                        }
+                };
+                break;
             case "menuPrincipal":
                 menu = new String[][]{
                         {
-                            "MENÚ PRINCIPAL"
+                                "MENÚ PRINCIPAL"
                         },
                         {
-                            "0. Salir.",
+                                "0. Salir.",
                                 "1. Agregar una ciudad.",
                                 "2. Dar de baja una ciudad.",
                                 "3. Modificar una ciudad.",
@@ -27,21 +40,9 @@ public class OpcionesDeMenu {
                         }
                 };
                 break;
-            case "cargaDeDatosInicial":
-                menu = new String[][]{
-                        {
-                            "CARGA INICIAL DE DATOS"
-                        },
-                        {
-                            "0. Salir.",
-                                "1. Utilizar los últimos registros de datos",
-                                "2. Utilizar la carga inicial de datos",
-                                "3. Iniciar programa sin cargar datos"
-                        }
-                };
+            default:
+                /*menu = new String[][]{{},{}};*/
                 break;
-                default:
-                    /*menu = new String[][]{{},{}};*/
         }
         return menu;
     }

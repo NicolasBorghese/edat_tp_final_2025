@@ -20,6 +20,7 @@ public class Ciudad implements Comparable<Ciudad> {
         this.poblacionPorFecha = new TreeMap<>();
     }
 
+    // OBSERVADORES
     public String getNombre() {
         return this.nombre;
     }
@@ -36,12 +37,22 @@ public class Ciudad implements Comparable<Ciudad> {
         return this.superficie;
     }
 
-    public Integer getPoblacion(YearMonth fecha) {
+    public Map getPoblacionPorFecha() {
+        return poblacionPorFecha;
+    }
+
+    public Integer getPoblacionEnFecha(YearMonth fecha) {
         return poblacionPorFecha.get(fecha);
     }
 
+
+    // MODIFICADORES
+    public void setPoblacionPorFecha(TreeMap<YearMonth, Integer> poblacionPorFecha) {
+        this.poblacionPorFecha = poblacionPorFecha;
+  
     public void setConsumoDiarioProm(double nuevoConsumo) {
         this.cantM3ConsXDia = nuevoConsumo;
+
     }
 
     /**
@@ -121,8 +132,13 @@ public class Ciudad implements Comparable<Ciudad> {
     }
 
     @Override
-    public String toString() {
-        return this.nombre;
+    public String toString(){
+        String respuesta = "";
+        respuesta += "[Nombre: "+this.nombre
+                +" - Nomenclatura: "+this.nomenclatura
+                +" - Superficie: "+ this.superficie
+                +" - CantM3ConXDia: "+this.cantM3ConsXDia+"]";
+        return respuesta;
     }
 
     public String datos() {
