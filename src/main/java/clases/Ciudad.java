@@ -12,7 +12,7 @@ public class Ciudad implements Comparable<Ciudad> {
     private double cantM3ConsXDia;
     private Map<YearMonth, Integer> poblacionPorFecha;
 
-    public Ciudad(String nombre, String nomenclatura,double superficie, double consumoDiario) {
+    public Ciudad(String nombre, String nomenclatura, double superficie, double consumoDiario) {
         this.nombre = nombre;
         this.nomenclatura = nomenclatura;
         this.superficie = superficie;
@@ -45,15 +45,21 @@ public class Ciudad implements Comparable<Ciudad> {
         return poblacionPorFecha.get(fecha);
     }
 
+
     // MODIFICADORES
     public void setPoblacionPorFecha(TreeMap<YearMonth, Integer> poblacionPorFecha) {
         this.poblacionPorFecha = poblacionPorFecha;
+  
+    public void setConsumoDiarioProm(double nuevoConsumo) {
+        this.cantM3ConsXDia = nuevoConsumo;
+
     }
 
     /**
      * Si no hay un registro en la fecha indicada, entonces agrega un registro
      * con la cantidad de poblacion para esa fecha
-     * @param fecha YearMoth
+     * 
+     * @param fecha         YearMoth
      * @param cantPoblacion int
      * @return boolean
      */
@@ -67,8 +73,10 @@ public class Ciudad implements Comparable<Ciudad> {
     }
 
     /**
-     * Si existe un registro para la fecha indicada entonces sobreescribe la cantidad
+     * Si existe un registro para la fecha indicada entonces sobreescribe la
+     * cantidad
      * de poblacion para esa fecha
+     * 
      * @param fecha
      * @param cantPoblacion
      * @return boolean
@@ -95,9 +103,6 @@ public class Ciudad implements Comparable<Ciudad> {
     }
 
     public double calcularAprovisionamiento(Month mes) {
-        /*
-         * ANOTACION: Faltaría calcular por lo de las tuberías (todavía no está hecho).
-         */
         double cons = 0;
         int poblacionProm = calcularPobPromedio(mes);
         cons = poblacionProm * cantM3ConsXDia;
@@ -134,5 +139,10 @@ public class Ciudad implements Comparable<Ciudad> {
                 +" - Superficie: "+ this.superficie
                 +" - CantM3ConXDia: "+this.cantM3ConsXDia+"]";
         return respuesta;
+    }
+
+    public String datos() {
+        return "Ciudad: " + this.nombre + "\n" + "Nomenclatura: " + this.nomenclatura + "\n" + "Superficie: "
+                + this.superficie + "\n";
     }
 }

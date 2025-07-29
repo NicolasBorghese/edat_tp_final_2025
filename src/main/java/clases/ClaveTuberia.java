@@ -11,6 +11,18 @@ public class ClaveTuberia {
         this.nom2 = nomenclaturaC2;
     }
 
+   public ClaveTuberia(String nomCiudadOrigen, String nomCiudadDestino){
+        this.nom1 = nomCiudadOrigen;
+        this.nom2 = nomCiudadDestino;
+    }
+    public String getNomCOrigen(){
+        return this.nom1;
+    }
+
+    public String getNomCDestino(){
+        return this.nom2;
+    }
+
     @Override
     public boolean equals(Object o) {
         boolean iguales = true;
