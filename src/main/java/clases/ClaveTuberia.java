@@ -11,6 +11,14 @@ public class ClaveTuberia {
         this.nom2 = cDestino.getNomenclatura();
     }
 
+    public String getNomCOrigen(){
+        return this.nom1;
+    }
+
+    public String getNomCDestino(){
+        return this.nom2;
+    }
+
     @Override
     public boolean equals(Object o) {
         boolean iguales = true;

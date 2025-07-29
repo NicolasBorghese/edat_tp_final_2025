@@ -12,7 +12,7 @@ public class Ciudad implements Comparable<Ciudad> {
     private double cantM3ConsXDia;
     private Map<YearMonth, Integer> poblacionPorFecha;
 
-    public Ciudad(String nombre, String nomenclatura,double superficie, double consumoDiario) {
+    public Ciudad(String nombre, String nomenclatura, double superficie, double consumoDiario) {
         this.nombre = nombre;
         this.nomenclatura = nomenclatura;
         this.superficie = superficie;
@@ -40,10 +40,15 @@ public class Ciudad implements Comparable<Ciudad> {
         return poblacionPorFecha.get(fecha);
     }
 
+    public void setConsumoDiarioProm(double nuevoConsumo) {
+        this.cantM3ConsXDia = nuevoConsumo;
+    }
+
     /**
      * Si no hay un registro en la fecha indicada, entonces agrega un registro
      * con la cantidad de poblacion para esa fecha
-     * @param fecha YearMoth
+     * 
+     * @param fecha         YearMoth
      * @param cantPoblacion int
      * @return boolean
      */
@@ -57,8 +62,10 @@ public class Ciudad implements Comparable<Ciudad> {
     }
 
     /**
-     * Si existe un registro para la fecha indicada entonces sobreescribe la cantidad
+     * Si existe un registro para la fecha indicada entonces sobreescribe la
+     * cantidad
      * de poblacion para esa fecha
+     * 
      * @param fecha
      * @param cantPoblacion
      * @return boolean
@@ -119,5 +126,10 @@ public class Ciudad implements Comparable<Ciudad> {
     @Override
     public String toString() {
         return this.nombre;
+    }
+
+    public String datos() {
+        return "Ciudad: " + this.nombre + "\n" + "Nomenclatura: " + this.nomenclatura + "\n" + "Superficie: "
+                + this.superficie + "\n";
     }
 }
