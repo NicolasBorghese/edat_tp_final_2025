@@ -62,6 +62,7 @@ public class TestGrafo {
         System.out.println("Insertar otro arco en un lugar donde ya existe un arco: ");
         System.out.println("Insertar un arco con etiqueta nula: ");
         System.out.println("Insertar un ciclo:");
+        System.out.println("Hola Nico, cambié el main");     
     }
 
     public static void cargar(Grafo grafo) {
