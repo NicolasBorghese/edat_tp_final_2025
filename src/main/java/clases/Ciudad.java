@@ -102,6 +102,10 @@ public class Ciudad implements Comparable<Ciudad> {
         return nom;
     }
 
+    public double getConsumoEnFecha(YearMonth fecha){
+        return this.poblacionPorFecha.get(fecha) * this.cantM3ConsXDia;
+    }
+
     public double calcularAprovisionamiento(Month mes) {
         double cons = 0;
         int poblacionProm = calcularPobPromedio(mes);

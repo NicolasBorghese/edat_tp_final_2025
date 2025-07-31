@@ -188,6 +188,19 @@ public class Lista {
         return cad;
     }
 
+    public String toStringVertical(){
+        String cad = "[]";
+        if(this.cabecera != null){
+            Nodo aux = this.cabecera;
+            cad = "";
+            while(aux != null){
+                cad += aux.getElem().toString() + "." + "\n";
+                aux = aux.getEnlace();
+            }
+        }
+        return cad;
+    }
+
     public boolean moverAAnteultimaPosicion(int pos) {
         boolean exito = false;
 
