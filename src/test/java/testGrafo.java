@@ -24,6 +24,7 @@ public class TestGrafo {
                 "Camino más corto del grafo2 de A a E: " + BOLD + CYAN + grafo2.caminoMasCorto('A', 'E') + RESET);
         System.out.println(
                 "Camino más liviano del grafo2 de a a E: " + BOLD + CYAN + grafo2.caminoMasLiviano('A', 'E') + RESET);
+        System.out.println("ToString: " + BOLD + CYAN + grafo.toString() + RESET);
         // Insercion.
         System.out.println(CYAN + "Inserción: " + RESET);
         System.out.println("Insertar un elemento: " + GREEN + aux.insertarVertice(1) + RESET);
@@ -57,7 +58,10 @@ public class TestGrafo {
         System.out.println("Grafo no Vacio es Vacio? " + GREEN + grafo.vacio() + RESET);
 
         System.out.println(BOLD + BLUE + "Testeando: " + RESET);
-        System.out.println("ToString: " + BOLD + CYAN + grafo.toString() + RESET);
+        System.out.println("Insertar un arco: ");
+        System.out.println("Insertar otro arco en un lugar donde ya existe un arco: ");
+        System.out.println("Insertar un arco con etiqueta nula: ");
+        System.out.println("Insertar un ciclo:");
     }
 
     public static void cargar(Grafo grafo) {

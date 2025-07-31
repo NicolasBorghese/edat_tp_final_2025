@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.time.YearMonth;
 
+import clases.*;
 import consultas.*;
 import estructuras.*;
 import estructuras.conjuntistas.ArbolAVL;
@@ -19,9 +20,10 @@ public class TestConsultas {
         rutaTuberias = "src/main/java/datos/registro_tuberia.txt";
         CargaEstructuras.cargarEstructurasCompleto(arbolCiudades, rutaCiudades, rutaCiudadHabitantes, hashTuberias,
                 rutaTuberias);
+        Ciudad c = (Ciudad) arbolCiudades.getObjeto("Villa el Chocón");
         Lista lista = ConsultasCiudad.getCiudadesEnRango(arbolCiudades, "A", "Z", 0, 1000000, YearMonth.of(2024, 6));
         System.out.println(lista.toStringVertical());
-        System.out.println(ConsultasCiudad.getPobYConsEnFecha(arbolCiudades, "Allen", YearMonth.of(2024, 6)));
+        System.out.println(ConsultasCiudad.getPobYConsEnFecha(arbolCiudades, "Villa el Chocón", YearMonth.of(2024, 6)));
     }
 
 }

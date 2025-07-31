@@ -65,7 +65,7 @@ public class CargaEstructuras {
                     (nombreCiudad.equals(((String[]) listaHabitantes.recuperar(iterRegistrosHabitantes))[0]))) {
 
                 String fechaStr = ((String[]) listaHabitantes.recuperar(iterRegistrosHabitantes))[1];
-                YearMonth fecha = YearMonth.parse(fechaStr); // ✅ convierte "2024-06" a YearMonth
+                YearMonth fecha = YearMonth.parse(fechaStr); 
                 int cantHabitantes = Integer
                         .parseInt(((String[]) listaHabitantes.recuperar(iterRegistrosHabitantes))[2]);
 
