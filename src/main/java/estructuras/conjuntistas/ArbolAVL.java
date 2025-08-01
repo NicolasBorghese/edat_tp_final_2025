@@ -383,6 +383,62 @@ public class ArbolAVL {
         return objeto;
     }
 
+    public Lista listarPreorden() {
+        // Retorna una lista con los elementos del arbol en PREORDEN.
+        Lista lista = new Lista();
+        listarPreordenAux(this.raiz, lista);
+        return lista;
+    }
+
+    private void listarPreordenAux(NodoAVLDicc nodo, Lista lista) {
+        // Metodo recursivo PRIVADO porque su paramentro es de tipo NodoArbol.
+        if (nodo != null) {
+            // Visita el elemento en el nodo.
+            lista.insertar(nodo.getObjeto(), lista.longitud() + 1);
+            // Recorre sus hijos en preorden.
+            listarPreordenAux(nodo.getIzquierdo(), lista);
+            listarPreordenAux(nodo.getDerecho(), lista);
+        }
+    }
+
+     public Lista listarInorden() {
+        // Retorna una lista con los elementos del arbol en INORDEN.
+        Lista lista = new Lista();
+        listarInordenAux(this.raiz, lista);
+        return lista;
+    }
+
+    private void listarInordenAux(NodoAVLDicc nodo, Lista lista) {
+        // Metodo recursivo PRIVADO porque se parametro es tipo arbol.
+        if (nodo != null) {
+            // Visita el subarbol izquierdo en INORDEN.
+            listarInordenAux(nodo.getIzquierdo(), lista);
+            // Visita el elemento raiz.
+            lista.insertar(nodo.getObjeto(), lista.longitud() + 1);
+            // Visita el subarbol derecho en INORDEN.
+            listarInordenAux(nodo.getDerecho(), lista);
+        }
+    }
+
+    public Lista listarPostorden() {
+        // Retorna una lista con los elementos del arbol en POSTORDEN.
+        Lista lista = new Lista();
+        listarPostordenAux(this.raiz, lista);
+        return lista;
+    }
+
+    private void listarPostordenAux(NodoAVLDicc nodo, Lista lista) {
+        // Metodo recursivo PRIVADO porque su parametro es tipo arbol.
+        if (nodo != null) {
+            // Visita el subarbol izquierdo en POSTORDEN.
+            listarPostordenAux(nodo.getIzquierdo(), lista);
+            // Visita el subarbol derecho en POSTORDEN.
+            listarPostordenAux(nodo.getDerecho(), lista);
+            // Visita el elemento raiz.
+            lista.insertar(nodo.getObjeto(), lista.longitud() + 1);
+        }
+    }
+
     public boolean vacio() {
         return this.raiz == null;
     }

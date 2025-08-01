@@ -8,6 +8,7 @@ import clases.*;
 import estructuras.*;
 import estructuras.lineales.dinamicas.Lista;
 import estructuras.conjuntistas.ArbolAVL;
+import estructuras.conjuntistas.ArbolBB;
 
 public class ConsultasCiudad {
     private static String RESET = Estilos.RESET;
@@ -64,5 +65,24 @@ public class ConsultasCiudad {
             }
         }
         return lista;
+    }
+
+    public static String generarListaConsumoAnual(ArbolAVL arbol, Year year) {
+        String listado = "";
+        // Tengo que recorrer el AVL obtener la ciudad, calcular el consumo anual y
+        // meterla en el ABB.
+        // Tengo que verificar que le año este adentro de algún map.
+        if (!arbol.vacio()) {
+            Lista listaCiudades = arbol.listarPreorden();
+            ArbolBB ciudadesOrdenadas = new ArbolBB();
+            for (int i = 1; i <= listaCiudades.longitud(); i++) {
+                Ciudad c = (Ciudad) listaCiudades.recuperar(i);
+                CiudadConsumo aux = new CiudadConsumo(c, c.calcularConsumoAnual(year));
+                ciudadesOrdenadas.insertar(aux);
+            }
+            listado = ciudadesOrdenadas.toStringMayorAMenor();
+            arbol.vaciar();
+        }
+        return listado;
     }
 }
