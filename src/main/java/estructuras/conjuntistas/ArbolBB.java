@@ -334,6 +334,10 @@ public class ArbolBB {
         return retorno;
     }
 
+    public void vaciar(){
+        this.raiz = null;
+    }
+
     public Comparable mejorCandidato(Comparable elemento) {
         // Retorna el mejor candidato para reemplazar a elem, si tiene un hijo retorna
         // ese hijo, si tiene 2 retorna al aritmeticamente más cercano.

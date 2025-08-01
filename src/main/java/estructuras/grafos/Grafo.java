@@ -302,14 +302,14 @@ public class Grafo {
         Lista caminoMasLiviano = new Lista();
         if (vOrigen != null && vDestino != null) {
             Lista caminoActual = new Lista();
-            int[] pesoMin = { Integer.MAX_VALUE };
+            double[] pesoMin = { Integer.MAX_VALUE };
             caminoMasLivianoAux(vOrigen, vDestino, caminoActual, caminoMasLiviano, -1, pesoMin);
         }
         return caminoMasLiviano;
     }
 
     private void caminoMasLivianoAux(NodoVert actual, NodoVert destino, Lista caminoActual, Lista caminoMasLiviano,
-            int pesoActual, int[] pesoMin) {
+            double pesoActual, double[] pesoMin) {
         caminoActual.insertar(actual.getElemento(), caminoActual.longitud() + 1);
         if (actual.getElemento().equals(destino.getElemento())) {
             if (pesoActual < pesoMin[0]) {
@@ -323,10 +323,10 @@ public class Grafo {
             NodoAdy ady = actual.getPrimerAdy();
             while (ady != null) {
                 if (caminoActual.localizar(ady.getVertice().getElemento()) < 0) {
-                    int etiqueta = (int) ady.getEtiqueta();
+                    double etiqueta = (double) ady.getEtiqueta();
                     // Esto solo es útil para el ejercicio del agua, en otro caso tengo que ir
                     // sumando las etiquetas.
-                    int nuevoPeso = (pesoActual == -1) ? etiqueta : Math.min(pesoActual, etiqueta);
+                    double nuevoPeso = (pesoActual == -1) ? etiqueta : Math.min(pesoActual, etiqueta);
                     caminoMasLivianoAux(ady.getVertice(), destino, caminoActual, caminoMasLiviano, nuevoPeso, pesoMin);
                 }
                 ady = ady.getSigAdyacente();
