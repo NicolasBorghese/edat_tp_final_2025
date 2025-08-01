@@ -2,8 +2,10 @@ package main;
 
 import java.util.Scanner;
 
+import constantes.Rutas;
 import clases.ClaveTuberia;
 import clases.Tuberia;
+import estructuras.grafos.Grafo;
 import funciones.VisualizaEstructuras;
 import validaciones.Validar;
 import funciones.CargaEstructuras;
@@ -12,6 +14,19 @@ import estructuras.conjuntistas.ArbolAVL;
 import java.util.HashMap;
 
 public class TransporteAgua {
+
+    // CONSTANTES Y VARIABLES GLOBALES
+
+    // RUTAS DE REGISTROS DINÁMICOS
+    public static final String RUTA_REGISTRO_CIUDAD = Rutas.RUTA_REGISTRO_CIUDAD;
+    public static final String RUTA_REGISTRO_CIUDAD_HABITANTES = Rutas.RUTA_REGISTRO_CIUDAD_HABITANTES;
+    public static final String RUTA_REGISTRO_CONTADOR_CIUDAD = Rutas.RUTA_REGISTRO_CONTADOR_CIUDAD;
+    public static final String RUTA_REGISTRO_TUBERIA = Rutas.RUTA_REGISTRO_TUBERIA;
+    // RUTAS DE REGISTROS PARA CONTAR CON UNA CARGA INICIAL
+    public static final String RUTA_SEED_CIUDAD = Rutas.RUTA_SEED_CIUDAD;
+    public static final String RUTA_SEED_CIUDAD_HABITANTES = Rutas.RUTA_SEED_CIUDAD_HABITANTES;
+    public static final String RUTA_SEED_CONTADOR_CIUDAD = Rutas.RUTA_SEED_CONTADOR_CIUDAD;
+    public static final String RUTA_SEED_TUBERIA = Rutas.RUTA_SEED_TUBERIA;
 
     /**
      * 1 - Carga los datos con los que va a trabajar el usuario según su elección <br>
@@ -25,17 +40,19 @@ public class TransporteAgua {
         int opcionElegida;
         ArbolAVL arbolCiudades = new ArbolAVL();
         HashMap<ClaveTuberia, Tuberia> hashTuberias = new HashMap<>();
+        Grafo grafoCiudades = new Grafo();
 
         Imprimir.portada();
 
         // Controlar carga inicial de datos
         opcionElegida = mostrarMenuDeOpciones("cargaDeDatosInicial", sc);
-        controlCargaDeDatosInicial(opcionElegida, arbolCiudades, hashTuberias);
+        controlCargaDeDatosInicial(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades);
+
 
         // Mostrar menú principal
         while (opcionElegida != 0) {
             opcionElegida = mostrarMenuDeOpciones("menuPrincipal", sc);
-            controlOperacionesMenuPrincipal(opcionElegida, arbolCiudades, hashTuberias);
+            controlOperacionesMenuPrincipal(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades);
         }
 
         Imprimir.finDeEjecucion();
@@ -62,25 +79,36 @@ public class TransporteAgua {
      * Controla las operaciones de la carga de datos inicial
      * @param opcion
      */
-    public static void  controlCargaDeDatosInicial(int opcion,  ArbolAVL arbolCiudades,  HashMap<ClaveTuberia, Tuberia> hashTuberias) {
-        String rutaCiudades = "";
-        String rutaCiudadHabitantes = "";
-        String rutaTuberias = "";
+    public static void  controlCargaDeDatosInicial(
+            int opcion,
+            ArbolAVL arbolCiudades,
+            HashMap<ClaveTuberia, Tuberia> hashTuberias,
+            Grafo grafoCiudades
+    ) {
 
         switch(opcion) {
             case 0:// 0. Salir.
                 break;
             case 1:// 1. Utilizar los últimos registros de datos
-                rutaCiudades = "src/main/java/datos/seed_ciudad.txt";
-                rutaCiudadHabitantes = "src/main/java/datos/seed_ciudad_habitantes.txt";
-                rutaTuberias = "src/main/java/datos/registro_tuberia.txt";
-                CargaEstructuras.cargarEstructurasCompleto(arbolCiudades, rutaCiudades,  rutaCiudadHabitantes, hashTuberias, rutaTuberias);
+                CargaEstructuras.cargarEstructurasCompleto(
+                        arbolCiudades,
+                        RUTA_REGISTRO_CIUDAD,
+                        RUTA_REGISTRO_CIUDAD_HABITANTES,
+                        hashTuberias,
+                        RUTA_REGISTRO_TUBERIA,
+                        grafoCiudades
+                );
                 break;
             case 2:// 2. Utilizar la carga inicial de datos
-                rutaCiudades = "src/main/java/datos/registro_ciudad.txt";
-                rutaCiudadHabitantes = "src/main/java/datos/registro_ciudad_habitantes.txt";
-                rutaTuberias = "src/main/java/datos/registro_tuberia.txt";
-                CargaEstructuras.cargarEstructurasCompleto(arbolCiudades, rutaCiudades,  rutaCiudadHabitantes, hashTuberias, rutaTuberias);
+                CargaEstructuras.cargarEstructurasCompleto(
+                        arbolCiudades,
+                        RUTA_SEED_CIUDAD,
+                        RUTA_SEED_CIUDAD_HABITANTES,
+                        hashTuberias,
+                        RUTA_SEED_TUBERIA,
+                        grafoCiudades
+                        );
+                //TODO falta sobreescribir últimos registros
                 break;
             case 3:// 3. Iniciar programa sin cargar datos
                 break;
@@ -93,12 +121,12 @@ public class TransporteAgua {
      * Controla las operaciones del menú principal
      * @param opcion
      */
-    public static void  controlOperacionesMenuPrincipal(int opcion, ArbolAVL arbolCiudades,  HashMap<ClaveTuberia, Tuberia> hashTuberias) {
-
-        String rutaCiudades = "";
-        String rutaCiudadHabitantes = "";
-        String rutaTuberias = "";
-        String rutaContadorCiudad = "src/main/java/datos/contador_ciudad.txt";
+    public static void  controlOperacionesMenuPrincipal(
+            int opcion,
+            ArbolAVL arbolCiudades,
+            HashMap<ClaveTuberia, Tuberia> hashTuberias,
+            Grafo grafoCiudades
+    ) {
 
         switch(opcion) {
             case 0:// 0. Salir.
@@ -118,9 +146,10 @@ public class TransporteAgua {
             case 7:// 7. Ver el Ranking de ciudades.
                 break;
             case 8:// 8. Ver el árbol AVL.
-                VisualizaEstructuras.visualizarArbolAVLCiudades(arbolCiudades);
+                System.out.println(arbolCiudades.toString());
                 break;
             case 9:// 9. Ver el Grafo Etiquetado.
+                System.out.println(grafoCiudades.toString());
                 break;
             case 10:// 10. Ver el HashMap.
                 VisualizaEstructuras.visualizarHashMapTuberias(hashTuberias);

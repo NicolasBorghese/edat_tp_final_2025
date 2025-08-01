@@ -1,6 +1,7 @@
 package funciones;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.TreeMap;
 import java.time.YearMonth;
 import java.util.Comparator;
@@ -9,6 +10,7 @@ import clases.Ciudad;
 import clases.Tuberia;
 import clases.ClaveTuberia;
 import estructuras.conjuntistas.ArbolAVL;
+import estructuras.grafos.Grafo;
 import estructuras.lineales.dinamicas.Lista;
 import manipuladorDeRegistros.ManipuladorDeRegistros;
 
@@ -27,15 +29,19 @@ public class CargaEstructuras {
      *                       cada ciudad
      * @param hashTuberias   HashMap de tipo Tuberia
      * @param rutaTuberias   String de la ruta con los datos de las tuberias
+     * @param grafoCiudades   Grafo que conecta Ciudades con Tuberias
      */
     public static void cargarEstructurasCompleto(
             ArbolAVL arbolCiudades,
             String rutaCiudades,
             String rutaHabitantes,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            String rutaTuberias) {
-        cargarCiudades(arbolCiudades, rutaCiudades, rutaHabitantes);
-        cargarTuberias(hashTuberias, rutaTuberias);
+            String rutaTuberias,
+            Grafo grafoCiudades
+            ) {
+        cargarArbolAVLCiudades(arbolCiudades, rutaCiudades, rutaHabitantes);
+        cargarHashTuberias(hashTuberias, rutaTuberias);
+        cargarGrafoCiudades(arbolCiudades, hashTuberias, grafoCiudades);
     }
 
     /**
@@ -46,7 +52,7 @@ public class CargaEstructuras {
      * @param rutaHabitantes String de la ruta con los datos de los habitantes de
      *                       cada ciudad
      */
-    public static void cargarCiudades(ArbolAVL arbolCiudades, String rutaCiudades, String rutaHabitantes) {
+    public static void cargarArbolAVLCiudades(ArbolAVL arbolCiudades, String rutaCiudades, String rutaHabitantes) {
 
         Lista listaCiudades = ManipuladorDeRegistros.obtenerRegistros(rutaCiudades);
         Lista listaHabitantes = ManipuladorDeRegistros.obtenerRegistros(rutaHabitantes);
@@ -94,7 +100,7 @@ public class CargaEstructuras {
      * @param hashTuberias HashMap de tipo Tuberia
      * @param rutaTuberias String de la ruta con los datos de las tuberias
      */
-    public static void cargarTuberias(HashMap<ClaveTuberia, Tuberia> hashTuberias, String rutaTuberias) {
+    public static void cargarHashTuberias(HashMap<ClaveTuberia, Tuberia> hashTuberias, String rutaTuberias) {
 
         Lista listaTuberias = ManipuladorDeRegistros.obtenerRegistros(rutaTuberias);
 
@@ -117,5 +123,33 @@ public class CargaEstructuras {
         }
 
     }
+
+    /**
+     *
+     * @param arbolCiudades
+     * @param hashTuberias
+     * @param grafoCiudades
+     */
+    public static void cargarGrafoCiudades(
+            ArbolAVL arbolCiudades,
+            HashMap<ClaveTuberia, Tuberia> hashTuberias,
+            Grafo grafoCiudades) {
+
+        Lista listaCiudades =  arbolCiudades.listar();
+        int posUltimaCiudad = listaCiudades.longitud();
+
+        for(int posActual = 1 ; posActual <= posUltimaCiudad;  posActual++) {
+            String nomenclaturaCiudad = ((Ciudad) listaCiudades.recuperar(posActual)).getNomenclatura();
+            grafoCiudades.insertarVertice(nomenclaturaCiudad);
+        }
+
+        for (Tuberia tuberia : hashTuberias.values()) {
+            double caudalMaximo = tuberia.getCaudalMaximo();
+            String[] nomenclaturas = tuberia.getNomenclatura().split("-");
+            grafoCiudades.insertarArco(nomenclaturas[0], nomenclaturas[1], caudalMaximo);
+        }
+
+    }
+
 
 }

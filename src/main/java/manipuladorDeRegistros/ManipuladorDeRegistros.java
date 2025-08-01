@@ -1,19 +1,21 @@
 package manipuladorDeRegistros;
 
-import estructuras.lineales.dinamicas.Lista;
 
+import constantes.Rutas;
+import estructuras.lineales.dinamicas.Lista;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 
 
 public class ManipuladorDeRegistros {
+
+    final static String RUTA_LOG = Rutas.RUTA_LOG;
 
     /**
      * Abre, lee y devuelve los contenidos de un archivo como String
@@ -109,7 +111,7 @@ public class ManipuladorDeRegistros {
      */
     public static void registrarEnLog(String[] nuevoRegistro) {
         try {
-            String rutaLogs = "src/main/java/logs/logs.txt";
+
 
             //Se genera el timestamp con formato
             LocalDateTime ahora = LocalDateTime.now();
@@ -117,8 +119,8 @@ public class ManipuladorDeRegistros {
             String timestamp = ahora.format(formato);
 
             //Se genera el string que se va a anexar al archivos de logs
-            FileWriter fr = new FileWriter(rutaLogs, true);
-            String registroToString = "["+ timestamp +"][" + nuevoRegistro[0] + "]\n[" + nuevoRegistro[1] + "]\n\n" ;
+            FileWriter fr = new FileWriter(RUTA_LOG, true);
+            String registroToString = "["+ timestamp +"][" + nuevoRegistro[0] + "]\n" + nuevoRegistro[1] + "\n\n" ;
 
             fr.append(registroToString);
             fr.close();
