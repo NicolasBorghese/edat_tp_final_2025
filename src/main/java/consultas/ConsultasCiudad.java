@@ -69,9 +69,6 @@ public class ConsultasCiudad {
 
     public static String generarListaConsumoAnual(ArbolAVL arbol, Year year) {
         String listado = "";
-        // Tengo que recorrer el AVL obtener la ciudad, calcular el consumo anual y
-        // meterla en el ABB.
-        // Tengo que verificar que le año este adentro de algún map.
         if (!arbol.vacio()) {
             Lista listaCiudades = arbol.listarPreorden();
             ArbolBB ciudadesOrdenadas = new ArbolBB();
