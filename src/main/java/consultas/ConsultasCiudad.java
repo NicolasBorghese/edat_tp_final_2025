@@ -78,7 +78,7 @@ public class ConsultasCiudad {
                 ciudadesOrdenadas.insertar(aux);
             }
             listado = ciudadesOrdenadas.toStringMayorAMenor();
-            arbol.vaciar();
+            ciudadesOrdenadas.vaciar();
         }
         return listado;
     }
