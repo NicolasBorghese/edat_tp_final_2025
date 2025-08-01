@@ -38,21 +38,35 @@ public class ConsultasTuberia {
                 // Si se cumplen las condiciones, tengo que listar el camino más liviano del
                 // grafo e ir buscando las tuberías en el hash ¡Cómo hago esto al mismo tiempo'
                 Lista lCamino = grafo.caminoMasLiviano(ciudadOrigen.getNomenclatura(), ciudadDestino.getNomenclatura());
+                boolean caminoEnDis = false;
+                boolean caminoEnRep = false;
+                boolean caminoInactivo = false;
                 for (int i = 1; i < lCamino.longitud(); i++) {
                     String nom1 = (String) lCamino.recuperar(i);
-                    String nom2 = (String) lCamino.recuperar(i++);
+                    String nom2 = (String) lCamino.recuperar(i + 1);
 
                     ClaveTuberia clave = new ClaveTuberia(nom1, nom2);
                     Tuberia tuberia = (Tuberia) hash.get(clave);
                     caudalPleno = (tuberia.getCaudalMaximo() < caudalPleno) ? tuberia.getCaudalMaximo() : caudalPleno;
                     String estadoTuberia = tuberia.getEstado();
-                    if (estadoTuberia.equals("EN DISEÑO")) {
-                        estado = DISEÑO + "EN DISEÑO" + RESET;
-                    } else if (estadoTuberia.equals("INACTIVO") && !estado.equals("EN DISEÑO")) {
-                        estado = RESET + "INACTIVO";
-                    } else if (estadoTuberia.equals("EN REPARACIÓN") && !estado.equals("INACTIVO")) {
-                        estado = REPARACIÓN + "EN REPARACIÓN" + RESET;
+                    switch (estadoTuberia.toUpperCase()) {
+                        case "EN DISEÑO":
+                            caminoEnDis = true;
+                            break;
+                        case "EN REPARACIÓN":
+                            caminoEnRep = true;
+                            break;
+                        case "INACTIVO":
+                            caminoInactivo = true;
+                            break;
                     }
+                }
+                if (caminoEnDis) {
+                    estado = DISEÑO + "EN DISEÑO" + RESET;
+                } else if (caminoInactivo) {
+                    estado = RESET + "INACTIVO";
+                } else if (caminoEnRep) {
+                    estado = REPARACIÓN + "EN REPARACIÓN" + RESET;
                 }
                 retorno = BOLD + "Camino: " + RESET + "\n" + YELLOW + lCamino.toString() + RESET + "\n" + BOLD
                         + "ESTADO: " + RESET + estado + "\n" + BOLD + "Caudal Pleno: " + BLUE + caudalPleno + RESET;
@@ -71,20 +85,34 @@ public class ConsultasTuberia {
             retorno = BOLD + ERROR + "No existe camino entre las ciudades" + RESET;
             if (grafo.existeCamino(ciudadOrigen.getNomenclatura(), ciudadDestino.getNomenclatura())) {
                 Lista lCamino = grafo.caminoMasCorto(ciudadOrigen, ciudadDestino);
+                boolean caminoEnDis = false;
+                boolean caminoEnRep = false;
+                boolean caminoInactivo = false;
                 for (int i = 1; i < lCamino.longitud(); i++) {
                     String nom1 = (String) lCamino.recuperar(i);
-                    String nom2 = (String) lCamino.recuperar(i++);
+                    String nom2 = (String) lCamino.recuperar(i + 1);
 
                     ClaveTuberia clave = new ClaveTuberia(nom1, nom2);
                     Tuberia tuberia = (Tuberia) hash.get(clave);
                     String estadoTuberia = tuberia.getEstado();
-                    if (estadoTuberia.equals("EN DISEÑO")) {
-                        estado = DISEÑO + "EN DISEÑO" + RESET;
-                    } else if (estadoTuberia.equals("INACTIVO") && !estado.equals("EN DISEÑO")) {
-                        estado = RESET + "INACTIVO";
-                    } else if (estadoTuberia.equals("EN REPARACIÓN") && !estado.equals("INACTIVO")) {
-                        estado = REPARACIÓN + "EN REPARACIÓN" + RESET;
+                    switch (estadoTuberia.toUpperCase()) {
+                        case "EN DISEÑO":
+                            caminoEnDis = true;
+                            break;
+                        case "EN REPARACIÓN":
+                            caminoEnRep = true;
+                            break;
+                        case "INACTIVO":
+                            caminoInactivo = true;
+                            break;
                     }
+                }
+                if (caminoEnDis) {
+                    estado = DISEÑO + "EN DISEÑO" + RESET;
+                } else if (caminoInactivo) {
+                    estado = RESET + "INACTIVO";
+                } else if (caminoEnRep) {
+                    estado = REPARACIÓN + "EN REPARACIÓN" + RESET;
                 }
                 retorno = BOLD + "Camino: " + RESET + "\n" + YELLOW + lCamino.toString() + RESET + "\n" + BOLD
                         + "ESTADO: " + RESET + estado;
