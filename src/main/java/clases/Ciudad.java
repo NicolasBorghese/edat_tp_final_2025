@@ -3,6 +3,7 @@ package clases;
 import java.util.TreeMap;
 import java.util.Map;
 import java.time.Month;
+import java.time.Year;
 import java.time.YearMonth;
 
 public class Ciudad implements Comparable<Ciudad> {
@@ -44,7 +45,6 @@ public class Ciudad implements Comparable<Ciudad> {
     public Integer getPoblacionEnFecha(YearMonth fecha) {
         return poblacionPorFecha.get(fecha);
     }
-
 
     // MODIFICADORES
     public void setPoblacionPorFecha(TreeMap<YearMonth, Integer> poblacionPorFecha) {
@@ -102,7 +102,7 @@ public class Ciudad implements Comparable<Ciudad> {
         return nom;
     }
 
-    public double getConsumoEnFecha(YearMonth fecha){
+    public double getConsumoEnFecha(YearMonth fecha) {
         return this.poblacionPorFecha.get(fecha) * this.cantM3ConsXDia;
     }
 
@@ -126,6 +126,16 @@ public class Ciudad implements Comparable<Ciudad> {
         return suma / cantMeses;
     }
 
+    public double calcularConsumoAnual(Year year) {
+        double total = 0;
+        for (Map.Entry<YearMonth, Integer> entry : poblacionPorFecha.entrySet()) {
+            if (Year.of(entry.getKey().getYear()).equals(year)) {
+                total += (entry.getValue() * cantM3ConsXDia);
+            }
+        }
+        return Math.round(total * 100.0) / 100.0;
+    }
+
     public boolean equals(Ciudad c) {
         return this.nombre == c.nombre;
     }
@@ -136,12 +146,12 @@ public class Ciudad implements Comparable<Ciudad> {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         String respuesta = "";
-        respuesta += "[Nombre: "+this.nombre
-                +" - Nomenclatura: "+this.nomenclatura
-                +" - Superficie: "+ this.superficie
-                +" - CantM3ConXDia: "+this.cantM3ConsXDia+"]";
+        respuesta += "[Nombre: " + this.nombre
+                + " - Nomenclatura: " + this.nomenclatura
+                + " - Superficie: " + this.superficie
+                + " - CantM3ConXDia: " + this.cantM3ConsXDia + "]";
         return respuesta;
     }
 
