@@ -64,12 +64,7 @@ public class Ciudad implements Comparable<Ciudad> {
      * @return boolean
      */
     public boolean agregarPoblacion(YearMonth fecha, int cantPoblacion) {
-        boolean agregado = false;
-        if (poblacionPorFecha.get(fecha) == null) {
-            poblacionPorFecha.put(fecha, cantPoblacion);
-            agregado = true;
-        }
-        return agregado;
+        return poblacionPorFecha.putIfAbsent(fecha, cantPoblacion) == null;
     }
 
     /**
@@ -82,12 +77,7 @@ public class Ciudad implements Comparable<Ciudad> {
      * @return boolean
      */
     public boolean modificarPoblacion(YearMonth fecha, int cantPoblacion) {
-        boolean modificado = false;
-        if (poblacionPorFecha.get(fecha) != null) {
-            poblacionPorFecha.put(fecha, cantPoblacion);
-            modificado = true;
-        }
-        return modificado;
+        return poblacionPorFecha.replace(fecha, cantPoblacion) != null;
     }
 
     private String crearNomenclatura(int numCiudad) {
