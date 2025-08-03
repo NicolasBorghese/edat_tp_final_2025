@@ -109,8 +109,12 @@ public class Imprimir {
         System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
     }
 
-    public static void errorIngresarCiudad() {
+    public static void errorAltaCiudad() {
         System.out.println(BOLD + ERROR + "No fue posible cargar la ciudad, nombre duplicado." + RESET);
+    }
+
+    public static void errorBajaCiudad() {
+        System.out.println(BOLD + ERROR + "No fue posible dar de baja la ciudad, nombre inexistente en el sistema." + RESET);
     }
 
     // ███████╗██╗  ██╗██╗████████╗ ██████╗
@@ -132,8 +136,12 @@ public class Imprimir {
         System.out.println(BOLD + EXITO + "Éxito al vaciar los registros." + RESET);
     }
 
-    public static void exitoIngresarCiudad(){
+    public static void exitoAltaCiudad(){
         System.out.println(BOLD + EXITO + "La ciudad se cargo con éxito al sistema." + RESET);
+    }
+
+    public static void exitoBajaCiudad(){
+        System.out.println(BOLD + EXITO + "La ciudad se dio de baja con éxito del sistema." + RESET);
     }
 
     // ██╗   ██╗ █████╗ ██████╗ ██╗ ██████╗ ███████╗

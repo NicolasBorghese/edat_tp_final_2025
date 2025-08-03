@@ -96,7 +96,7 @@ public class GestorOperaciones {
     ){
 
         int numCiudad = CargaEstructuras.recuperarContadorCiudad(rutaContadorCiudad);
-        Ciudad nuevaCiudad = Formulario.crearNuevaCiudad(sc, numCiudad);
+        Ciudad nuevaCiudad = Formulario.crearNuevaCiudad(numCiudad, sc);
 
         boolean exito = ControladorCiudad.alta(arbolCiudades, grafoCiudades, nuevaCiudad);
 
@@ -106,12 +106,12 @@ public class GestorOperaciones {
             String titulo = "ÉXITO al cargar una nueva ciudad en el sistema";
             String contenido = nuevaCiudad.toString();
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.exitoIngresarCiudad();
+            Imprimir.exitoAltaCiudad();
         } else {
             String titulo = "ERROR al intentar cargar una nueva ciudad en el sistema";
             String contenido = nuevaCiudad.toString();
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.errorIngresarCiudad();
+            Imprimir.errorAltaCiudad();
         }
 
     }
@@ -122,6 +122,28 @@ public class GestorOperaciones {
             Grafo grafoCiudades,
             Scanner sc){
 
+        String nombreCiudad = Formulario.nombreStringValido(sc);
+
+        boolean exito = ControladorCiudad.baja(
+                arbolCiudades,
+                grafoCiudades,
+                hashTuberias,
+                nombreCiudad);
+
+        if (exito) {
+            RegistraEstructuras.registrarArbolAVLCiudades(arbolCiudades);
+            RegistraEstructuras.registrarHashMapTuberias(hashTuberias);
+            String titulo = "ÉXITO al eliminar una ciudad del sistema";
+            String contenido = "Se elimina la ciudad " + nombreCiudad + " del sistema," +
+                    " junto con todas las tuberías que la conectaban";
+            RegistraEstructuras.registrarComoLog(titulo, contenido);
+            Imprimir.exitoBajaCiudad();
+        } else {
+            String titulo = "ERROR al intentar eliminar una ciudad del sistema";
+            String contenido = "La ciudad " + nombreCiudad + " no existe dentro el sistema,";
+            RegistraEstructuras.registrarComoLog(titulo, contenido);
+            Imprimir.errorBajaCiudad();
+        }
     }
 
     public static void modificarCiudad(

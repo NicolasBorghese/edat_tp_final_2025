@@ -39,6 +39,7 @@ public class ControladorCiudad {
              * del vértice de la ciudad que se eliminó.
              */
             eliminarTuberias(hash, nombreCiudad);
+            baja = true;
         }
         return baja;
     }

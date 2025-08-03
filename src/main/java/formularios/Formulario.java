@@ -24,7 +24,7 @@ public class Formulario {
      * @param numeroCiudad int
      * @return Ciudad
      */
-    public static Ciudad crearNuevaCiudad(Scanner sc, int numeroCiudad){
+    public static Ciudad crearNuevaCiudad( int numeroCiudad, Scanner sc){
 
         sc.nextLine();
         System.out.print(BOLD + "Ingrese el nombre de la ciudad que desea ingresar: " + RESET);
@@ -35,6 +35,11 @@ public class Formulario {
         double consumoPromM3 = Validar.numeroReal(sc);
 
         return new Ciudad(nombre, numeroCiudad, superficie, consumoPromM3);
+    }
+
+    public static String nombreStringValido(Scanner sc){
+        System.out.print(BOLD + "Ingrese el nombre de la ciudad que desea dar de baja: " + RESET);
+        return Validar.textoNoVacio2Caracteres(sc);
     }
 
 }
