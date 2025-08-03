@@ -16,7 +16,7 @@ public class OpcionesDeMenu {
                                 "0. Salir.",
                                 "1. Utilizar los últimos registros de datos",
                                 "2. Utilizar la carga inicial de datos",
-                                "3. Iniciar programa sin cargar datos"
+                                "3. Iniciar programa con registros vacios"
                         }
                 };
                 break;
@@ -27,16 +27,21 @@ public class OpcionesDeMenu {
                         },
                         {
                                 "0. Salir.",
-                                "1. Agregar una ciudad.",
-                                "2. Dar de baja una ciudad.",
-                                "3. Modificar una ciudad.",
-                                "4. Agregar una tubería.",
-                                "5. Dar de baja una tubería.",
-                                "6. Modificar una tubería.",
-                                "7. Ver el Ranking de ciudades.",
-                                "8. Ver el árbol AVL.",
-                                "9. Ver el Grafo Etiquetado.",
-                                "10. Ver el HashMap."
+                                "1. Ciudad - Alta",
+                                "2. Ciudad - Baja",
+                                "3. Ciudad - Modificar",
+                                "4. Ciudad - Actualizar población por fecha",
+                                "5. Tubería - Alta",
+                                "6. Tubería - Baja",
+                                "7. Tubería - Modificar",
+                                "8. Cantidad habitantes y agua consumida por fecha",
+                                "9. Consumo de agua entre rango de nombres",
+                                "10. Camino de A a B con caudal pleno mínimo",
+                                "11. Camino de A a B con menor recorrido",
+                                "12. Ciudades ordenadas por consumo de agua",
+                                "13. Visualizar arbolAVL de ciudades",
+                                "14. Visualizar HashMap de tuberias",
+                                "15. Visualizar Grafo (Ciudad-Tubería)"
                         }
                 };
                 break;

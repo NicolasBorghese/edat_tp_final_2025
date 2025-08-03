@@ -17,34 +17,6 @@ import manipuladorDeRegistros.ManipuladorDeRegistros;
 public class CargaEstructuras {
 
     /**
-     * Hace una carga completa de todas las estructuras con las que trabaja el
-     * sistema<br>
-     * 1 - Recibe un ArbolAVL y 3 rutas para cargar todos los datos de ciudades<br>
-     * 2 - Recibe un HashMap y 1 ruta para cargar todos los datos de las
-     * tuberias<br>
-     *
-     * @param arbolCiudades  ArbolAVL de tipo Ciudad
-     * @param rutaCiudades   String de la ruta con los datos de las ciudades
-     * @param rutaHabitantes String de la ruta con los datos de los habitantes de
-     *                       cada ciudad
-     * @param hashTuberias   HashMap de tipo Tuberia
-     * @param rutaTuberias   String de la ruta con los datos de las tuberias
-     * @param grafoCiudades   Grafo que conecta Ciudades con Tuberias
-     */
-    public static void cargarEstructurasCompleto(
-            ArbolAVL arbolCiudades,
-            String rutaCiudades,
-            String rutaHabitantes,
-            HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            String rutaTuberias,
-            Grafo grafoCiudades
-            ) {
-        cargarArbolAVLCiudades(arbolCiudades, rutaCiudades, rutaHabitantes);
-        cargarHashTuberias(hashTuberias, rutaTuberias);
-        cargarGrafoCiudades(arbolCiudades, hashTuberias, grafoCiudades);
-    }
-
-    /**
      * Recibe un ArbolAVL y 3 rutas para cargar todos los datos de ciudades
      *
      * @param arbolCiudades  ArbolAVL de tipo Ciudad

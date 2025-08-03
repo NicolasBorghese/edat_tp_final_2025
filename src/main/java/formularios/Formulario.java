@@ -26,8 +26,9 @@ public class Formulario {
      */
     public static Ciudad crearNuevaCiudad(Scanner sc, int numeroCiudad){
 
+        sc.nextLine();
         System.out.print(BOLD + "Ingrese el nombre de la ciudad que desea ingresar: " + RESET);
-        String nombre = sc.next();
+        String nombre = Validar.textoNoVacio2Caracteres(sc);
         System.out.print(BOLD + "Ingrese la superficie en m2 de esa ciudad: " + RESET);
         double superficie = Validar.numeroReal(sc);
         System.out.print(BOLD + "Ingrese el promedio de consumo diario de agua por día por habitante en M3: " + RESET);

@@ -94,6 +94,11 @@ public class Imprimir {
         System.out.print(BOLD + "Elija una opción nuevamente: " + RESET);
     }
 
+    public static void errorTextoVacio2Caracteres() {
+        System.out.println(BOLD + ERROR + "El valor ingresado no debe ser una cadena de texto vacía y debe contener al menos 2 carácteres." + RESET);
+        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
+    }
+
     public static void errorNoEsEntero() {
         System.out.println(BOLD + ERROR + "El valor ingresado no es un número ENTERO válido." + RESET);
         System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
@@ -115,6 +120,18 @@ public class Imprimir {
     // ███████╗██╔╝ ██╗██║   ██║   ╚██████╔╝
     // ╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
 
+    public static void exitoCargarEstructurasUltimosRegistros(){
+        System.out.println(BOLD + EXITO + "Éxito al cargar las estructuras con los últimos registros." + RESET);
+    }
+
+    public static void exitoCargarEstructurasConSeed(){
+        System.out.println(BOLD + EXITO + "Éxito al cargar las estructuras con los los registros de base." + RESET);
+    }
+
+    public static void exitoVaciarRegistros(){
+        System.out.println(BOLD + EXITO + "Éxito al vaciar los registros." + RESET);
+    }
+
     public static void exitoIngresarCiudad(){
         System.out.println(BOLD + EXITO + "La ciudad se cargo con éxito al sistema." + RESET);
     }
@@ -133,7 +150,7 @@ public class Imprimir {
     public static void hashMapTuberias(HashMap<ClaveTuberia, Tuberia> hashTuberias){
 
         if (hashTuberias.isEmpty()) {
-            System.out.println("La estructura HashMap de tuberías se encuentra vacía.");
+            System.out.print("La estructura HashMap de tuberías se encuentra vacía.");
         } else {
             System.out.println("Contenido del HashMap de tuberías: ");
             for (Map.Entry<ClaveTuberia, Tuberia> entry : hashTuberias.entrySet()) {

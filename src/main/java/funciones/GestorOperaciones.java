@@ -22,6 +22,33 @@ public class GestorOperaciones {
     public static final String RUTA_REGISTRO_CONTADOR_CIUDAD = Rutas.RUTA_REGISTRO_CONTADOR_CIUDAD;
     public static final String RUTA_LOG = Rutas.RUTA_LOG;
 
+    /**
+     * Hace una carga completa de todas las estructuras con las que trabaja el
+     * sistema<br>
+     * 1 - Recibe un ArbolAVL y 3 rutas para cargar todos los datos de ciudades<br>
+     * 2 - Recibe un HashMap y 1 ruta para cargar todos los datos de las
+     * tuberias<br>
+     *
+     * @param arbolCiudades  ArbolAVL de tipo Ciudad
+     * @param rutaCiudades   String de la ruta con los datos de las ciudades
+     * @param rutaHabitantes String de la ruta con los datos de los habitantes de
+     *                       cada ciudad
+     * @param hashTuberias   HashMap de tipo Tuberia
+     * @param rutaTuberias   String de la ruta con los datos de las tuberias
+     * @param grafoCiudades   Grafo que conecta Ciudades con Tuberias
+     */
+    public static void cargarEstructurasCompleto(
+            ArbolAVL arbolCiudades,
+            String rutaCiudades,
+            String rutaHabitantes,
+            HashMap<ClaveTuberia, Tuberia> hashTuberias,
+            String rutaTuberias,
+            Grafo grafoCiudades
+    ) {
+        CargaEstructuras.cargarArbolAVLCiudades(arbolCiudades, rutaCiudades, rutaHabitantes);
+        CargaEstructuras.cargarHashTuberias(hashTuberias, rutaTuberias);
+        CargaEstructuras.cargarGrafoCiudades(arbolCiudades, hashTuberias, grafoCiudades);
+    }
 
     /**
      * Copia todos los datos que se encuentran en los SEED hacia los registros dinámicos
@@ -30,7 +57,7 @@ public class GestorOperaciones {
      * @param hashTuberias HashMap<ClaveTuberia, Tuberia>
      * @param grafoCiudades Grafo
      */
-    public static void reiniciarRegistros(
+    public static void reiniciarRegistrosConSeed(
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
             Grafo grafoCiudades
@@ -42,6 +69,18 @@ public class GestorOperaciones {
     }
 
     /**
+     * Deja todos los registros vacios o con los valores base necesarios
+     * para trabajar con las estructuras desde cero.
+     */
+    public static void vaciarRegistros(){
+        ArbolAVL arbolCiudadesVacio = new ArbolAVL();
+        HashMap<ClaveTuberia, Tuberia> hashTuberiasVacio = new HashMap<>();
+        RegistraEstructuras.registrarContadorCiudad(3000);
+        RegistraEstructuras.registrarArbolAVLCiudades(arbolCiudadesVacio);
+        RegistraEstructuras.registrarHashMapTuberias(hashTuberiasVacio);
+    }
+
+    /**
      * Inserta una nueva ciudad en el ArbolAVL, si la operación es exitosa lo registra y la agrega al grafo
      *
      * @param arbolCiudades ArbolAVL
@@ -49,7 +88,7 @@ public class GestorOperaciones {
      * @param rutaContadorCiudad String
      * @param sc Scanner
      */
-    public static void insertarUnaNuevaCiudad(
+    public static void altaCiudad(
             ArbolAVL arbolCiudades,
             Grafo grafoCiudades,
             String rutaContadorCiudad,
@@ -74,6 +113,20 @@ public class GestorOperaciones {
             RegistraEstructuras.registrarComoLog(titulo, contenido);
             Imprimir.errorIngresarCiudad();
         }
+
+    }
+
+    public static void bajaCiudad(
+            ArbolAVL arbolCiudades,
+            HashMap<ClaveTuberia, Tuberia> hashTuberias,
+            Grafo grafoCiudades,
+            Scanner sc){
+
+    }
+
+    public static void modificarCiudad(
+            ArbolAVL arbolCiudades,
+            Scanner sc){
 
     }
 
