@@ -7,7 +7,6 @@ import constantes.Estilos;
 import clases.Ciudad;
 import clases.ClaveTuberia;
 import clases.Tuberia;
-import constantes.Estilos;
 import estructuras.conjuntistas.ArbolAVL;
 import estructuras.grafos.Grafo;
 import estructuras.lineales.dinamicas.Lista;
@@ -98,7 +97,6 @@ public class ConsultasTuberia {
                 for (int i = 1; i < lCamino.longitud(); i++) {
                     String nom1 = (String) lCamino.recuperar(i);
                     String nom2 = (String) lCamino.recuperar(i + 1);
-
                     ClaveTuberia clave = new ClaveTuberia(nom1, nom2);
                     Tuberia tuberia = hash.get(clave);
                     if (tuberia != null) {
@@ -128,7 +126,6 @@ public class ConsultasTuberia {
                         + "ESTADO: " + RESET + estado;
             }
         }
-
         return retorno;
     }
 }

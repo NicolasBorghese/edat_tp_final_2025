@@ -93,7 +93,7 @@ public class ConsultasCiudad {
         int i = 1;
         while (i <= lista.longitud() && !existe) {
             Ciudad c = (Ciudad) lista.recuperar(i);
-            Set<YearMonth> todasLasFechas =c.getPoblacionPorFecha().keySet();
+            Set<YearMonth> todasLasFechas = c.getPoblacionPorFecha().keySet();
             for (YearMonth fecha : todasLasFechas) {
                 if (fecha.getYear() == year.getValue()) {
                     existe = true;
