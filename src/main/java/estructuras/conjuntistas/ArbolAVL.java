@@ -357,11 +357,13 @@ public class ArbolAVL {
 
     public Object getObjeto(Comparable clave) {
         // Dada la clave retorna el objeto correspondiente del nodo
-        NodoAVLDicc nodo = buscarNodo(this.raiz, clave);
         Object objeto = null;
+        if (clave != null) {
+            NodoAVLDicc nodo = buscarNodo(this.raiz, clave);
 
-        if (nodo != null) {
-            objeto = nodo.getObjeto();
+            if (nodo != null) {
+                objeto = nodo.getObjeto();
+            }
         }
 
         return objeto;

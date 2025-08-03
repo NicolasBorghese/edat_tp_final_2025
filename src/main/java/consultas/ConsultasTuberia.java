@@ -97,7 +97,7 @@ public class ConsultasTuberia {
                 boolean caminoInactivo = false;
                 for (int i = 1; i < lCamino.longitud(); i++) {
                     String nom1 = (String) lCamino.recuperar(i);
-                    String nom2 = (String) lCamino.recuperar(i+1);
+                    String nom2 = (String) lCamino.recuperar(i + 1);
 
                     ClaveTuberia clave = new ClaveTuberia(nom1, nom2);
                     Tuberia tuberia = hash.get(clave);
@@ -128,6 +128,7 @@ public class ConsultasTuberia {
                         + "ESTADO: " + RESET + estado;
             }
         }
+
         return retorno;
     }
 }
