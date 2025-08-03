@@ -15,24 +15,42 @@ public class Validar {
      */
     public static int opcionDeMenu(int cantOpciones, Scanner sc) {
 
-        int opcionElegida;
-
-        while (!sc.hasNextInt()) {
-            Imprimir.errorOpcionNoEsEntero();
-            sc.next();
-        }
-
-        opcionElegida = sc.nextInt();
+        int opcionElegida = numeroEntero(sc);
 
         while (opcionElegida < 0 || opcionElegida > (cantOpciones-1)) {
             Imprimir.errorOpcionExcedeRango(cantOpciones);
-            while (!sc.hasNextInt()) {
-                Imprimir.errorOpcionNoEsEntero();
-                sc.next();
-            }
-            opcionElegida = sc.nextInt();
+            opcionElegida = numeroEntero(sc);
         }
         return opcionElegida;
     };
+
+    /**
+     * Controla que el siguiente valor ingresado por teclado sea un número entero
+     * @param sc
+     */
+    public static int numeroEntero(Scanner sc){
+
+        while (!sc.hasNextInt()) {
+            Imprimir.errorNoEsEntero();
+            sc.next();
+        }
+        return sc.nextInt();
+    }
+
+    /**
+     * Controla que el siguiente valor ingresado por teclado sea un número real
+     * @param sc
+     */
+    public static double numeroReal(Scanner sc){
+
+        while (!sc.hasNextDouble()) {
+            Imprimir.errorNoEsReal();
+            sc.next();
+        }
+        return sc.nextDouble();
+    }
+
+
+
 
 }

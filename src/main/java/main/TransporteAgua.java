@@ -6,7 +6,7 @@ import constantes.Rutas;
 import clases.ClaveTuberia;
 import clases.Tuberia;
 import estructuras.grafos.Grafo;
-import funciones.VisualizaEstructuras;
+import funciones.GestorOperaciones;
 import validaciones.Validar;
 import funciones.CargaEstructuras;
 import mensajesPorConsola.Imprimir;
@@ -48,13 +48,13 @@ public class TransporteAgua {
         opcionElegida = mostrarMenuDeOpciones("cargaDeDatosInicial", sc);
         controlCargaDeDatosInicial(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades);
 
-
         // Mostrar menú principal
         while (opcionElegida != 0) {
             opcionElegida = mostrarMenuDeOpciones("menuPrincipal", sc);
-            controlOperacionesMenuPrincipal(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades);
+            controlOperacionesMenuPrincipal(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades, sc);
         }
 
+        System.out.println();
         Imprimir.finDeEjecucion();
         sc.close();
     }
@@ -74,6 +74,23 @@ public class TransporteAgua {
 
         return opcionElegida;
     };
+
+    public static void detenerEjecucion(Scanner sc){
+        String presionarEnter;
+
+        System.out.println();
+
+        sc.nextLine();
+        do {
+            // Mensaje de parada para leer los resultados
+            Imprimir.continuarEjecucion();
+            // Obligación de ingresar un valor para continuar la ejecución del código
+            presionarEnter = sc.nextLine();
+
+        }while (!presionarEnter.equals(""));
+
+        System.out.println();
+    }
 
     /**
      * Controla las operaciones de la carga de datos inicial
@@ -108,7 +125,7 @@ public class TransporteAgua {
                         RUTA_SEED_TUBERIA,
                         grafoCiudades
                         );
-                //TODO falta sobreescribir últimos registros
+                GestorOperaciones.reiniciarRegistros(arbolCiudades, hashTuberias,  grafoCiudades);
                 break;
             case 3:// 3. Iniciar programa sin cargar datos
                 break;
@@ -125,13 +142,15 @@ public class TransporteAgua {
             int opcion,
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Grafo grafoCiudades
+            Grafo grafoCiudades,
+            Scanner sc
     ) {
 
         switch(opcion) {
             case 0:// 0. Salir.
                 break;
             case 1:// 1. Agregar una ciudad.
+                GestorOperaciones.insertarUnaNuevaCiudad(arbolCiudades, grafoCiudades, RUTA_REGISTRO_CONTADOR_CIUDAD, sc);
                 break;
             case 2:// 2. Dar de baja una ciudad.
                 break;
@@ -152,11 +171,14 @@ public class TransporteAgua {
                 System.out.println(grafoCiudades.toString());
                 break;
             case 10:// 10. Ver el HashMap.
-                VisualizaEstructuras.visualizarHashMapTuberias(hashTuberias);
+                Imprimir.hashMapTuberias(hashTuberias);
                 break;
             default:
                 break;
         }
+
+        if (opcion != 0) {
+            detenerEjecucion(sc);
+        }
     }
 }
-

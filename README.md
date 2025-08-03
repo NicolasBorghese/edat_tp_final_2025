@@ -3,11 +3,7 @@
 <h3>Trabajo Final de Estructuras de Datos - FAI - UNCOMA</h3>
 <h1>RED DE DISTRIBUCIÓN DE AGUA 2025</h1>
 
-<div>
-
 <img src="imagenes/portada.jpeg"/>
-
-</div>
 
 </div>
 

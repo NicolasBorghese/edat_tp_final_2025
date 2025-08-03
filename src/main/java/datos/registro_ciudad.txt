@@ -1,15 +1,16 @@
-C;Allen;AL3001;60;0.27;
-C;Bariloche;BA3002;150;0.40;
-C;Caviahue;CA3003;20;0.55;
-C;Cipolletti;CI3004;120;0.30;
-C;El Bolsón;EB3005;45;0.35;
-C;Junín de los Andes;JD3006;25;0.33;
-C;Las Grutas;LG3007;10;0.25;
-C;Neuquén;NE3008;200;0.28;
-C;Playas Doradas;PD3009;8;0.22;
-C;Primeros Pinos;PP3010;6;0.30;
-C;San Martín de los andes;SM3011;40;0.36;
-C;Sierra Grande;SG3012;15;0.32;
-C;Viedma;VI3013;110;0.26;
-C;Villa Trafúl;VT3014;5;0.38;
-C;Villa el Chocón;VE3015;20;0.34;
+C;Allen;AL3001;60.0;0.27
+C;Bariloche;BA3002;150.0;0.4
+C;Caviahue;CA3003;20.0;0.55
+C;Cipolletti;CI3004;120.0;0.3
+C;El Bolsón;EB3005;45.0;0.35
+C;Junín de los Andes;JD3006;25.0;0.33
+C;Las Grutas;LG3007;10.0;0.25
+C;Neuquén;NE3008;200.0;0.28
+C;Playas Doradas;PD3009;8.0;0.22
+C;Primeros Pinos;PP3010;6.0;0.3
+C;Rosario;RO3016;200.5;30.6
+C;San Martín de los andes;SM3011;40.0;0.36
+C;Sierra Grande;SG3012;15.0;0.32
+C;Viedma;VI3013;110.0;0.26
+C;Villa Trafúl;VT3014;5.0;0.38
+C;Villa el Chocón;VE3015;20.0;0.34

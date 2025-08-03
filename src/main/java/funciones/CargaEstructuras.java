@@ -85,7 +85,7 @@ public class CargaEstructuras {
         for (int i = 1; i <= cantRegistrosCiudades; i++) {
             String[] arreglo = (String[]) listaCiudades.recuperar(i);
             Ciudad ciudad = new Ciudad(
-                    arreglo[1], arreglo[2], Integer.parseInt(arreglo[3]), Double.parseDouble(arreglo[4]));
+                    arreglo[1], arreglo[2], Double.parseDouble(arreglo[3]), Double.parseDouble(arreglo[4]));
             if (habitantesPorCiudad.containsKey(ciudad.getNombre())) {
                 ciudad.setPoblacionPorFecha(habitantesPorCiudad.get(ciudad.getNombre()));
             }
@@ -125,6 +125,7 @@ public class CargaEstructuras {
     }
 
     /**
+     * Carga un grafo a partir de un ArbolAVL de tipo Ciudad y una HashMap de tipo Tuberia
      *
      * @param arbolCiudades
      * @param hashTuberias
@@ -149,6 +150,19 @@ public class CargaEstructuras {
             grafoCiudades.insertarArco(nomenclaturas[0], nomenclaturas[1], caudalMaximo);
         }
 
+    }
+
+    /**
+     * Recupera el último valor almacenado del contador de ciudades que se encuentre en la ruta indicada
+     *
+     * @param rutaContadorCiudad int
+     * @return int
+     */
+    public static int recuperarContadorCiudad(String rutaContadorCiudad){
+        Lista listaNumCiudad = ManipuladorDeRegistros.obtenerRegistros(rutaContadorCiudad);
+        String[] tupla = (String[]) listaNumCiudad.recuperar(1);
+
+        return Integer.parseInt(tupla[0]);
     }
 
 
