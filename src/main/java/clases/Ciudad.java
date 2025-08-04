@@ -10,14 +10,36 @@ public class Ciudad implements Comparable<Ciudad> {
     private String nombre;
     private String nomenclatura;
     private double superficie;
-    private double cantM3ConsXDia;
-    private Map<YearMonth, Integer> poblacionPorFecha;
+    private double consumoDiarioProm;
+    private TreeMap<YearMonth, Integer> poblacionPorFecha;
 
-    public Ciudad(String nombre, String nomenclatura, double superficie, double consumoDiario) {
+    /**
+     * Constructor que se utiliza al momento de cargar los datos de una ciudad existente
+     * @param nombre
+     * @param nomenclatura
+     * @param superficie
+     * @param consumoDiarioProm
+     */
+    public Ciudad(String nombre, String nomenclatura, double superficie, double consumoDiarioProm) {
         this.nombre = nombre;
         this.nomenclatura = nomenclatura;
         this.superficie = superficie;
-        this.cantM3ConsXDia = consumoDiario;
+        this.consumoDiarioProm = consumoDiarioProm;
+        this.poblacionPorFecha = new TreeMap<>();
+    }
+
+    /**
+     * Constructor que se utiliza al momento de crear una nueva ciudad
+     * @param nombre
+     * @param numero
+     * @param superficie
+     * @param consumoDiarioProm
+     */
+    public Ciudad(String nombre, int numero,double superficie, double consumoDiarioProm) {
+        this.nombre = nombre;
+        this.nomenclatura = crearNomenclatura(numero);
+        this.superficie = superficie;
+        this.consumoDiarioProm = consumoDiarioProm;
         this.poblacionPorFecha = new TreeMap<>();
     }
 
@@ -31,14 +53,20 @@ public class Ciudad implements Comparable<Ciudad> {
     }
 
     public double getConsumoDiarioProm() {
-        return this.cantM3ConsXDia;
+        return this.consumoDiarioProm;
     }
 
     public double getSuperficie() {
         return this.superficie;
     }
 
-    public Map getPoblacionPorFecha() {
+    /**
+     * Devuelve un TreeMap donde cada clave es una fecha y cada valor contenido
+     * representa una cantidad de habitantes
+     *
+     * @return TreeMap
+     */
+    public TreeMap<YearMonth, Integer> getPoblacionPorFecha() {
         return poblacionPorFecha;
     }
 
@@ -52,24 +80,19 @@ public class Ciudad implements Comparable<Ciudad> {
     }
 
     public void setConsumoDiarioProm(double nuevoConsumo) {
-        this.cantM3ConsXDia = nuevoConsumo;
+        this.consumoDiarioProm = nuevoConsumo;
     }
 
     /**
      * Si no hay un registro en la fecha indicada, entonces agrega un registro
      * con la cantidad de poblacion para esa fecha
      * 
-     * @param fecha         YearMoth
+     * @param fecha YearMoth
      * @param cantPoblacion int
      * @return boolean
      */
     public boolean agregarPoblacion(YearMonth fecha, int cantPoblacion) {
-        boolean agregado = false;
-        if (poblacionPorFecha.get(fecha) == null) {
-            poblacionPorFecha.put(fecha, cantPoblacion);
-            agregado = true;
-        }
-        return agregado;
+        return poblacionPorFecha.putIfAbsent(fecha, cantPoblacion) == null;
     }
 
     /**
@@ -82,15 +105,10 @@ public class Ciudad implements Comparable<Ciudad> {
      * @return boolean
      */
     public boolean modificarPoblacion(YearMonth fecha, int cantPoblacion) {
-        boolean modificado = false;
-        if (poblacionPorFecha.get(fecha) != null) {
-            poblacionPorFecha.put(fecha, cantPoblacion);
-            modificado = true;
-        }
-        return modificado;
+        return poblacionPorFecha.replace(fecha, cantPoblacion) != null;
     }
 
-    private String crearNomenclatura(int numCiudad) {
+    private String crearNomenclatura(int numUltimaCiudad) {
         String nom = "";
         String[] palabras = nombre.toUpperCase().split(" ");
         if (palabras.length == 1) {
@@ -98,19 +116,19 @@ public class Ciudad implements Comparable<Ciudad> {
         } else {
             nom = palabras[0].substring(0, 1).toUpperCase() + palabras[1].substring(0, 1);
         }
-        nom += numCiudad;
+        nom += numUltimaCiudad + 1;
         return nom;
     }
 
     public double getConsumoEnFecha(YearMonth fecha) {
-        double consumo = this.poblacionPorFecha.get(fecha) * this.cantM3ConsXDia;
+        double consumo = this.poblacionPorFecha.get(fecha) * this.consumoDiarioProm;
         return Math.round(consumo * 100.0) / 100.0;
     }
 
     public double calcularAprovisionamiento(Month mes) {
         double cons = 0;
         int poblacionProm = calcularPobPromedio(mes);
-        cons = poblacionProm * cantM3ConsXDia;
+        cons = poblacionProm * consumoDiarioProm;
         return cons;
     }
 
@@ -131,7 +149,7 @@ public class Ciudad implements Comparable<Ciudad> {
         double total = 0;
         for (Map.Entry<YearMonth, Integer> entry : poblacionPorFecha.entrySet()) {
             if (Year.of(entry.getKey().getYear()).equals(year)) {
-                total += (entry.getValue() * cantM3ConsXDia);
+                total += (entry.getValue() * consumoDiarioProm);
             }
         }
         return Math.round(total * 100.0) / 100.0;
@@ -156,7 +174,7 @@ public class Ciudad implements Comparable<Ciudad> {
         return respuesta;
     }
 
-    public String datos() {
+    public String toStringCompleto() {
         return "Ciudad: " + this.nombre + "\n" + "Nomenclatura: " + this.nomenclatura + "\n" + "Superficie: "
                 + this.superficie + "\n";
     }

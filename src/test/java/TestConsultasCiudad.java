@@ -33,7 +33,7 @@ public class TestConsultasCiudad {
         HashMap<ClaveTuberia, Tuberia> hashTuberias = new HashMap<>();
         Grafo grafoCiudades = new Grafo();
         String rutaTuberias = "src/main/java/datos/registro_tuberia2.txt";
-        CargaEstructuras.cargarEstructurasCompleto(
+        GestorOperaciones.cargarEstructurasCompleto(
                 arbolCiudades,
                 RUTA_REGISTRO_CIUDAD,
                 RUTA_REGISTRO_CIUDAD_HABITANTES,

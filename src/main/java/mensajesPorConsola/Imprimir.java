@@ -1,6 +1,13 @@
 package mensajesPorConsola;
 
+import clases.ClaveTuberia;
+import clases.Tuberia;
 import constantes.Estilos;
+import estructuras.conjuntistas.ArbolAVL;
+import estructuras.lineales.dinamicas.Lista;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Imprimir {
@@ -9,12 +16,27 @@ public class Imprimir {
     public static final String RESET = Estilos.RESET;
     public static final String BOLD = Estilos.BOLD;
     public static final String ERROR = Estilos.RED;
+    public static final String EXITO = Estilos.GREEN;
     public static final String PRINCIPAL_1 = Estilos.BLUE;
     public static final String PRINCIPAL_2 = Estilos.CYAN;
     public static final String PORTADA = Estilos.PURPLE;
     public static final String DESTACADO = Estilos.YELLOW;
 
     private static final int ANCHO_MENU = 60;
+
+    // ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
+    // ████╗ ████║██╔════╝████╗  ██║██║   ██║
+    // ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
+    // ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
+    // ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
+    // ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝
+    //
+    // ██████╗ ██████╗ ██╗███╗   ██╗ ██████╗██╗██████╗  █████╗ ██╗
+    // ██╔══██╗██╔══██╗██║████╗  ██║██╔════╝██║██╔══██╗██╔══██╗██║
+    // ██████╔╝██████╔╝██║██╔██╗ ██║██║     ██║██████╔╝███████║██║
+    // ██╔═══╝ ██╔══██╗██║██║╚██╗██║██║     ██║██╔═══╝ ██╔══██║██║
+    // ██║     ██║  ██║██║██║ ╚████║╚██████╗██║██║     ██║  ██║███████╗
+    // ╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝╚═╝╚═╝     ╚═╝  ╚═╝╚══════╝
 
     public static int menuDeOpciones(String nombreMenu) {
 
@@ -52,18 +74,117 @@ public class Imprimir {
         return "║ " + texto + " ".repeat(ANCHO_MENU - texto.length() - 1) + "║";
     }
 
-    public static void errorOpcionNoEsEntero() {
-        System.out.println(ERROR + "Por favor, ingrese un número válido." + RESET);
-        System.out.print(BOLD + "Seleccione una opción: " + RESET);
-    }
-
-    public static void errorOpcionExcedeRango(int cantOpciones) {
-        System.out.println(ERROR + "La opción debe estar entre 0 y " + (cantOpciones - 1) + "." + RESET);
-        System.out.print(BOLD + "Seleccione una opción: " + RESET);
+    public static void continuarEjecucion(){
+        System.out.print(BOLD + DESTACADO + "Presione [ENTER] para continuar." + RESET);
     }
 
     public static void finDeEjecucion() {
-        System.out.println(BOLD + DESTACADO + "El programa ha finalizado" + RESET);
+        System.out.println(BOLD + DESTACADO + "EL PROGRAMA HA FINALIZADO" + RESET);
+    }
+
+    // ███████╗██████╗ ██████╗  ██████╗ ██████╗
+    // ██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗
+    // █████╗  ██████╔╝██████╔╝██║   ██║██████╔╝
+    // ██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗
+    // ███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║
+    // ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+
+    public static void errorOpcionExcedeRango(int cantOpciones) {
+        System.out.println(BOLD + ERROR + "La opción debe estar entre 0 y " + (cantOpciones - 1) + "." + RESET);
+        System.out.print(BOLD + "Elija una opción nuevamente: " + RESET);
+    }
+
+    public static void errorTextoVacio2Caracteres() {
+        System.out.println(BOLD + ERROR + "El valor ingresado no debe ser una cadena de texto vacía y debe contener al menos 2 carácteres." + RESET);
+        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
+    }
+
+    public static void errorNoEsEntero() {
+        System.out.println(BOLD + ERROR + "El valor ingresado no es un número ENTERO válido." + RESET);
+        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
+    }
+
+    public static void errorNoEsReal() {
+        System.out.println(BOLD + ERROR + "El valor ingresado no es un número REAL válido." + RESET);
+        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
+    }
+
+    public static void errorAltaCiudad() {
+        System.out.println(BOLD + ERROR + "No fue posible cargar la ciudad, nombre duplicado." + RESET);
+    }
+
+    public static void errorBajaCiudad() {
+        System.out.println(BOLD + ERROR + "No fue posible dar de baja la ciudad, nombre inexistente en el sistema." + RESET);
+    }
+
+    // ███████╗██╗  ██╗██╗████████╗ ██████╗
+    // ██╔════╝╚██╗██╔╝██║╚══██╔══╝██╔═══██╗
+    // █████╗   ╚███╔╝ ██║   ██║   ██║   ██║
+    // ██╔══╝   ██╔██╗ ██║   ██║   ██║   ██║
+    // ███████╗██╔╝ ██╗██║   ██║   ╚██████╔╝
+    // ╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+
+    public static void exitoCargarEstructurasUltimosRegistros(){
+        System.out.println(BOLD + EXITO + "Éxito al cargar las estructuras con los últimos registros." + RESET);
+    }
+
+    public static void exitoCargarEstructurasConSeed(){
+        System.out.println(BOLD + EXITO + "Éxito al cargar las estructuras con los los registros de base." + RESET);
+    }
+
+    public static void exitoVaciarRegistros(){
+        System.out.println(BOLD + EXITO + "Éxito al vaciar los registros." + RESET);
+    }
+
+    public static void exitoAltaCiudad(){
+        System.out.println(BOLD + EXITO + "La ciudad se cargo con éxito al sistema." + RESET);
+    }
+
+    public static void exitoBajaCiudad(){
+        System.out.println(BOLD + EXITO + "La ciudad se dio de baja con éxito del sistema." + RESET);
+    }
+
+    // ██╗   ██╗ █████╗ ██████╗ ██╗ ██████╗ ███████╗
+    // ██║   ██║██╔══██╗██╔══██╗██║██╔═══██╗██╔════╝
+    // ██║   ██║███████║██████╔╝██║██║   ██║███████╗
+    // ╚██╗ ██╔╝██╔══██║██╔══██╗██║██║   ██║╚════██║
+    //  ╚████╔╝ ██║  ██║██║  ██║██║╚██████╔╝███████║
+    //   ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝ ╚═════╝ ╚══════╝
+
+    /**
+     * Imprime en pantalla el contenido de la estructura del HashMap de tuberías
+     * @param hashTuberias HashMap<ClaveTuberia, Tuberia>
+     */
+    public static void hashMapTuberias(HashMap<ClaveTuberia, Tuberia> hashTuberias){
+
+        if (hashTuberias.isEmpty()) {
+            System.out.print("La estructura HashMap de tuberías se encuentra vacía.");
+        } else {
+            System.out.println("Contenido del HashMap de tuberías: ");
+            for (Map.Entry<ClaveTuberia, Tuberia> entry : hashTuberias.entrySet()) {
+                System.out.println("- Clave: " + entry.getKey() + " | Valor: " + entry.getValue().toString());
+            }
+        }
+
+    }
+
+    /**
+     * Imprime en pantalla el contenido de la estructura del ArbolAVL de Ciudades
+     * @param arbolCiudades ArbolAVL
+     */
+    public static void arbolAVLCiudadesAlfabetico(ArbolAVL arbolCiudades){
+
+        if (arbolCiudades.vacio()) {
+            System.out.println("La estructura ArbolAVL de ciudades se encuentra vacía.");
+        } else {
+            System.out.println("Contenido del ArbolAVL de ciudades: ");
+            Lista listaCiudades = arbolCiudades.listar();
+            int cantElem = listaCiudades.longitud();
+            for(int i = 1; i <= cantElem; i++){
+                System.out.println(listaCiudades.recuperar(i).toString());
+            }
+        }
+
     }
 
     /**

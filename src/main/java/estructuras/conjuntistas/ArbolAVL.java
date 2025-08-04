@@ -1,5 +1,6 @@
 package estructuras.conjuntistas;
 
+import clases.Ciudad;
 import estructuras.lineales.dinamicas.*;
 
 public class ArbolAVL {
@@ -435,7 +436,7 @@ public class ArbolAVL {
 
     @Override
     public String toString() {
-        String cadena = "Arbol vacio";
+        String cadena = "ArbolAVL vacío";
 
         if (this.raiz != null) {
             cadena = stringAux(this.raiz, "");
@@ -463,11 +464,44 @@ public class ArbolAVL {
         if (nodo.getIzquierdo() != null) {
             cadena = stringAux(nodo.getIzquierdo(), cadena);
         }
-
         if (nodo.getDerecho() != null) {
             cadena = stringAux(nodo.getDerecho(), cadena);
         }
+        return cadena;
+    }
 
+    public String toStringTipoCiudad() {
+        String cadena = "ArbolAVL vacío";
+
+        if (this.raiz != null) {
+            cadena = stringTipoCiudadAux(this.raiz, "");
+        }
+        return cadena;
+    }
+
+    private String stringTipoCiudadAux(NodoAVLDicc nodo, String cadena) {
+        cadena += "Nodo: " + ((Ciudad) nodo.getObjeto()).getNombre();
+
+        if (nodo.getIzquierdo() != null) {
+            cadena += " | HI: " + ((Ciudad) nodo.getIzquierdo().getObjeto()).getNombre();
+        } else {
+            cadena += " | HI: -";
+        }
+
+        if (nodo.getDerecho() != null) {
+            cadena += " | HD: " + ((Ciudad) nodo.getDerecho().getObjeto()).getNombre() + "";
+        } else {
+            cadena += " | HD: -";
+        }
+
+        cadena += " | Altura : " + nodo.getAltura() + "\n";
+
+        if (nodo.getIzquierdo() != null) {
+            cadena = stringTipoCiudadAux(nodo.getIzquierdo(), cadena);
+        }
+        if (nodo.getDerecho() != null) {
+            cadena = stringTipoCiudadAux(nodo.getDerecho(), cadena);
+        }
         return cadena;
     }
 

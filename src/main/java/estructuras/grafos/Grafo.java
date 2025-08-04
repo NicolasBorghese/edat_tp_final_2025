@@ -277,22 +277,25 @@ public class Grafo {
 
     private void caminoMasCortoAux(NodoVert actual, NodoVert destino, Lista caminoActual, Lista caminoMasCorto) {
         caminoActual.insertar(actual.getElemento(), caminoActual.longitud() + 1);
-        if (actual.getElemento().equals(destino.getElemento())) {
-            if (caminoMasCorto.esVacia() || caminoMasCorto.longitud() > caminoActual.longitud()) {
-                caminoMasCorto.vaciar();
-                for (int i = 1; i <= caminoActual.longitud(); i++) {
-                    caminoMasCorto.insertar(caminoActual.recuperar(i), i);
+        if (caminoMasCorto.esVacia() || caminoMasCorto.longitud() >= caminoActual.longitud()) {
+            if (actual.getElemento().equals(destino.getElemento())) {
+                if (caminoMasCorto.esVacia() || caminoMasCorto.longitud() > caminoActual.longitud()) {
+                    caminoMasCorto.vaciar();
+                    for (int i = 1; i <= caminoActual.longitud(); i++) {
+                        caminoMasCorto.insertar(caminoActual.recuperar(i), i);
+                    }
                 }
-            }
-        } else {
-            NodoAdy ady = actual.getPrimerAdy();
-            while (ady != null) {
-                if (caminoActual.localizar(ady.getVertice().getElemento()) < 0) {
-                    caminoMasCortoAux(ady.getVertice(), destino, caminoActual, caminoMasCorto);
+            } else {
+                NodoAdy ady = actual.getPrimerAdy();
+                while (ady != null) {
+                    if (caminoActual.localizar(ady.getVertice().getElemento()) < 0) {
+                        caminoMasCortoAux(ady.getVertice(), destino, caminoActual, caminoMasCorto);
+                    }
+                    ady = ady.getSigAdyacente();
                 }
-                ady = ady.getSigAdyacente();
             }
         }
+
         caminoActual.eliminar(caminoActual.longitud());
     }
 
@@ -312,7 +315,7 @@ public class Grafo {
             double pesoActual, double[] pesoMin) {
         caminoActual.insertar(actual.getElemento(), caminoActual.longitud() + 1);
         if (actual.getElemento().equals(destino.getElemento())) {
-            if (pesoActual < pesoMin[0]) {
+            if (pesoActual > pesoMin[0]) {
                 pesoMin[0] = pesoActual;
                 caminoMasLiviano.vaciar();
                 for (int i = 1; i <= caminoActual.longitud(); i++) {
@@ -323,7 +326,7 @@ public class Grafo {
             NodoAdy ady = actual.getPrimerAdy();
             while (ady != null) {
                 if (caminoActual.localizar(ady.getVertice().getElemento()) < 0) {
-                    double etiqueta = (double) ady.getEtiqueta();
+                    double etiqueta = ((Number) ady.getEtiqueta()).doubleValue();
                     // Esto solo es útil para el ejercicio del agua, en otro caso tengo que ir
                     // sumando las etiquetas.
                     double nuevoPeso = (pesoActual == -1) ? etiqueta : Math.min(pesoActual, etiqueta);

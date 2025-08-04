@@ -17,34 +17,6 @@ import manipuladorDeRegistros.ManipuladorDeRegistros;
 public class CargaEstructuras {
 
     /**
-     * Hace una carga completa de todas las estructuras con las que trabaja el
-     * sistema<br>
-     * 1 - Recibe un ArbolAVL y 3 rutas para cargar todos los datos de ciudades<br>
-     * 2 - Recibe un HashMap y 1 ruta para cargar todos los datos de las
-     * tuberias<br>
-     *
-     * @param arbolCiudades  ArbolAVL de tipo Ciudad
-     * @param rutaCiudades   String de la ruta con los datos de las ciudades
-     * @param rutaHabitantes String de la ruta con los datos de los habitantes de
-     *                       cada ciudad
-     * @param hashTuberias   HashMap de tipo Tuberia
-     * @param rutaTuberias   String de la ruta con los datos de las tuberias
-     * @param grafoCiudades   Grafo que conecta Ciudades con Tuberias
-     */
-    public static void cargarEstructurasCompleto(
-            ArbolAVL arbolCiudades,
-            String rutaCiudades,
-            String rutaHabitantes,
-            HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            String rutaTuberias,
-            Grafo grafoCiudades
-            ) {
-        cargarArbolAVLCiudades(arbolCiudades, rutaCiudades, rutaHabitantes);
-        cargarHashTuberias(hashTuberias, rutaTuberias);
-        cargarGrafoCiudades(arbolCiudades, hashTuberias, grafoCiudades);
-    }
-
-    /**
      * Recibe un ArbolAVL y 3 rutas para cargar todos los datos de ciudades
      *
      * @param arbolCiudades  ArbolAVL de tipo Ciudad
@@ -85,7 +57,7 @@ public class CargaEstructuras {
         for (int i = 1; i <= cantRegistrosCiudades; i++) {
             String[] arreglo = (String[]) listaCiudades.recuperar(i);
             Ciudad ciudad = new Ciudad(
-                    arreglo[1], arreglo[2], Integer.parseInt(arreglo[3]), Double.parseDouble(arreglo[4]));
+                    arreglo[1], arreglo[2], Double.parseDouble(arreglo[3]), Double.parseDouble(arreglo[4]));
             if (habitantesPorCiudad.containsKey(ciudad.getNombre())) {
                 ciudad.setPoblacionPorFecha(habitantesPorCiudad.get(ciudad.getNombre()));
             }
@@ -125,6 +97,7 @@ public class CargaEstructuras {
     }
 
     /**
+     * Carga un grafo a partir de un ArbolAVL de tipo Ciudad y una HashMap de tipo Tuberia
      *
      * @param arbolCiudades
      * @param hashTuberias
@@ -149,6 +122,19 @@ public class CargaEstructuras {
             grafoCiudades.insertarArco(nomenclaturas[0], nomenclaturas[1], caudalMaximo);
         }
 
+    }
+
+    /**
+     * Recupera el último valor almacenado del contador de ciudades que se encuentre en la ruta indicada
+     *
+     * @param rutaContadorCiudad int
+     * @return int
+     */
+    public static int recuperarContadorCiudad(String rutaContadorCiudad){
+        Lista listaNumCiudad = ManipuladorDeRegistros.obtenerRegistros(rutaContadorCiudad);
+        String[] tupla = (String[]) listaNumCiudad.recuperar(1);
+
+        return Integer.parseInt(tupla[0]);
     }
 
 

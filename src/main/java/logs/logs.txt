@@ -1,2 +1,32 @@
 
 
+[2025-08-03 02:23:33][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Rosario - Nomenclatura: RO3016 - Superficie: 500.0 - ConsumoDiarioProm: 50.0]
+
+[2025-08-03 02:24:45][ERROR al intentar cargar una nueva ciudad en el sistema]
+[Nombre: Rosario - Nomenclatura: RO3017 - Superficie: 100.0 - ConsumoDiarioProm: 200.0]
+
+[2025-08-03 02:48:42][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Rosario - Nomenclatura: RO3016 - Superficie: 500.0 - ConsumoDiarioProm: 20.0]
+
+[2025-08-03 02:49:11][ERROR al intentar cargar una nueva ciudad en el sistema]
+[Nombre: Rosario - Nomenclatura: RO3017 - Superficie: 400.0 - ConsumoDiarioProm: 30.0]
+
+[2025-08-03 02:49:42][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Cordoba - Nomenclatura: CO3017 - Superficie: 500.0 - ConsumoDiarioProm: 20.0]
+
+[2025-08-03 03:26:07][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Rosario - Nomenclatura: RO3016 - Superficie: 200.5 - ConsumoDiarioProm: 30.6]
+
+[2025-08-03 20:15:25][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: bb - Nomenclatura: BB3001 - Superficie: 200.0 - ConsumoDiarioProm: 50.0]
+
+[2025-08-03 20:16:16][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Papel - Nomenclatura: PA3002 - Superficie: 100.0 - ConsumoDiarioProm: 50.7]
+
+[2025-08-03 20:18:27][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: 55 - Nomenclatura: 553016 - Superficie: 500.0 - ConsumoDiarioProm: 200.0]
+
+[2025-08-03 20:25:31][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: 00 - Nomenclatura: 003016 - Superficie: 200.0 - ConsumoDiarioProm: 2.0]
+

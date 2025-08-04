@@ -6,7 +6,7 @@ import constantes.Rutas;
 import clases.ClaveTuberia;
 import clases.Tuberia;
 import estructuras.grafos.Grafo;
-import funciones.VisualizaEstructuras;
+import funciones.GestorOperaciones;
 import validaciones.Validar;
 import funciones.CargaEstructuras;
 import mensajesPorConsola.Imprimir;
@@ -46,15 +46,15 @@ public class TransporteAgua {
 
         // Controlar carga inicial de datos
         opcionElegida = mostrarMenuDeOpciones("cargaDeDatosInicial", sc);
-        controlCargaDeDatosInicial(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades);
-
+        controlCargaDeDatosInicial(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades, sc);
 
         // Mostrar menú principal
         while (opcionElegida != 0) {
             opcionElegida = mostrarMenuDeOpciones("menuPrincipal", sc);
-            controlOperacionesMenuPrincipal(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades);
+            controlOperacionesMenuPrincipal(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades, sc);
         }
 
+        System.out.println();
         Imprimir.finDeEjecucion();
         sc.close();
     }
@@ -71,9 +71,27 @@ public class TransporteAgua {
 
         cantOpciones = Imprimir.menuDeOpciones(nombreMenu);
         opcionElegida = Validar.opcionDeMenu(cantOpciones, sc);
+        System.out.println();
 
         return opcionElegida;
     };
+
+    public static void detenerEjecucion(Scanner sc){
+        String presionarEnter;
+
+        //System.out.println();
+
+        sc.nextLine();
+        do {
+            // Mensaje de parada para leer los resultados
+            Imprimir.continuarEjecucion();
+            // Obligación de ingresar un valor para continuar la ejecución del código
+            presionarEnter = sc.nextLine();
+
+        }while (!presionarEnter.equals(""));
+
+        System.out.println();
+    }
 
     /**
      * Controla las operaciones de la carga de datos inicial
@@ -83,14 +101,15 @@ public class TransporteAgua {
             int opcion,
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Grafo grafoCiudades
+            Grafo grafoCiudades,
+            Scanner sc
     ) {
 
         switch(opcion) {
             case 0:// 0. Salir.
                 break;
             case 1:// 1. Utilizar los últimos registros de datos
-                CargaEstructuras.cargarEstructurasCompleto(
+                GestorOperaciones.cargarEstructurasCompleto(
                         arbolCiudades,
                         RUTA_REGISTRO_CIUDAD,
                         RUTA_REGISTRO_CIUDAD_HABITANTES,
@@ -98,9 +117,10 @@ public class TransporteAgua {
                         RUTA_REGISTRO_TUBERIA,
                         grafoCiudades
                 );
+                Imprimir.exitoCargarEstructurasUltimosRegistros();
                 break;
             case 2:// 2. Utilizar la carga inicial de datos
-                CargaEstructuras.cargarEstructurasCompleto(
+                GestorOperaciones.cargarEstructurasCompleto(
                         arbolCiudades,
                         RUTA_SEED_CIUDAD,
                         RUTA_SEED_CIUDAD_HABITANTES,
@@ -108,12 +128,19 @@ public class TransporteAgua {
                         RUTA_SEED_TUBERIA,
                         grafoCiudades
                         );
-                //TODO falta sobreescribir últimos registros
+                GestorOperaciones.reiniciarRegistrosConSeed(arbolCiudades, hashTuberias,  grafoCiudades);
+                Imprimir.exitoCargarEstructurasConSeed();
                 break;
-            case 3:// 3. Iniciar programa sin cargar datos
+            case 3:// 3. Iniciar programa con registros vacios
+                GestorOperaciones.vaciarRegistros();
+                Imprimir.exitoVaciarRegistros();
                 break;
             default:
                 break;
+        }
+
+        if (opcion != 0) {
+            detenerEjecucion(sc);
         }
     }
 
@@ -125,38 +152,56 @@ public class TransporteAgua {
             int opcion,
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Grafo grafoCiudades
+            Grafo grafoCiudades,
+            Scanner sc
     ) {
 
         switch(opcion) {
             case 0:// 0. Salir.
                 break;
-            case 1:// 1. Agregar una ciudad.
+            case 1:// 1. Ciudad - Alta
+                GestorOperaciones.altaCiudad(arbolCiudades, grafoCiudades, RUTA_REGISTRO_CONTADOR_CIUDAD, sc);
                 break;
-            case 2:// 2. Dar de baja una ciudad.
+            case 2:// 2. Ciudad - Baja
+                GestorOperaciones.bajaCiudad(arbolCiudades, hashTuberias, grafoCiudades, sc);
                 break;
-            case 3:// 3. Modificar una ciudad.
+            case 3:// 3. Ciudad - Modificar
+                GestorOperaciones.modificarCiudad(arbolCiudades, sc);
                 break;
-            case 4:// 4. Agregar una tubería.
+            case 4:// 4. Ciudad - Actualizar población por fecha.
                 break;
-            case 5:// 5. Dar de baja una tubería.
+            case 5:// 5. Tubería - Alta
                 break;
-            case 6:// 6. Modificar una tubería.
+            case 6:// 6. Tubería - Baja
                 break;
-            case 7:// 7. Ver el Ranking de ciudades.
+            case 7:// 7. Tubería - Modificar
                 break;
-            case 8:// 8. Ver el árbol AVL.
-                System.out.println(arbolCiudades.toString());
+            case 8:// 8. Cantidad habitantes y agua consumida por fecha
                 break;
-            case 9:// 9. Ver el Grafo Etiquetado.
+            case 9:// 9. Consumo de agua entre rango de nombres
+                break;
+            case 10:// 10. Camino de A a B con caudal pleno mínimo
+                break;
+            case 11:// 11. Camino de A a B con menor recorrido
+                break;
+            case 12:// 12. Ciudades ordenadas por consumo de agua
+                break;
+            case 13:// 13. Visualizar arbolAVL de ciudades
+                System.out.println(arbolCiudades.toStringTipoCiudad());
+              break;
+            case 14:// 14. Visualizar HashMap de tuberias
+                Imprimir.hashMapTuberias(hashTuberias);
+                System.out.println();
+                break;
+            case 15:// 15. Visualizar Grafo (Ciudad-Tubería)
                 System.out.println(grafoCiudades.toString());
-                break;
-            case 10:// 10. Ver el HashMap.
-                VisualizaEstructuras.visualizarHashMapTuberias(hashTuberias);
                 break;
             default:
                 break;
         }
+
+        if (opcion != 0) {
+            detenerEjecucion(sc);
+        }
     }
 }
-
