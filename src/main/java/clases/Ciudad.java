@@ -121,7 +121,8 @@ public class Ciudad implements Comparable<Ciudad> {
     }
 
     public double getConsumoEnFecha(YearMonth fecha) {
-        return this.poblacionPorFecha.get(fecha) * this.consumoDiarioProm;
+        double consumo = this.poblacionPorFecha.get(fecha) * this.consumoDiarioProm;
+        return Math.round(consumo * 100.0) / 100.0;
     }
 
     public double calcularAprovisionamiento(Month mes) {
@@ -160,20 +161,20 @@ public class Ciudad implements Comparable<Ciudad> {
 
     @Override
     public int compareTo(Ciudad c) {
-        return this.nombre.compareTo(c.nombre);
+        String n1 = (this.nombre.toUpperCase()).replaceAll("\\s+", "");
+        String n2 = (c.nombre.toUpperCase()).replaceAll("\\s+", "");
+        return n1.compareTo(n2);
     }
 
     @Override
     public String toString() {
         String respuesta = "";
-        respuesta += "[Nombre: " + this.nombre
-                + " - Nomenclatura: " + this.nomenclatura
-                + " - Superficie: " + this.superficie
-                + " - ConsumoDiarioProm: " + this.consumoDiarioProm + "]";
+        respuesta += this.nombre;
+
         return respuesta;
     }
 
-    public String datos() {
+    public String toStringCompleto() {
         return "Ciudad: " + this.nombre + "\n" + "Nomenclatura: " + this.nomenclatura + "\n" + "Superficie: "
                 + this.superficie + "\n";
     }

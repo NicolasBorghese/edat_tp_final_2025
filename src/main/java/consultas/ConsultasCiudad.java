@@ -1,6 +1,7 @@
 package consultas;
 
 import java.time.YearMonth;
+import java.util.Set;
 import java.time.Year;
 
 import constantes.Estilos;
@@ -17,7 +18,7 @@ public class ConsultasCiudad {
     private static String ERROR = Estilos.RED;
 
     public static String getPobYConsEnFecha(ArbolAVL arbol, String nombreCiudad, YearMonth fecha) {
-        String res = ERROR + "ERROR: Nombre de ciudad erróneo." + RESET;
+        String res = ERROR + "ERROR: Ciudad inexistente." + RESET;
         Ciudad ciudad = (Ciudad) arbol.getObjeto(nombreCiudad);
         if (ciudad != null) {
             res = ERROR + "ERROR: Fecha inexistente." + RESET;
@@ -26,8 +27,8 @@ public class ConsultasCiudad {
             if (poblacion != -1 && consumo != -1) {
                 res = BOLD + "Ciudad: " + YELLOW + nombreCiudad + RESET + ".\n" + BOLD + "Fecha: " + RESET + fecha
                         + ".\n"
-                        + BOLD + "Poblacion: " + RESET + poblacion + ".\n"
-                        + BOLD + "Consumo Promedio: " + RESET + consumo + ".";
+                        + BOLD + "Poblacion: " + RESET + YELLOW + poblacion + RESET + ".\n"
+                        + BOLD + "Consumo Promedio: " + RESET + YELLOW + consumo + RESET + ".";
             }
         }
         return res;
@@ -70,16 +71,36 @@ public class ConsultasCiudad {
     public static String generarListaConsumoAnual(ArbolAVL arbol, Year year) {
         String listado = "";
         if (!arbol.vacio()) {
-            Lista listaCiudades = arbol.listarPreorden();
-            ArbolBB ciudadesOrdenadas = new ArbolBB();
-            for (int i = 1; i <= listaCiudades.longitud(); i++) {
-                Ciudad c = (Ciudad) listaCiudades.recuperar(i);
-                CiudadConsumo aux = new CiudadConsumo(c, c.calcularConsumoAnual(year));
-                ciudadesOrdenadas.insertar(aux);
+            listado = ERROR + "No existe información del año: " + year + RESET;
+            if (existeAnio(arbol, year)) {
+                Lista listaCiudades = arbol.listarPreorden();
+                ArbolBB ciudadesOrdenadas = new ArbolBB();
+                for (int i = 1; i <= listaCiudades.longitud(); i++) {
+                    Ciudad c = (Ciudad) listaCiudades.recuperar(i);
+                    CiudadConsumo aux = new CiudadConsumo(c, c.calcularConsumoAnual(year));
+                    ciudadesOrdenadas.insertar(aux);
+                }
+                listado = ciudadesOrdenadas.toStringMayorAMenor();
+                ciudadesOrdenadas.vaciar();
             }
-            listado = ciudadesOrdenadas.toStringMayorAMenor();
-            ciudadesOrdenadas.vaciar();
         }
         return listado;
+    }
+
+    private static boolean existeAnio(ArbolAVL arbol, Year year) {
+        boolean existe = false;
+        Lista lista = arbol.listar();
+        int i = 1;
+        while (i <= lista.longitud() && !existe) {
+            Ciudad c = (Ciudad) lista.recuperar(i);
+            Set<YearMonth> todasLasFechas = c.getPoblacionPorFecha().keySet();
+            for (YearMonth fecha : todasLasFechas) {
+                if (fecha.getYear() == year.getValue()) {
+                    existe = true;
+                }
+            }
+            i++;
+        }
+        return existe;
     }
 }
