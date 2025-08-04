@@ -31,7 +31,7 @@ public class TestConsultas {
         String rutaCiudadHabitantes = "";
         String rutaTuberias = "";
 
-        CargaEstructuras.cargarEstructurasCompleto(
+        GestorOperaciones.cargarEstructurasCompleto(
                 arbolCiudades,
                 RUTA_REGISTRO_CIUDAD,
                 RUTA_REGISTRO_CIUDAD_HABITANTES,
