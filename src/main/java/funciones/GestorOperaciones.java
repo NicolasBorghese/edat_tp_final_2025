@@ -414,7 +414,8 @@ public class GestorOperaciones {
         String nombreCiudad = Formulario.nombreCiudadValido(sc);
         YearMonth fecha = YearMonth.of(anio, mes);
 
-        ConsultasCiudad.getPobYConsEnFecha(arbolCiudades, nombreCiudad, fecha);
+        String respuesta = ConsultasCiudad.getPobYConsEnFecha(arbolCiudades, nombreCiudad, fecha);
+        System.out.println(respuesta);
     }
 
     /**
