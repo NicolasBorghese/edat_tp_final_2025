@@ -61,7 +61,7 @@ public class TestConsultasCiudad {
         System.out.println(ConsultasCiudad.getPobYConsEnFecha(arbolCiudades, "Bariloche", YearMonth.of(1920, 04)));
         // Consulta Poblacion y Consumo para Springfield en abril del 2120.
         System.out.println(
-                BOLD + PURPLE + "Consulta Población y consumo en Bariloche (04 del 2020): \n" + RESET + RED
+                BOLD + PURPLE + "Consulta Población y consumo en Springfield (04 del 2020): \n" + RESET + RED
                         + "No existe la Ciudad." + RESET);
         System.out.println(BOLD + PURPLE + "Resultado:" + RESET);
         System.out.println(ConsultasCiudad.getPobYConsEnFecha(arbolCiudades, "Springfield", YearMonth.of(2020, 04)));
