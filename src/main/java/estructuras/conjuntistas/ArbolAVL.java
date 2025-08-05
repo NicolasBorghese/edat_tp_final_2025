@@ -148,9 +148,6 @@ public class ArbolAVL {
 
         nodo.setClave(nuevaClave);
         nodo.setObjeto(nuevoNodo.getObjeto());
-
-        eliminarAux(nodo, nodo.getDerecho(), nuevaClave);
-
     }
 
     private NodoAVLDicc buscarNodoMinimo(NodoAVLDicc nodo) {

@@ -6,8 +6,8 @@ public class TestAVLV2 {
         cargarArbol(arbol);
         System.out.println(arbol.toString());
         System.out.println("");
-        arbol.eliminar(35);
-        System.out.println("35 eliminado: ");
+        arbol.eliminar(30);
+        System.out.println("30 eliminado: ");
         System.out.println(arbol.toString());
     }
 

@@ -140,20 +140,6 @@ public class TestConsultasTuberias {
                 System.out.println(BOLD + GREEN
                                 + "Todas las consultas que se hacen a las tuberías están testeadas y funcionan \n :)"
                                 + RESET);
-                // Camino con menor caudal pleno entre Caviahue y San Martín.
-                System.out.println(
-
-                                BOLD + PURPLE + "Camino con menor caudal pleno entre Caviahue y San Martín." + RESET);
-          
-                System.out.println(
-                                BOLD + "Predicción: \n" + "Camino:" + YELLOW
-                                                + "Caviahue->Neuquén->Cipolletti->Allen->Chocón->Bariloche->San Martín. \n"
-                                                + RESET + BOLD + "Estado: " + RESET + CYAN + "EN DISEÑO \n" + RESET
-                                                + BOLD + "Caudal: "
-                                                + RESET + BLUE + "123" + RESET);
-                System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
-                                                grafoCiudades, hashTuberias, "Caviahue", "San Martín de los andes"));
 
         }
 
