@@ -8,6 +8,7 @@ C;Las Grutas;LG3007;10.0;0.25
 C;Neuquén;NE3008;200.0;0.28
 C;Playas Doradas;PD3009;8.0;0.22
 C;Primeros Pinos;PP3010;6.0;0.3
+C;Roma;RO3016;200.0;10.0
 C;San Martín de los andes;SM3011;40.0;0.36
 C;Sierra Grande;SG3012;15.0;0.32
 C;Viedma;VI3013;110.0;0.26

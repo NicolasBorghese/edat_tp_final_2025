@@ -15,6 +15,7 @@ public class Ciudad implements Comparable<Ciudad> {
 
     /**
      * Constructor que se utiliza al momento de cargar los datos de una ciudad existente
+     *
      * @param nombre
      * @param nomenclatura
      * @param superficie
@@ -30,6 +31,7 @@ public class Ciudad implements Comparable<Ciudad> {
 
     /**
      * Constructor que se utiliza al momento de crear una nueva ciudad
+     *
      * @param nombre
      * @param numero
      * @param superficie
@@ -40,6 +42,19 @@ public class Ciudad implements Comparable<Ciudad> {
         this.nomenclatura = crearNomenclatura(numero);
         this.superficie = superficie;
         this.consumoDiarioProm = consumoDiarioProm;
+        this.poblacionPorFecha = new TreeMap<>();
+    }
+
+    /**
+     * Constructor que se utiliza solo para comparar su id (nombre)
+     *
+     * @param nombre
+     */
+    public Ciudad(String nombre) {
+        this.nombre = nombre;
+        this.nomenclatura = "AA-0000";
+        this.superficie = 0;
+        this.consumoDiarioProm = 0;
         this.poblacionPorFecha = new TreeMap<>();
     }
 
@@ -79,8 +94,27 @@ public class Ciudad implements Comparable<Ciudad> {
         this.poblacionPorFecha = poblacionPorFecha;
     }
 
+    public void setSuperficie(double superficie) { this.superficie = superficie; }
+
     public void setConsumoDiarioProm(double nuevoConsumo) {
         this.consumoDiarioProm = nuevoConsumo;
+    }
+
+    /**
+     * Si no existe un registro para la población en esa fecha entonces lo crea y le asigna un valor.<br>
+     * Si existe un registro entonces sobreescribe su valor con el dato recibido por parámetro.
+     *
+     * @param fecha YearMonth
+     * @param cantPoblacion int
+     * @return
+     */
+    public boolean modificarPoblacionPorFecha(YearMonth fecha, int cantPoblacion){
+
+        if (!this.agregarPoblacion(fecha, cantPoblacion)) {
+            this.modificarPoblacion(fecha, cantPoblacion);
+        }
+
+        return true;
     }
 
     /**
@@ -92,6 +126,7 @@ public class Ciudad implements Comparable<Ciudad> {
      * @return boolean
      */
     public boolean agregarPoblacion(YearMonth fecha, int cantPoblacion) {
+        System.out.println("La fecha es: "+fecha+" y la cantidad es: "+cantPoblacion);
         return poblacionPorFecha.putIfAbsent(fecha, cantPoblacion) == null;
     }
 
