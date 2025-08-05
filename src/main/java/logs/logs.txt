@@ -973,3 +973,83 @@ Vertice: BA3002 -> SM3011 (273.0), VE3015 (205.0), EB3005 (319.0)
 Vertice: AL3001 -> NE3008 (100.0), VI3013 (281.0), LG3007 (130.0)
 
 
+[2025-08-05 10:26:47][Estado de estructura del ArbolAVL de Ciudades]
+Nodo: Neuquen | HI: Cipolletti | HD: Sierra Grande | Altura : 3
+Nodo: Cipolletti | HI: Bariloche | HD: Junin de los Andes | Altura : 2
+Nodo: Bariloche | HI: Allen | HD: Caviahue | Altura : 1
+Nodo: Allen | HI: - | HD: - | Altura : 0
+Nodo: Caviahue | HI: - | HD: - | Altura : 0
+Nodo: Junin de los Andes | HI: El Bolson | HD: Las Grutas | Altura : 1
+Nodo: El Bolson | HI: - | HD: - | Altura : 0
+Nodo: Las Grutas | HI: - | HD: - | Altura : 0
+Nodo: Sierra Grande | HI: Primeros Pinos | HD: Villa Traful | Altura : 2
+Nodo: Primeros Pinos | HI: Playas Doradas | HD: San Martin de los andes | Altura : 1
+Nodo: Playas Doradas | HI: - | HD: - | Altura : 0
+Nodo: San Martin de los andes | HI: - | HD: - | Altura : 0
+Nodo: Villa Traful | HI: Viedma | HD: Villa el Chocon | Altura : 1
+Nodo: Viedma | HI: - | HD: - | Altura : 0
+Nodo: Villa el Chocon | HI: - | HD: - | Altura : 0
+
+
+[2025-08-05 10:27:04][ERROR al intentar eliminar una ciudad del sistema]
+La ciudad Villa Chocon no existe dentro el sistema.
+
+[2025-08-05 10:27:21][Estado de estructura del ArbolAVL de Ciudades]
+Nodo: Neuquen | HI: Cipolletti | HD: Sierra Grande | Altura : 3
+Nodo: Cipolletti | HI: Bariloche | HD: Junin de los Andes | Altura : 2
+Nodo: Bariloche | HI: Allen | HD: Caviahue | Altura : 1
+Nodo: Allen | HI: - | HD: - | Altura : 0
+Nodo: Caviahue | HI: - | HD: - | Altura : 0
+Nodo: Junin de los Andes | HI: El Bolson | HD: Las Grutas | Altura : 1
+Nodo: El Bolson | HI: - | HD: - | Altura : 0
+Nodo: Las Grutas | HI: - | HD: - | Altura : 0
+Nodo: Sierra Grande | HI: Primeros Pinos | HD: Villa Traful | Altura : 2
+Nodo: Primeros Pinos | HI: Playas Doradas | HD: San Martin de los andes | Altura : 1
+Nodo: Playas Doradas | HI: - | HD: - | Altura : 0
+Nodo: San Martin de los andes | HI: - | HD: - | Altura : 0
+Nodo: Villa Traful | HI: Viedma | HD: Villa el Chocon | Altura : 1
+Nodo: Viedma | HI: - | HD: - | Altura : 0
+Nodo: Villa el Chocon | HI: - | HD: - | Altura : 0
+
+
+[2025-08-05 10:27:35][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Villa el Chocon del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 10:27:45][Estado de estructura del ArbolAVL de Ciudades]
+Nodo: Neuquen | HI: Cipolletti | HD: Sierra Grande | Altura : 3
+Nodo: Cipolletti | HI: Bariloche | HD: Junin de los Andes | Altura : 2
+Nodo: Bariloche | HI: Allen | HD: Caviahue | Altura : 1
+Nodo: Allen | HI: - | HD: - | Altura : 0
+Nodo: Caviahue | HI: - | HD: - | Altura : 0
+Nodo: Junin de los Andes | HI: El Bolson | HD: Las Grutas | Altura : 1
+Nodo: El Bolson | HI: - | HD: - | Altura : 0
+Nodo: Las Grutas | HI: - | HD: - | Altura : 0
+Nodo: Sierra Grande | HI: Primeros Pinos | HD: Villa Traful | Altura : 2
+Nodo: Primeros Pinos | HI: Playas Doradas | HD: San Martin de los andes | Altura : 1
+Nodo: Playas Doradas | HI: - | HD: - | Altura : 0
+Nodo: San Martin de los andes | HI: - | HD: - | Altura : 0
+Nodo: Villa Traful | HI: Viedma | HD: - | Altura : 1
+Nodo: Viedma | HI: - | HD: - | Altura : 0
+
+
+[2025-08-05 10:27:55][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Neuquen del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 10:41:41][Estado de estructura del ArbolAVL de Ciudades]
+Nodo: Neuquen | HI: Cipolletti | HD: Sierra Grande | Altura : 3
+Nodo: Cipolletti | HI: Bariloche | HD: Junin de los Andes | Altura : 2
+Nodo: Bariloche | HI: Allen | HD: Caviahue | Altura : 1
+Nodo: Allen | HI: - | HD: - | Altura : 0
+Nodo: Caviahue | HI: - | HD: - | Altura : 0
+Nodo: Junin de los Andes | HI: El Bolson | HD: Las Grutas | Altura : 1
+Nodo: El Bolson | HI: - | HD: - | Altura : 0
+Nodo: Las Grutas | HI: - | HD: - | Altura : 0
+Nodo: Sierra Grande | HI: Primeros Pinos | HD: Villa Traful | Altura : 2
+Nodo: Primeros Pinos | HI: Playas Doradas | HD: San Martin de los andes | Altura : 1
+Nodo: Playas Doradas | HI: - | HD: - | Altura : 0
+Nodo: San Martin de los andes | HI: - | HD: - | Altura : 0
+Nodo: Villa Traful | HI: Viedma | HD: Villa el Chocon | Altura : 1
+Nodo: Viedma | HI: - | HD: - | Altura : 0
+Nodo: Villa el Chocon | HI: - | HD: - | Altura : 0
+
+

@@ -7,7 +7,13 @@ public class TestAVLV2 {
         System.out.println(arbol.toString());
         System.out.println("");
         arbol.eliminar(30);
-        System.out.println("30 eliminado: ");
+        System.out.println("30 eliminado:");
+        System.out.println(arbol.toString());
+        arbol.eliminar(33);
+        System.out.println("33 eliminado:");
+        System.out.println(arbol.toString());
+        arbol.eliminar(35);
+        System.out.println("35 eliminado:");
         System.out.println(arbol.toString());
     }
 

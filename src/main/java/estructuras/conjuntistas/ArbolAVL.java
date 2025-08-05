@@ -142,24 +142,37 @@ public class ArbolAVL {
 
     }
 
-    private void eliminarDosHijos(NodoAVLDicc nodo) {
-        NodoAVLDicc nuevoNodo = buscarNodoMinimo(nodo.getDerecho());
-        Comparable nuevaClave = nuevoNodo.getClave();
+    	private void eliminarDosHijos(NodoAVLDicc hijo) {
+		NodoAVLDicc padreNuevoNodo = buscarPadreNodoMinimo(hijo.getDerecho());
+		NodoAVLDicc nuevoNodo = padreNuevoNodo.getIzquierdo();
 
-        nodo.setClave(nuevaClave);
-        nodo.setObjeto(nuevoNodo.getObjeto());
-    }
+		// Candidato con el menor hijo del subarbol derecho
+		// Ponemos el elemento de dicho candidato
+		if (nuevoNodo != null) {
+			hijo.setClave(nuevoNodo.getClave());
+			hijo.setObjeto(nuevoNodo.getObjeto());
+			// Eliminamos al candidato
+			eliminarAux(hijo, hijo.getDerecho(), nuevoNodo.getClave());
+		} else {
+			hijo.setClave(padreNuevoNodo.getClave());
+			hijo.setObjeto(padreNuevoNodo.getObjeto());
+			// Eliminamos al candidato
+			eliminarAux(hijo, padreNuevoNodo, padreNuevoNodo.getClave());
+		}
 
-    private NodoAVLDicc buscarNodoMinimo(NodoAVLDicc nodo) {
-        if (nodo == null)
-            return null;
+	}
 
-        while (nodo.getIzquierdo() != null) {
-            nodo = nodo.getIzquierdo();
-        }
+	private NodoAVLDicc buscarPadreNodoMinimo(NodoAVLDicc nodo) {
+		NodoAVLDicc encontrado = nodo;
 
-        return nodo;
-    }
+		if (nodo != null) {
+			if (nodo.getIzquierdo() != null && nodo.getIzquierdo().getIzquierdo() != null) {
+				encontrado = buscarPadreNodoMinimo(nodo.getIzquierdo());
+			}
+		}
+
+		return encontrado;
+	}
 
     private void balancear(NodoAVLDicc padre, NodoAVLDicc nodo) {
         NodoAVLDicc retorno;
