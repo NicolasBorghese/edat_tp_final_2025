@@ -6,7 +6,15 @@ public class Tuberia {
     private double caudalMaximo;
     private double diametro;
     private String estado;
-
+    
+    /**
+     * Constructor
+     * @param nomenclatura Tipo String de mínimo 6 carácterers
+     * @param caudalMinimo
+     * @param caudalMaximo
+     * @param diametro
+     * @param estado
+     */
     public Tuberia(String nomenclatura, double caudalMinimo, double caudalMaximo,
             double diametro, String estado) {
 
@@ -17,7 +25,7 @@ public class Tuberia {
         this.estado = estado;
     }
   
-      public Tuberia(String nomenclatura, double caudalMinimo, double caudalMaximo, double diametro) {
+    public Tuberia(String nomenclatura, double caudalMinimo, double caudalMaximo, double diametro) {
         
         this.nomenclatura = nomenclatura;
         this.caudalMinimo = caudalMinimo;
