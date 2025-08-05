@@ -930,3 +930,7 @@ Contenido del HashMap de tuberías: - Clave: SG3012-JD3006 | Valor: [Caudal mín
 [2025-08-05 02:01:04][ÉXITO al modificar la cantidad de habitantes por fecha de la ciudad: Roma]
 La nueva cantidad de habitantes para la fecha 2000-01 es: 200
 
+[2025-08-05 03:30:04][ÉXITO al modificar la ciudad: Neuquén]
+Nuevo Estado de la ciudad:
+
+

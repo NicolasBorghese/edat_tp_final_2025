@@ -9,6 +9,7 @@ import controladores.*;
 import clases.Ciudad;
 import estructuras.conjuntistas.ArbolAVL;
 import estructuras.grafos.Grafo;
+import estructuras.lineales.dinamicas.Lista;
 import formularios.Formulario;
 import mensajesPorConsola.Imprimir;
 import validaciones.Validar;
@@ -434,7 +435,8 @@ public class GestorOperaciones {
         int mes = Formulario.generarMesValido(sc);
         YearMonth fecha = YearMonth.of(anio, mes);
 
-        ConsultasCiudad.getCiudadesEnRango(arbolCiudades, nombreMin, nombreMax, consumoMin, consumoMax, fecha);
+        Lista listaCiudades = ConsultasCiudad.getCiudadesEnRango(arbolCiudades, nombreMin, nombreMax, consumoMin, consumoMax, fecha);
+        listaCiudades.toString();
     }
 
     /**
@@ -456,7 +458,8 @@ public class GestorOperaciones {
         String ciudadOrigen = Formulario.nombreCiudadValido(sc);
         String ciudadDestino = Formulario.nombreCiudadValido(sc);
 
-        ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades, grafoCiudades, hashTuberias, ciudadOrigen, ciudadDestino);
+        String respuesta = ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades, grafoCiudades, hashTuberias, ciudadOrigen, ciudadDestino);
+        System.out.println("Respuesta: " + respuesta);
     }
 
     /**

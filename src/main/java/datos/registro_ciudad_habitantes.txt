@@ -1148,7 +1148,6 @@ Primeros Pinos;2025-04;146
 Primeros Pinos;2025-05;147
 Primeros Pinos;2025-06;148
 Primeros Pinos;2025-07;149
-Roma;2000-01;200
 San Martín de los andes;2016-01;26000
 San Martín de los andes;2016-02;26045
 San Martín de los andes;2016-03;26090
