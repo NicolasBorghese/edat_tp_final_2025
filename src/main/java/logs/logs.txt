@@ -934,3 +934,42 @@ La nueva cantidad de habitantes para la fecha 2000-01 es: 200
 Nuevo Estado de la ciudad:
 
 
+[2025-08-05 03:55:29][Estado de estructura del ArbolAVL de Ciudades]
+Nodo: Neuquen | HI: Cipolletti | HD: Sierra Grande | Altura : 3
+Nodo: Cipolletti | HI: Bariloche | HD: Junin de los Andes | Altura : 2
+Nodo: Bariloche | HI: Allen | HD: Caviahue | Altura : 1
+Nodo: Allen | HI: - | HD: - | Altura : 0
+Nodo: Caviahue | HI: - | HD: - | Altura : 0
+Nodo: Junin de los Andes | HI: El Bolson | HD: Las Grutas | Altura : 1
+Nodo: El Bolson | HI: - | HD: - | Altura : 0
+Nodo: Las Grutas | HI: - | HD: - | Altura : 0
+Nodo: Sierra Grande | HI: Primeros Pinos | HD: Villa Traful | Altura : 2
+Nodo: Primeros Pinos | HI: Playas Doradas | HD: San Martin de los andes | Altura : 1
+Nodo: Playas Doradas | HI: - | HD: - | Altura : 0
+Nodo: San Martin de los andes | HI: - | HD: - | Altura : 0
+Nodo: Villa Traful | HI: Viedma | HD: Villa el Chocon | Altura : 1
+Nodo: Viedma | HI: - | HD: - | Altura : 0
+Nodo: Villa el Chocon | HI: - | HD: - | Altura : 0
+
+
+[2025-08-05 03:55:51][ÉXITO al cargar una nueva tubería en el sistema]
+[Caudal mínimo: 200.0 - Caudal maximo: 100.0 - Diametro: 100.0 - Estado: ACTIVO]
+
+[2025-08-05 03:56:00][Estado de estructura del Grafo de Ciudades con tuberías]
+Vertice: VE3015 -> AL3001 (124.0), CI3004 (123.0), BA3002 (212.0), LG3007 (330.0), VI3013 (351.0), NE3008 (144.0)
+Vertice: VT3014 ->  - 
+Vertice: VI3013 -> LG3007 (187.0), VE3015 (225.0)
+Vertice: SG3012 -> PD3009 (443.0)
+Vertice: SM3011 -> JD3006 (265.0), VT3014 (279.0)
+Vertice: PP3010 ->  - 
+Vertice: PD3009 ->  - 
+Vertice: NE3008 -> VE3015 (487.0), CI3004 (202.0)
+Vertice: LG3007 -> VI3013 (165.0), SG3012 (231.0), PD3009 (413.0)
+Vertice: JD3006 -> VE3015 (161.0)
+Vertice: EB3005 -> BA3002 (446.0)
+Vertice: CI3004 -> AL3001 (123.0)
+Vertice: CA3003 -> PP3010 (225.0), SM3011 (238.0), NE3008 (408.0), JD3006 (381.0)
+Vertice: BA3002 -> SM3011 (273.0), VE3015 (205.0), EB3005 (319.0)
+Vertice: AL3001 -> NE3008 (100.0), VI3013 (281.0), LG3007 (130.0)
+
+
