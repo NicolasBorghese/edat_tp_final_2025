@@ -30,3 +30,903 @@
 [2025-08-03 20:25:31][ÉXITO al cargar una nueva ciudad en el sistema]
 [Nombre: 00 - Nomenclatura: 003016 - Superficie: 200.0 - ConsumoDiarioProm: 2.0]
 
+[2025-08-05 00:07:45][Estado de estructura del ArbolAVL de Ciudades]
+Nodo: Neuquén | HI: Cipolletti | HD: Sierra Grande | Altura : 3
+Nodo: Cipolletti | HI: Bariloche | HD: Junín de los Andes | Altura : 2
+Nodo: Bariloche | HI: Allen | HD: Caviahue | Altura : 1
+Nodo: Allen | HI: - | HD: - | Altura : 0
+Nodo: Caviahue | HI: - | HD: - | Altura : 0
+Nodo: Junín de los Andes | HI: El Bolsón | HD: Las Grutas | Altura : 1
+Nodo: El Bolsón | HI: - | HD: - | Altura : 0
+Nodo: Las Grutas | HI: - | HD: - | Altura : 0
+Nodo: Sierra Grande | HI: Primeros Pinos | HD: Villa Trafúl | Altura : 2
+Nodo: Primeros Pinos | HI: Playas Doradas | HD: San Martín de los andes | Altura : 1
+Nodo: Playas Doradas | HI: - | HD: - | Altura : 0
+Nodo: San Martín de los andes | HI: - | HD: - | Altura : 0
+Nodo: Villa Trafúl | HI: Viedma | HD: Villa el Chocón | Altura : 1
+Nodo: Viedma | HI: - | HD: - | Altura : 0
+Nodo: Villa el Chocón | HI: - | HD: - | Altura : 0
+
+
+[2025-08-05 00:08:21][Estado de estructura del HashMap de Tuberías]
+Contenido del HashMap de tuberías: - Clave: SG3012-JD3006 | Valor: [Caudal mínimo: 43.0 - Caudal maximo: 317.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 443.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-SG3012 | Valor: [Caudal mínimo: 86.0 - Caudal maximo: 338.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: JD3006-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 419.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: CA3003-CI3004 | Valor: [Caudal mínimo: 35.0 - Caudal maximo: 225.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-LG3007 | Valor: [Caudal mínimo: 46.0 - Caudal maximo: 281.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-SG3012 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 368.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: CA3003-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 238.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VT3014 | Valor: [Caudal mínimo: 33.0 - Caudal maximo: 311.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: CI3004-VI3013 | Valor: [Caudal mínimo: 90.0 - Caudal maximo: 400.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-VI3013 | Valor: [Caudal mínimo: 72.0 - Caudal maximo: 243.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: PP3010-JD3006 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 175.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-CA3003 | Valor: [Caudal mínimo: 25.0 - Caudal maximo: 156.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: BA3002-VI3013 | Valor: [Caudal mínimo: 51.0 - Caudal maximo: 319.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-BA3002 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 443.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: NE3008-VT3014 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 451.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VI3013 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 195.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 246.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-SM3011 | Valor: [Caudal mínimo: 42.0 - Caudal maximo: 360.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VI3013 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 165.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-BA3002 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 279.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VE3015-CA3003 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: BA3002-CI3004 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 406.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: PD3009-JD3006 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 322.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: NE3008-VE3015 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 487.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: NE3008-SM3011 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 330.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: VE3015-VT3014 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 351.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: JD3006-PP3010 | Valor: [Caudal mínimo: 61.0 - Caudal maximo: 464.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-NE3008 | Valor: [Caudal mínimo: 49.0 - Caudal maximo: 238.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 446.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: EB3005-LG3007 | Valor: [Caudal mínimo: 41.0 - Caudal maximo: 249.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: CA3003-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 333.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-SM3011 | Valor: [Caudal mínimo: 53.0 - Caudal maximo: 413.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-VT3014 | Valor: [Caudal mínimo: 80.0 - Caudal maximo: 170.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-EB3005 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 308.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VT3014-VE3015 | Valor: [Caudal mínimo: 58.0 - Caudal maximo: 444.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: JD3006-PD3009 | Valor: [Caudal mínimo: 37.0 - Caudal maximo: 161.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VT3014-NE3008 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 144.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-JD3006 | Valor: [Caudal mínimo: 14.0 - Caudal maximo: 381.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: PP3010-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: VT3014-EB3005 | Valor: [Caudal mínimo: 26.0 - Caudal maximo: 412.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-NE3008 | Valor: [Caudal mínimo: 95.0 - Caudal maximo: 408.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 263.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-LG3007 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 123.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: PP3010-VT3014 | Valor: [Caudal mínimo: 75.0 - Caudal maximo: 220.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: LG3007-CI3004 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 208.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: VI3013-LG3007 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-AL3001 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 467.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-EB3005 | Valor: [Caudal mínimo: 36.0 - Caudal maximo: 143.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-NE3008 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 301.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: NE3008-CI3004 | Valor: [Caudal mínimo: 11.0 - Caudal maximo: 202.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VI3013-AL3001 | Valor: [Caudal mínimo: 52.0 - Caudal maximo: 124.0 - Diametro: 300.0 - Estado: INACTIVO]
+- Clave: LG3007-PD3009 | Valor: [Caudal mínimo: 84.0 - Caudal maximo: 351.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: NE3008-PD3009 | Valor: [Caudal mínimo: 88.0 - Caudal maximo: 310.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: SG3012-AL3001 | Valor: [Caudal mínimo: 55.0 - Caudal maximo: 190.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: VE3015-LG3007 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 123.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-LG3007 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 205.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: AL3001-CI3004 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 348.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: JD3006-SM3011 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 239.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VT3014 | Valor: [Caudal mínimo: 78.0 - Caudal maximo: 136.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VI3013 | Valor: [Caudal mínimo: 17.0 - Caudal maximo: 130.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-PP3010 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 250.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 424.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: BA3002-PP3010 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-AL3001 | Valor: [Caudal mínimo: 91.0 - Caudal maximo: 279.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SM3011 | Valor: [Caudal mínimo: 13.0 - Caudal maximo: 153.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: VE3015-PP3010 | Valor: [Caudal mínimo: 76.0 - Caudal maximo: 330.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 438.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-PD3009 | Valor: [Caudal mínimo: 68.0 - Caudal maximo: 297.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: SM3011-CA3003 | Valor: [Caudal mínimo: 31.0 - Caudal maximo: 265.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VE3015 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 231.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: PD3009-SG3012 | Valor: [Caudal mínimo: 32.0 - Caudal maximo: 495.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-SG3012 | Valor: [Caudal mínimo: 79.0 - Caudal maximo: 273.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+
+
+[2025-08-05 00:09:09][Estado de estructura del Grafo de Ciudades con tuberías]
+Vertice: VE3015 -> PP3010 (330.0), LG3007 (123.0), VT3014 (351.0), CA3003 (212.0)
+Vertice: VT3014 -> EB3005 (412.0), NE3008 (144.0), VE3015 (444.0)
+Vertice: VI3013 -> AL3001 (124.0), LG3007 (187.0)
+Vertice: SG3012 -> AL3001 (190.0), VT3014 (170.0), BA3002 (279.0), PD3009 (443.0), JD3006 (317.0)
+Vertice: SM3011 -> CA3003 (265.0), AL3001 (279.0), SG3012 (368.0)
+Vertice: PP3010 -> VE3015 (438.0), VT3014 (220.0), VI3013 (263.0), SM3011 (187.0), JD3006 (175.0)
+Vertice: PD3009 -> SG3012 (495.0), JD3006 (322.0)
+Vertice: NE3008 -> VI3013 (424.0), PP3010 (250.0), PD3009 (310.0), CI3004 (202.0), SM3011 (330.0), VE3015 (487.0), VT3014 (451.0)
+Vertice: LG3007 -> VE3015 (231.0), PD3009 (351.0), AL3001 (467.0), CI3004 (208.0), SM3011 (413.0), VI3013 (165.0)
+Vertice: JD3006 -> SM3011 (239.0), PD3009 (161.0), PP3010 (464.0), SG3012 (419.0)
+Vertice: EB3005 -> SM3011 (153.0), VT3014 (136.0), LG3007 (249.0), SG3012 (446.0), VI3013 (195.0)
+Vertice: CI3004 -> LG3007 (123.0), NE3008 (238.0), PD3009 (246.0), VI3013 (400.0)
+Vertice: CA3003 -> PD3009 (297.0), LG3007 (205.0), NE3008 (408.0), JD3006 (381.0), EB3005 (308.0), VE3015 (333.0), VI3013 (243.0), SM3011 (238.0), CI3004 (225.0)
+Vertice: BA3002 -> SG3012 (273.0), PP3010 (212.0), NE3008 (301.0), CI3004 (406.0), VI3013 (319.0)
+Vertice: AL3001 -> VI3013 (130.0), CI3004 (348.0), EB3005 (143.0), SM3011 (360.0), BA3002 (443.0), CA3003 (156.0), VT3014 (311.0), LG3007 (281.0), SG3012 (338.0)
+
+
+[2025-08-05 00:09:49][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Allen del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:10:06][Estado de estructura del ArbolAVL de Ciudades]
+Nodo: Neuquén | HI: Cipolletti | HD: Sierra Grande | Altura : 3
+Nodo: Cipolletti | HI: Bariloche | HD: Junín de los Andes | Altura : 2
+Nodo: Bariloche | HI: Allen | HD: Caviahue | Altura : 1
+Nodo: Allen | HI: - | HD: - | Altura : 0
+Nodo: Caviahue | HI: - | HD: - | Altura : 0
+Nodo: Junín de los Andes | HI: El Bolsón | HD: Las Grutas | Altura : 1
+Nodo: El Bolsón | HI: - | HD: - | Altura : 0
+Nodo: Las Grutas | HI: - | HD: - | Altura : 0
+Nodo: Sierra Grande | HI: Primeros Pinos | HD: Villa Trafúl | Altura : 2
+Nodo: Primeros Pinos | HI: Playas Doradas | HD: San Martín de los andes | Altura : 1
+Nodo: Playas Doradas | HI: - | HD: - | Altura : 0
+Nodo: San Martín de los andes | HI: - | HD: - | Altura : 0
+Nodo: Villa Trafúl | HI: Viedma | HD: Villa el Chocón | Altura : 1
+Nodo: Viedma | HI: - | HD: - | Altura : 0
+Nodo: Villa el Chocón | HI: - | HD: - | Altura : 0
+
+
+[2025-08-05 00:10:18][Estado de estructura del Grafo de Ciudades con tuberías]
+Vertice: VE3015 -> PP3010 (330.0), LG3007 (123.0), VT3014 (351.0), CA3003 (212.0)
+Vertice: VT3014 -> EB3005 (412.0), NE3008 (144.0), VE3015 (444.0)
+Vertice: VI3013 -> LG3007 (187.0)
+Vertice: SG3012 -> VT3014 (170.0), BA3002 (279.0), PD3009 (443.0), JD3006 (317.0)
+Vertice: SM3011 -> CA3003 (265.0), SG3012 (368.0)
+Vertice: PP3010 -> VE3015 (438.0), VT3014 (220.0), VI3013 (263.0), SM3011 (187.0), JD3006 (175.0)
+Vertice: PD3009 -> SG3012 (495.0), JD3006 (322.0)
+Vertice: NE3008 -> VI3013 (424.0), PP3010 (250.0), PD3009 (310.0), CI3004 (202.0), SM3011 (330.0), VE3015 (487.0), VT3014 (451.0)
+Vertice: LG3007 -> VE3015 (231.0), PD3009 (351.0), CI3004 (208.0), SM3011 (413.0), VI3013 (165.0)
+Vertice: JD3006 -> SM3011 (239.0), PD3009 (161.0), PP3010 (464.0), SG3012 (419.0)
+Vertice: EB3005 -> SM3011 (153.0), VT3014 (136.0), LG3007 (249.0), SG3012 (446.0), VI3013 (195.0)
+Vertice: CI3004 -> LG3007 (123.0), NE3008 (238.0), PD3009 (246.0), VI3013 (400.0)
+Vertice: CA3003 -> PD3009 (297.0), LG3007 (205.0), NE3008 (408.0), JD3006 (381.0), EB3005 (308.0), VE3015 (333.0), VI3013 (243.0), SM3011 (238.0), CI3004 (225.0)
+Vertice: BA3002 -> SG3012 (273.0), PP3010 (212.0), NE3008 (301.0), CI3004 (406.0), VI3013 (319.0)
+
+
+[2025-08-05 00:11:18][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Allen del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:11:27][Estado de estructura del ArbolAVL de Ciudades]
+Nodo: Neuquén | HI: Cipolletti | HD: Sierra Grande | Altura : 3
+Nodo: Cipolletti | HI: Bariloche | HD: Junín de los Andes | Altura : 2
+Nodo: Bariloche | HI: Allen | HD: Caviahue | Altura : 1
+Nodo: Allen | HI: - | HD: - | Altura : 0
+Nodo: Caviahue | HI: - | HD: - | Altura : 0
+Nodo: Junín de los Andes | HI: El Bolsón | HD: Las Grutas | Altura : 1
+Nodo: El Bolsón | HI: - | HD: - | Altura : 0
+Nodo: Las Grutas | HI: - | HD: - | Altura : 0
+Nodo: Sierra Grande | HI: Primeros Pinos | HD: Villa Trafúl | Altura : 2
+Nodo: Primeros Pinos | HI: Playas Doradas | HD: San Martín de los andes | Altura : 1
+Nodo: Playas Doradas | HI: - | HD: - | Altura : 0
+Nodo: San Martín de los andes | HI: - | HD: - | Altura : 0
+Nodo: Villa Trafúl | HI: Viedma | HD: Villa el Chocón | Altura : 1
+Nodo: Viedma | HI: - | HD: - | Altura : 0
+Nodo: Villa el Chocón | HI: - | HD: - | Altura : 0
+
+
+[2025-08-05 00:14:54][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Allen del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:14:59][Estado de estructura del ArbolAVL de Ciudades]
+Nodo: Neuquén | HI: Cipolletti | HD: Sierra Grande | Altura : 3
+Nodo: Cipolletti | HI: Bariloche | HD: Junín de los Andes | Altura : 2
+Nodo: Bariloche | HI: - | HD: Caviahue | Altura : 1
+Nodo: Caviahue | HI: - | HD: - | Altura : 0
+Nodo: Junín de los Andes | HI: El Bolsón | HD: Las Grutas | Altura : 1
+Nodo: El Bolsón | HI: - | HD: - | Altura : 0
+Nodo: Las Grutas | HI: - | HD: - | Altura : 0
+Nodo: Sierra Grande | HI: Primeros Pinos | HD: Villa Trafúl | Altura : 2
+Nodo: Primeros Pinos | HI: Playas Doradas | HD: San Martín de los andes | Altura : 1
+Nodo: Playas Doradas | HI: - | HD: - | Altura : 0
+Nodo: San Martín de los andes | HI: - | HD: - | Altura : 0
+Nodo: Villa Trafúl | HI: Viedma | HD: Villa el Chocón | Altura : 1
+Nodo: Viedma | HI: - | HD: - | Altura : 0
+Nodo: Villa el Chocón | HI: - | HD: - | Altura : 0
+
+
+[2025-08-05 00:24:00][Estado de estructura del Grafo de Ciudades con tuberías]
+Vertice: VE3015 -> PP3010 (330.0), LG3007 (123.0), VT3014 (351.0), CA3003 (212.0)
+Vertice: VT3014 -> EB3005 (412.0), NE3008 (144.0), VE3015 (444.0)
+Vertice: VI3013 -> LG3007 (187.0)
+Vertice: SG3012 -> VT3014 (170.0), BA3002 (279.0), PD3009 (443.0), JD3006 (317.0)
+Vertice: SM3011 -> CA3003 (265.0), SG3012 (368.0)
+Vertice: PP3010 -> VE3015 (438.0), VT3014 (220.0), VI3013 (263.0), SM3011 (187.0), JD3006 (175.0)
+Vertice: PD3009 -> SG3012 (495.0), JD3006 (322.0)
+Vertice: NE3008 -> VI3013 (424.0), PP3010 (250.0), PD3009 (310.0), CI3004 (202.0), SM3011 (330.0), VE3015 (487.0), VT3014 (451.0)
+Vertice: LG3007 -> VE3015 (231.0), PD3009 (351.0), CI3004 (208.0), SM3011 (413.0), VI3013 (165.0)
+Vertice: JD3006 -> SM3011 (239.0), PD3009 (161.0), PP3010 (464.0), SG3012 (419.0)
+Vertice: EB3005 -> SM3011 (153.0), VT3014 (136.0), LG3007 (249.0), SG3012 (446.0), VI3013 (195.0)
+Vertice: CI3004 -> LG3007 (123.0), NE3008 (238.0), PD3009 (246.0), VI3013 (400.0)
+Vertice: CA3003 -> PD3009 (297.0), LG3007 (205.0), NE3008 (408.0), JD3006 (381.0), EB3005 (308.0), VE3015 (333.0), VI3013 (243.0), SM3011 (238.0), CI3004 (225.0)
+Vertice: BA3002 -> SG3012 (273.0), PP3010 (212.0), NE3008 (301.0), CI3004 (406.0), VI3013 (319.0)
+
+
+[2025-08-05 00:25:52][Estado de estructura del HashMap de Tuberías]
+Contenido del HashMap de tuberías: - Clave: SG3012-JD3006 | Valor: [Caudal mínimo: 43.0 - Caudal maximo: 317.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 443.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-SG3012 | Valor: [Caudal mínimo: 86.0 - Caudal maximo: 338.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: JD3006-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 419.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: CA3003-CI3004 | Valor: [Caudal mínimo: 35.0 - Caudal maximo: 225.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-LG3007 | Valor: [Caudal mínimo: 46.0 - Caudal maximo: 281.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-SG3012 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 368.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: CA3003-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 238.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VT3014 | Valor: [Caudal mínimo: 33.0 - Caudal maximo: 311.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: CI3004-VI3013 | Valor: [Caudal mínimo: 90.0 - Caudal maximo: 400.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-VI3013 | Valor: [Caudal mínimo: 72.0 - Caudal maximo: 243.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: PP3010-JD3006 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 175.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-CA3003 | Valor: [Caudal mínimo: 25.0 - Caudal maximo: 156.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: BA3002-VI3013 | Valor: [Caudal mínimo: 51.0 - Caudal maximo: 319.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-BA3002 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 443.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: NE3008-VT3014 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 451.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VI3013 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 195.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 246.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-SM3011 | Valor: [Caudal mínimo: 42.0 - Caudal maximo: 360.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VI3013 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 165.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-BA3002 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 279.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VE3015-CA3003 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: BA3002-CI3004 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 406.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: PD3009-JD3006 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 322.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: NE3008-VE3015 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 487.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: NE3008-SM3011 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 330.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: VE3015-VT3014 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 351.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: JD3006-PP3010 | Valor: [Caudal mínimo: 61.0 - Caudal maximo: 464.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-NE3008 | Valor: [Caudal mínimo: 49.0 - Caudal maximo: 238.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 446.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: EB3005-LG3007 | Valor: [Caudal mínimo: 41.0 - Caudal maximo: 249.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: CA3003-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 333.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-SM3011 | Valor: [Caudal mínimo: 53.0 - Caudal maximo: 413.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-VT3014 | Valor: [Caudal mínimo: 80.0 - Caudal maximo: 170.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-EB3005 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 308.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VT3014-VE3015 | Valor: [Caudal mínimo: 58.0 - Caudal maximo: 444.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: JD3006-PD3009 | Valor: [Caudal mínimo: 37.0 - Caudal maximo: 161.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VT3014-NE3008 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 144.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-JD3006 | Valor: [Caudal mínimo: 14.0 - Caudal maximo: 381.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: PP3010-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: VT3014-EB3005 | Valor: [Caudal mínimo: 26.0 - Caudal maximo: 412.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-NE3008 | Valor: [Caudal mínimo: 95.0 - Caudal maximo: 408.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 263.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-LG3007 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 123.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: PP3010-VT3014 | Valor: [Caudal mínimo: 75.0 - Caudal maximo: 220.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: LG3007-CI3004 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 208.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: VI3013-LG3007 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-AL3001 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 467.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-EB3005 | Valor: [Caudal mínimo: 36.0 - Caudal maximo: 143.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-NE3008 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 301.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: NE3008-CI3004 | Valor: [Caudal mínimo: 11.0 - Caudal maximo: 202.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VI3013-AL3001 | Valor: [Caudal mínimo: 52.0 - Caudal maximo: 124.0 - Diametro: 300.0 - Estado: INACTIVO]
+- Clave: LG3007-PD3009 | Valor: [Caudal mínimo: 84.0 - Caudal maximo: 351.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: NE3008-PD3009 | Valor: [Caudal mínimo: 88.0 - Caudal maximo: 310.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: SG3012-AL3001 | Valor: [Caudal mínimo: 55.0 - Caudal maximo: 190.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: VE3015-LG3007 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 123.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-LG3007 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 205.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: AL3001-CI3004 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 348.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: JD3006-SM3011 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 239.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VT3014 | Valor: [Caudal mínimo: 78.0 - Caudal maximo: 136.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VI3013 | Valor: [Caudal mínimo: 17.0 - Caudal maximo: 130.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-PP3010 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 250.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 424.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: BA3002-PP3010 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-AL3001 | Valor: [Caudal mínimo: 91.0 - Caudal maximo: 279.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SM3011 | Valor: [Caudal mínimo: 13.0 - Caudal maximo: 153.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: VE3015-PP3010 | Valor: [Caudal mínimo: 76.0 - Caudal maximo: 330.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 438.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-PD3009 | Valor: [Caudal mínimo: 68.0 - Caudal maximo: 297.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: SM3011-CA3003 | Valor: [Caudal mínimo: 31.0 - Caudal maximo: 265.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VE3015 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 231.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: PD3009-SG3012 | Valor: [Caudal mínimo: 32.0 - Caudal maximo: 495.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-SG3012 | Valor: [Caudal mínimo: 79.0 - Caudal maximo: 273.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+
+
+[2025-08-05 00:28:08][Estado de estructura del HashMap de Tuberías]
+Contenido del HashMap de tuberías: - Clave: SG3012-JD3006 | Valor: [Caudal mínimo: 43.0 - Caudal maximo: 317.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 443.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-SG3012 | Valor: [Caudal mínimo: 86.0 - Caudal maximo: 338.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: JD3006-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 419.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: CA3003-CI3004 | Valor: [Caudal mínimo: 35.0 - Caudal maximo: 225.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-LG3007 | Valor: [Caudal mínimo: 46.0 - Caudal maximo: 281.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-SG3012 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 368.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: CA3003-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 238.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VT3014 | Valor: [Caudal mínimo: 33.0 - Caudal maximo: 311.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: CI3004-VI3013 | Valor: [Caudal mínimo: 90.0 - Caudal maximo: 400.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-VI3013 | Valor: [Caudal mínimo: 72.0 - Caudal maximo: 243.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: PP3010-JD3006 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 175.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-CA3003 | Valor: [Caudal mínimo: 25.0 - Caudal maximo: 156.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: BA3002-VI3013 | Valor: [Caudal mínimo: 51.0 - Caudal maximo: 319.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-BA3002 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 443.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: NE3008-VT3014 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 451.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VI3013 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 195.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 246.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-SM3011 | Valor: [Caudal mínimo: 42.0 - Caudal maximo: 360.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VI3013 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 165.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-BA3002 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 279.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VE3015-CA3003 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: BA3002-CI3004 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 406.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: PD3009-JD3006 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 322.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: NE3008-VE3015 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 487.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: NE3008-SM3011 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 330.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: VE3015-VT3014 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 351.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: JD3006-PP3010 | Valor: [Caudal mínimo: 61.0 - Caudal maximo: 464.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-NE3008 | Valor: [Caudal mínimo: 49.0 - Caudal maximo: 238.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 446.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: EB3005-LG3007 | Valor: [Caudal mínimo: 41.0 - Caudal maximo: 249.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: CA3003-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 333.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-SM3011 | Valor: [Caudal mínimo: 53.0 - Caudal maximo: 413.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-VT3014 | Valor: [Caudal mínimo: 80.0 - Caudal maximo: 170.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-EB3005 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 308.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VT3014-VE3015 | Valor: [Caudal mínimo: 58.0 - Caudal maximo: 444.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: JD3006-PD3009 | Valor: [Caudal mínimo: 37.0 - Caudal maximo: 161.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VT3014-NE3008 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 144.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-JD3006 | Valor: [Caudal mínimo: 14.0 - Caudal maximo: 381.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: PP3010-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: VT3014-EB3005 | Valor: [Caudal mínimo: 26.0 - Caudal maximo: 412.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-NE3008 | Valor: [Caudal mínimo: 95.0 - Caudal maximo: 408.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 263.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-LG3007 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 123.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: PP3010-VT3014 | Valor: [Caudal mínimo: 75.0 - Caudal maximo: 220.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: LG3007-CI3004 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 208.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: VI3013-LG3007 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-AL3001 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 467.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-EB3005 | Valor: [Caudal mínimo: 36.0 - Caudal maximo: 143.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-NE3008 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 301.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: NE3008-CI3004 | Valor: [Caudal mínimo: 11.0 - Caudal maximo: 202.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VI3013-AL3001 | Valor: [Caudal mínimo: 52.0 - Caudal maximo: 124.0 - Diametro: 300.0 - Estado: INACTIVO]
+- Clave: LG3007-PD3009 | Valor: [Caudal mínimo: 84.0 - Caudal maximo: 351.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: NE3008-PD3009 | Valor: [Caudal mínimo: 88.0 - Caudal maximo: 310.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: SG3012-AL3001 | Valor: [Caudal mínimo: 55.0 - Caudal maximo: 190.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: VE3015-LG3007 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 123.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-LG3007 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 205.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: AL3001-CI3004 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 348.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: JD3006-SM3011 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 239.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VT3014 | Valor: [Caudal mínimo: 78.0 - Caudal maximo: 136.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VI3013 | Valor: [Caudal mínimo: 17.0 - Caudal maximo: 130.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-PP3010 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 250.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 424.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: BA3002-PP3010 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-AL3001 | Valor: [Caudal mínimo: 91.0 - Caudal maximo: 279.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SM3011 | Valor: [Caudal mínimo: 13.0 - Caudal maximo: 153.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: VE3015-PP3010 | Valor: [Caudal mínimo: 76.0 - Caudal maximo: 330.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 438.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-PD3009 | Valor: [Caudal mínimo: 68.0 - Caudal maximo: 297.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: SM3011-CA3003 | Valor: [Caudal mínimo: 31.0 - Caudal maximo: 265.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VE3015 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 231.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: PD3009-SG3012 | Valor: [Caudal mínimo: 32.0 - Caudal maximo: 495.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-SG3012 | Valor: [Caudal mínimo: 79.0 - Caudal maximo: 273.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+
+
+[2025-08-05 00:28:34][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Allen del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:31:50][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Allen del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:32:01][Estado de estructura del HashMap de Tuberías]
+Contenido del HashMap de tuberías: - Clave: SG3012-JD3006 | Valor: [Caudal mínimo: 43.0 - Caudal maximo: 317.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 443.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: JD3006-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 419.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: CA3003-CI3004 | Valor: [Caudal mínimo: 35.0 - Caudal maximo: 225.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: SM3011-SG3012 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 368.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: CA3003-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 238.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-VI3013 | Valor: [Caudal mínimo: 90.0 - Caudal maximo: 400.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-VI3013 | Valor: [Caudal mínimo: 72.0 - Caudal maximo: 243.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: PP3010-JD3006 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 175.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: BA3002-VI3013 | Valor: [Caudal mínimo: 51.0 - Caudal maximo: 319.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: NE3008-VT3014 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 451.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VI3013 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 195.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 246.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: LG3007-VI3013 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 165.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-BA3002 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 279.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VE3015-CA3003 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: BA3002-CI3004 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 406.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: PD3009-JD3006 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 322.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: NE3008-VE3015 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 487.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: NE3008-SM3011 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 330.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: VE3015-VT3014 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 351.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: JD3006-PP3010 | Valor: [Caudal mínimo: 61.0 - Caudal maximo: 464.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-NE3008 | Valor: [Caudal mínimo: 49.0 - Caudal maximo: 238.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 446.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: EB3005-LG3007 | Valor: [Caudal mínimo: 41.0 - Caudal maximo: 249.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: CA3003-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 333.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-SM3011 | Valor: [Caudal mínimo: 53.0 - Caudal maximo: 413.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-VT3014 | Valor: [Caudal mínimo: 80.0 - Caudal maximo: 170.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-EB3005 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 308.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VT3014-VE3015 | Valor: [Caudal mínimo: 58.0 - Caudal maximo: 444.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: JD3006-PD3009 | Valor: [Caudal mínimo: 37.0 - Caudal maximo: 161.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VT3014-NE3008 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 144.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-JD3006 | Valor: [Caudal mínimo: 14.0 - Caudal maximo: 381.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: PP3010-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: VT3014-EB3005 | Valor: [Caudal mínimo: 26.0 - Caudal maximo: 412.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-NE3008 | Valor: [Caudal mínimo: 95.0 - Caudal maximo: 408.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 263.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-LG3007 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 123.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: PP3010-VT3014 | Valor: [Caudal mínimo: 75.0 - Caudal maximo: 220.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: LG3007-CI3004 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 208.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: VI3013-LG3007 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: BA3002-NE3008 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 301.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: NE3008-CI3004 | Valor: [Caudal mínimo: 11.0 - Caudal maximo: 202.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: LG3007-PD3009 | Valor: [Caudal mínimo: 84.0 - Caudal maximo: 351.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: NE3008-PD3009 | Valor: [Caudal mínimo: 88.0 - Caudal maximo: 310.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: VE3015-LG3007 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 123.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-LG3007 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 205.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: JD3006-SM3011 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 239.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VT3014 | Valor: [Caudal mínimo: 78.0 - Caudal maximo: 136.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: NE3008-PP3010 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 250.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 424.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: BA3002-PP3010 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: EB3005-SM3011 | Valor: [Caudal mínimo: 13.0 - Caudal maximo: 153.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: VE3015-PP3010 | Valor: [Caudal mínimo: 76.0 - Caudal maximo: 330.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 438.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-PD3009 | Valor: [Caudal mínimo: 68.0 - Caudal maximo: 297.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: SM3011-CA3003 | Valor: [Caudal mínimo: 31.0 - Caudal maximo: 265.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VE3015 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 231.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: PD3009-SG3012 | Valor: [Caudal mínimo: 32.0 - Caudal maximo: 495.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-SG3012 | Valor: [Caudal mínimo: 79.0 - Caudal maximo: 273.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+
+
+[2025-08-05 00:32:15][ERROR al intentar eliminar una ciudad del sistema]
+La ciudad Cavihaue no existe dentro el sistema.
+
+[2025-08-05 00:32:46][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Caviahue del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:32:56][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Neuquén del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:33:05][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Las Grutas del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:33:11][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Bariloche del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:33:21][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad El Bolsón del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:33:31][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Cipolletti del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:33:44][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Playas Doradas del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:34:40][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Villa el Chocón del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:34:55][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Junín de los Andes del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:35:03][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Primeros Pinos del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:35:08][Estado de estructura del HashMap de Tuberías]
+Contenido del HashMap de tuberías: - Clave: SM3011-SG3012 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 368.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: SG3012-VT3014 | Valor: [Caudal mínimo: 80.0 - Caudal maximo: 170.0 - Diametro: 300.0 - Estado: ACTIVO]
+
+
+[2025-08-05 00:35:21][Estado de estructura del ArbolAVL de Ciudades]
+Nodo: Sierra Grande | HI: San Martín de los andes | HD: Villa Trafúl | Altura : 2
+Nodo: San Martín de los andes | HI: - | HD: - | Altura : 0
+Nodo: Villa Trafúl | HI: Viedma | HD: - | Altura : 1
+Nodo: Viedma | HI: - | HD: - | Altura : 0
+
+
+[2025-08-05 00:35:39][ÉXITO al eliminar una ciudad del sistema]
+Se elimina la ciudad Viedma del sistema, junto con todas las tuberías que la conectaban
+
+[2025-08-05 00:35:42][Estado de estructura del Grafo de Ciudades con tuberías]
+Vertice: VT3014 ->  - 
+Vertice: SG3012 -> VT3014 (170.0)
+Vertice: SM3011 -> SG3012 (368.0)
+
+
+[2025-08-05 00:35:53][Estado de estructura del HashMap de Tuberías]
+Contenido del HashMap de tuberías: - Clave: SM3011-SG3012 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 368.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: SG3012-VT3014 | Valor: [Caudal mínimo: 80.0 - Caudal maximo: 170.0 - Diametro: 300.0 - Estado: ACTIVO]
+
+
+[2025-08-05 00:38:34][ERROR al intentar cargar una nueva tubería en el sistema]
+Ya existe una tubería en el sistema que conecta las mismas ciudades en la misma dirección
+
+[2025-08-05 00:38:55][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 200.0 - ConsumoDiarioProm: 50.0]
+
+[2025-08-05 00:41:53][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 200.0 - ConsumoDiarioProm: 50.0]
+
+[2025-08-05 00:42:41][ÉXITO al cargar una nueva tubería en el sistema]
+[Caudal mínimo: 10.0 - Caudal maximo: 10.0 - Diametro: 200.0 - Estado: ACTIVO]
+
+[2025-08-05 00:42:48][Estado de estructura del HashMap de Tuberías]
+Contenido del HashMap de tuberías: - Clave: SG3012-JD3006 | Valor: [Caudal mínimo: 43.0 - Caudal maximo: 317.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 443.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-SG3012 | Valor: [Caudal mínimo: 86.0 - Caudal maximo: 338.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: JD3006-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 419.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: CA3003-CI3004 | Valor: [Caudal mínimo: 35.0 - Caudal maximo: 225.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-LG3007 | Valor: [Caudal mínimo: 46.0 - Caudal maximo: 281.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-SG3012 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 368.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: CA3003-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 238.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VT3014 | Valor: [Caudal mínimo: 33.0 - Caudal maximo: 311.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: CI3004-VI3013 | Valor: [Caudal mínimo: 90.0 - Caudal maximo: 400.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-VI3013 | Valor: [Caudal mínimo: 72.0 - Caudal maximo: 243.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: PP3010-JD3006 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 175.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-CA3003 | Valor: [Caudal mínimo: 25.0 - Caudal maximo: 156.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: BA3002-VI3013 | Valor: [Caudal mínimo: 51.0 - Caudal maximo: 319.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-BA3002 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 443.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: NE3008-VT3014 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 451.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VI3013 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 195.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 246.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-SM3011 | Valor: [Caudal mínimo: 42.0 - Caudal maximo: 360.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VI3013 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 165.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-BA3002 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 279.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VE3015-CA3003 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: BA3002-CI3004 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 406.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: PD3009-JD3006 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 322.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: NE3008-VE3015 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 487.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: NE3008-SM3011 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 330.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: VE3015-VT3014 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 351.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: JD3006-PP3010 | Valor: [Caudal mínimo: 61.0 - Caudal maximo: 464.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-NE3008 | Valor: [Caudal mínimo: 49.0 - Caudal maximo: 238.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 446.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: EB3005-LG3007 | Valor: [Caudal mínimo: 41.0 - Caudal maximo: 249.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: CA3003-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 333.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-SM3011 | Valor: [Caudal mínimo: 53.0 - Caudal maximo: 413.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-VT3014 | Valor: [Caudal mínimo: 80.0 - Caudal maximo: 170.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-EB3005 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 308.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VT3014-VE3015 | Valor: [Caudal mínimo: 58.0 - Caudal maximo: 444.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: JD3006-PD3009 | Valor: [Caudal mínimo: 37.0 - Caudal maximo: 161.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VT3014-NE3008 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 144.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-JD3006 | Valor: [Caudal mínimo: 14.0 - Caudal maximo: 381.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: PP3010-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: VT3014-EB3005 | Valor: [Caudal mínimo: 26.0 - Caudal maximo: 412.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-NE3008 | Valor: [Caudal mínimo: 95.0 - Caudal maximo: 408.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 263.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-LG3007 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 123.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: PP3010-VT3014 | Valor: [Caudal mínimo: 75.0 - Caudal maximo: 220.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: LG3007-CI3004 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 208.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: VI3013-LG3007 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-AL3001 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 467.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-EB3005 | Valor: [Caudal mínimo: 36.0 - Caudal maximo: 143.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-NE3008 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 301.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: NE3008-CI3004 | Valor: [Caudal mínimo: 11.0 - Caudal maximo: 202.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VI3013-AL3001 | Valor: [Caudal mínimo: 52.0 - Caudal maximo: 124.0 - Diametro: 300.0 - Estado: INACTIVO]
+- Clave: LG3007-PD3009 | Valor: [Caudal mínimo: 84.0 - Caudal maximo: 351.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: NE3008-PD3009 | Valor: [Caudal mínimo: 88.0 - Caudal maximo: 310.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: SG3012-AL3001 | Valor: [Caudal mínimo: 55.0 - Caudal maximo: 190.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: VE3015-LG3007 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 123.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-LG3007 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 205.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: AL3001-CI3004 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 348.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: JD3006-SM3011 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 239.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VT3014 | Valor: [Caudal mínimo: 78.0 - Caudal maximo: 136.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VI3013 | Valor: [Caudal mínimo: 17.0 - Caudal maximo: 130.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-PP3010 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 250.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 424.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: BA3002-PP3010 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-AL3001 | Valor: [Caudal mínimo: 91.0 - Caudal maximo: 279.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SM3011 | Valor: [Caudal mínimo: 13.0 - Caudal maximo: 153.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: VE3015-PP3010 | Valor: [Caudal mínimo: 76.0 - Caudal maximo: 330.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 438.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-PD3009 | Valor: [Caudal mínimo: 68.0 - Caudal maximo: 297.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: SM3011-CA3003 | Valor: [Caudal mínimo: 31.0 - Caudal maximo: 265.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VE3015 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 231.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: PD3009-SG3012 | Valor: [Caudal mínimo: 32.0 - Caudal maximo: 495.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-SG3012 | Valor: [Caudal mínimo: 79.0 - Caudal maximo: 273.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-RO3016 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 10.0 - Diametro: 200.0 - Estado: ACTIVO]
+
+
+[2025-08-05 00:46:38][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 200.0 - ConsumoDiarioProm: 50.0]
+
+[2025-08-05 00:47:29][ÉXITO al cargar una nueva tubería en el sistema]
+[Caudal mínimo: 10.0 - Caudal maximo: 20.0 - Diametro: 200.0 - Estado: INACTIVO]
+
+[2025-08-05 01:02:12][Estado de estructura del Grafo de Ciudades con tuberías]
+Vertice: RO3016 ->  - 
+Vertice: VE3015 -> PP3010 (330.0), LG3007 (123.0), VT3014 (351.0), CA3003 (212.0)
+Vertice: VT3014 -> EB3005 (412.0), NE3008 (144.0), VE3015 (444.0)
+Vertice: VI3013 -> AL3001 (124.0), LG3007 (187.0)
+Vertice: SG3012 -> AL3001 (190.0), VT3014 (170.0), BA3002 (279.0), PD3009 (443.0), JD3006 (317.0)
+Vertice: SM3011 -> CA3003 (265.0), AL3001 (279.0), SG3012 (368.0)
+Vertice: PP3010 -> VE3015 (438.0), VT3014 (220.0), VI3013 (263.0), SM3011 (187.0), JD3006 (175.0)
+Vertice: PD3009 -> SG3012 (495.0), JD3006 (322.0)
+Vertice: NE3008 -> VI3013 (424.0), PP3010 (250.0), PD3009 (310.0), CI3004 (202.0), SM3011 (330.0), VE3015 (487.0), VT3014 (451.0)
+Vertice: LG3007 -> VE3015 (231.0), PD3009 (351.0), AL3001 (467.0), CI3004 (208.0), SM3011 (413.0), VI3013 (165.0)
+Vertice: JD3006 -> SM3011 (239.0), PD3009 (161.0), PP3010 (464.0), SG3012 (419.0)
+Vertice: EB3005 -> SM3011 (153.0), VT3014 (136.0), LG3007 (249.0), SG3012 (446.0), VI3013 (195.0)
+Vertice: CI3004 -> LG3007 (123.0), NE3008 (238.0), PD3009 (246.0), VI3013 (400.0)
+Vertice: CA3003 -> PD3009 (297.0), LG3007 (205.0), NE3008 (408.0), JD3006 (381.0), EB3005 (308.0), VE3015 (333.0), VI3013 (243.0), SM3011 (238.0), CI3004 (225.0)
+Vertice: BA3002 -> SG3012 (273.0), PP3010 (212.0), NE3008 (301.0), CI3004 (406.0), VI3013 (319.0)
+Vertice: AL3001 -> RO3016 (20.0), VI3013 (130.0), CI3004 (348.0), EB3005 (143.0), SM3011 (360.0), BA3002 (443.0), CA3003 (156.0), VT3014 (311.0), LG3007 (281.0), SG3012 (338.0)
+
+
+[2025-08-05 01:02:19][Estado de estructura del HashMap de Tuberías]
+Contenido del HashMap de tuberías: - Clave: SG3012-JD3006 | Valor: [Caudal mínimo: 43.0 - Caudal maximo: 317.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 443.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-SG3012 | Valor: [Caudal mínimo: 86.0 - Caudal maximo: 338.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: JD3006-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 419.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: CA3003-CI3004 | Valor: [Caudal mínimo: 35.0 - Caudal maximo: 225.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-LG3007 | Valor: [Caudal mínimo: 46.0 - Caudal maximo: 281.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-SG3012 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 368.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: CA3003-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 238.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VT3014 | Valor: [Caudal mínimo: 33.0 - Caudal maximo: 311.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: CI3004-VI3013 | Valor: [Caudal mínimo: 90.0 - Caudal maximo: 400.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-VI3013 | Valor: [Caudal mínimo: 72.0 - Caudal maximo: 243.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: PP3010-JD3006 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 175.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-CA3003 | Valor: [Caudal mínimo: 25.0 - Caudal maximo: 156.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: BA3002-VI3013 | Valor: [Caudal mínimo: 51.0 - Caudal maximo: 319.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-BA3002 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 443.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: NE3008-VT3014 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 451.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VI3013 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 195.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 246.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-SM3011 | Valor: [Caudal mínimo: 42.0 - Caudal maximo: 360.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VI3013 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 165.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-BA3002 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 279.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VE3015-CA3003 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: BA3002-CI3004 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 406.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: PD3009-JD3006 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 322.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: NE3008-VE3015 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 487.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: NE3008-SM3011 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 330.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: VE3015-VT3014 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 351.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: JD3006-PP3010 | Valor: [Caudal mínimo: 61.0 - Caudal maximo: 464.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-NE3008 | Valor: [Caudal mínimo: 49.0 - Caudal maximo: 238.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 446.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: EB3005-LG3007 | Valor: [Caudal mínimo: 41.0 - Caudal maximo: 249.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: CA3003-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 333.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-SM3011 | Valor: [Caudal mínimo: 53.0 - Caudal maximo: 413.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-VT3014 | Valor: [Caudal mínimo: 80.0 - Caudal maximo: 170.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-EB3005 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 308.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VT3014-VE3015 | Valor: [Caudal mínimo: 58.0 - Caudal maximo: 444.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: JD3006-PD3009 | Valor: [Caudal mínimo: 37.0 - Caudal maximo: 161.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VT3014-NE3008 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 144.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-JD3006 | Valor: [Caudal mínimo: 14.0 - Caudal maximo: 381.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: PP3010-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: VT3014-EB3005 | Valor: [Caudal mínimo: 26.0 - Caudal maximo: 412.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-NE3008 | Valor: [Caudal mínimo: 95.0 - Caudal maximo: 408.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 263.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-LG3007 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 123.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: PP3010-VT3014 | Valor: [Caudal mínimo: 75.0 - Caudal maximo: 220.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: LG3007-CI3004 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 208.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: VI3013-LG3007 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-AL3001 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 467.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-EB3005 | Valor: [Caudal mínimo: 36.0 - Caudal maximo: 143.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-NE3008 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 301.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: NE3008-CI3004 | Valor: [Caudal mínimo: 11.0 - Caudal maximo: 202.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VI3013-AL3001 | Valor: [Caudal mínimo: 52.0 - Caudal maximo: 124.0 - Diametro: 300.0 - Estado: INACTIVO]
+- Clave: LG3007-PD3009 | Valor: [Caudal mínimo: 84.0 - Caudal maximo: 351.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: NE3008-PD3009 | Valor: [Caudal mínimo: 88.0 - Caudal maximo: 310.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: SG3012-AL3001 | Valor: [Caudal mínimo: 55.0 - Caudal maximo: 190.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: VE3015-LG3007 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 123.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-LG3007 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 205.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: AL3001-CI3004 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 348.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: JD3006-SM3011 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 239.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VT3014 | Valor: [Caudal mínimo: 78.0 - Caudal maximo: 136.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VI3013 | Valor: [Caudal mínimo: 17.0 - Caudal maximo: 130.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-PP3010 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 250.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 424.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: BA3002-PP3010 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-AL3001 | Valor: [Caudal mínimo: 91.0 - Caudal maximo: 279.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SM3011 | Valor: [Caudal mínimo: 13.0 - Caudal maximo: 153.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: VE3015-PP3010 | Valor: [Caudal mínimo: 76.0 - Caudal maximo: 330.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 438.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-PD3009 | Valor: [Caudal mínimo: 68.0 - Caudal maximo: 297.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: SM3011-CA3003 | Valor: [Caudal mínimo: 31.0 - Caudal maximo: 265.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VE3015 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 231.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: PD3009-SG3012 | Valor: [Caudal mínimo: 32.0 - Caudal maximo: 495.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-SG3012 | Valor: [Caudal mínimo: 79.0 - Caudal maximo: 273.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-RO3016 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 20.0 - Diametro: 200.0 - Estado: INACTIVO]
+
+
+[2025-08-05 01:02:42][ERROR al intentar modificar una tubería del sistema]
+La tubería no existe en el sistema
+
+[2025-08-05 01:04:54][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 10.0 - ConsumoDiarioProm: 10.0]
+
+[2025-08-05 01:05:23][ÉXITO al cargar una nueva tubería en el sistema]
+[Caudal mínimo: 10.0 - Caudal maximo: 20.0 - Diametro: 200.0 - Estado: ACTIVO]
+
+[2025-08-05 01:06:00][ÉXITO al modificar una tubería en el sistema]
+[Caudal mínimo: 1.000005E8 - Caudal maximo: 20.0 - Diametro: 200.0 - Estado: ACTIVO]
+
+[2025-08-05 01:06:08][Estado de estructura del Grafo de Ciudades con tuberías]
+Vertice: RO3016 ->  - 
+Vertice: VE3015 -> PP3010 (330.0), LG3007 (123.0), VT3014 (351.0), CA3003 (212.0)
+Vertice: VT3014 -> EB3005 (412.0), NE3008 (144.0), VE3015 (444.0)
+Vertice: VI3013 -> AL3001 (124.0), LG3007 (187.0)
+Vertice: SG3012 -> AL3001 (190.0), VT3014 (170.0), BA3002 (279.0), PD3009 (443.0), JD3006 (317.0)
+Vertice: SM3011 -> CA3003 (265.0), AL3001 (279.0), SG3012 (368.0)
+Vertice: PP3010 -> VE3015 (438.0), VT3014 (220.0), VI3013 (263.0), SM3011 (187.0), JD3006 (175.0)
+Vertice: PD3009 -> SG3012 (495.0), JD3006 (322.0)
+Vertice: NE3008 -> VI3013 (424.0), PP3010 (250.0), PD3009 (310.0), CI3004 (202.0), SM3011 (330.0), VE3015 (487.0), VT3014 (451.0)
+Vertice: LG3007 -> VE3015 (231.0), PD3009 (351.0), AL3001 (467.0), CI3004 (208.0), SM3011 (413.0), VI3013 (165.0)
+Vertice: JD3006 -> SM3011 (239.0), PD3009 (161.0), PP3010 (464.0), SG3012 (419.0)
+Vertice: EB3005 -> SM3011 (153.0), VT3014 (136.0), LG3007 (249.0), SG3012 (446.0), VI3013 (195.0)
+Vertice: CI3004 -> LG3007 (123.0), NE3008 (238.0), PD3009 (246.0), VI3013 (400.0)
+Vertice: CA3003 -> PD3009 (297.0), LG3007 (205.0), NE3008 (408.0), JD3006 (381.0), EB3005 (308.0), VE3015 (333.0), VI3013 (243.0), SM3011 (238.0), CI3004 (225.0)
+Vertice: BA3002 -> SG3012 (273.0), PP3010 (212.0), NE3008 (301.0), CI3004 (406.0), VI3013 (319.0)
+Vertice: AL3001 -> RO3016 (20.0), VI3013 (130.0), CI3004 (348.0), EB3005 (143.0), SM3011 (360.0), BA3002 (443.0), CA3003 (156.0), VT3014 (311.0), LG3007 (281.0), SG3012 (338.0)
+
+
+[2025-08-05 01:06:35][Estado de estructura del HashMap de Tuberías]
+Contenido del HashMap de tuberías: - Clave: SG3012-JD3006 | Valor: [Caudal mínimo: 43.0 - Caudal maximo: 317.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 443.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-SG3012 | Valor: [Caudal mínimo: 86.0 - Caudal maximo: 338.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: JD3006-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 419.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: CA3003-CI3004 | Valor: [Caudal mínimo: 35.0 - Caudal maximo: 225.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-LG3007 | Valor: [Caudal mínimo: 46.0 - Caudal maximo: 281.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-SG3012 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 368.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: CA3003-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 238.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VT3014 | Valor: [Caudal mínimo: 33.0 - Caudal maximo: 311.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: CI3004-VI3013 | Valor: [Caudal mínimo: 90.0 - Caudal maximo: 400.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-VI3013 | Valor: [Caudal mínimo: 72.0 - Caudal maximo: 243.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: PP3010-JD3006 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 175.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-CA3003 | Valor: [Caudal mínimo: 25.0 - Caudal maximo: 156.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: BA3002-VI3013 | Valor: [Caudal mínimo: 51.0 - Caudal maximo: 319.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-BA3002 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 443.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: NE3008-VT3014 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 451.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VI3013 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 195.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 246.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-SM3011 | Valor: [Caudal mínimo: 42.0 - Caudal maximo: 360.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VI3013 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 165.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-BA3002 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 279.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VE3015-CA3003 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: BA3002-CI3004 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 406.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: PD3009-JD3006 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 322.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: NE3008-VE3015 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 487.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: NE3008-SM3011 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 330.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: VE3015-VT3014 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 351.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: JD3006-PP3010 | Valor: [Caudal mínimo: 61.0 - Caudal maximo: 464.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-NE3008 | Valor: [Caudal mínimo: 49.0 - Caudal maximo: 238.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 446.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: EB3005-LG3007 | Valor: [Caudal mínimo: 41.0 - Caudal maximo: 249.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: CA3003-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 333.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-SM3011 | Valor: [Caudal mínimo: 53.0 - Caudal maximo: 413.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-VT3014 | Valor: [Caudal mínimo: 80.0 - Caudal maximo: 170.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-EB3005 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 308.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VT3014-VE3015 | Valor: [Caudal mínimo: 58.0 - Caudal maximo: 444.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: JD3006-PD3009 | Valor: [Caudal mínimo: 37.0 - Caudal maximo: 161.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VT3014-NE3008 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 144.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-JD3006 | Valor: [Caudal mínimo: 14.0 - Caudal maximo: 381.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: PP3010-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: VT3014-EB3005 | Valor: [Caudal mínimo: 26.0 - Caudal maximo: 412.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-NE3008 | Valor: [Caudal mínimo: 95.0 - Caudal maximo: 408.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 263.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-LG3007 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 123.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: PP3010-VT3014 | Valor: [Caudal mínimo: 75.0 - Caudal maximo: 220.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: LG3007-CI3004 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 208.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: VI3013-LG3007 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-AL3001 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 467.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-EB3005 | Valor: [Caudal mínimo: 36.0 - Caudal maximo: 143.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-NE3008 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 301.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: NE3008-CI3004 | Valor: [Caudal mínimo: 11.0 - Caudal maximo: 202.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VI3013-AL3001 | Valor: [Caudal mínimo: 52.0 - Caudal maximo: 124.0 - Diametro: 300.0 - Estado: INACTIVO]
+- Clave: LG3007-PD3009 | Valor: [Caudal mínimo: 84.0 - Caudal maximo: 351.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: NE3008-PD3009 | Valor: [Caudal mínimo: 88.0 - Caudal maximo: 310.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: SG3012-AL3001 | Valor: [Caudal mínimo: 55.0 - Caudal maximo: 190.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: VE3015-LG3007 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 123.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-LG3007 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 205.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: AL3001-CI3004 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 348.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: JD3006-SM3011 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 239.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VT3014 | Valor: [Caudal mínimo: 78.0 - Caudal maximo: 136.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VI3013 | Valor: [Caudal mínimo: 17.0 - Caudal maximo: 130.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-PP3010 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 250.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 424.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: BA3002-PP3010 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-AL3001 | Valor: [Caudal mínimo: 91.0 - Caudal maximo: 279.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SM3011 | Valor: [Caudal mínimo: 13.0 - Caudal maximo: 153.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: VE3015-PP3010 | Valor: [Caudal mínimo: 76.0 - Caudal maximo: 330.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 438.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-PD3009 | Valor: [Caudal mínimo: 68.0 - Caudal maximo: 297.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: SM3011-CA3003 | Valor: [Caudal mínimo: 31.0 - Caudal maximo: 265.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VE3015 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 231.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: PD3009-SG3012 | Valor: [Caudal mínimo: 32.0 - Caudal maximo: 495.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-SG3012 | Valor: [Caudal mínimo: 79.0 - Caudal maximo: 273.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-RO3016 | Valor: [Caudal mínimo: 1.000005E8 - Caudal maximo: 20.0 - Diametro: 200.0 - Estado: ACTIVO]
+
+
+[2025-08-05 01:07:27][ÉXITO al modificar una tubería en el sistema]
+[Caudal mínimo: 200.0 - Caudal maximo: 20.0 - Diametro: 200.0 - Estado: ACTIVO]
+
+[2025-08-05 01:07:34][Estado de estructura del HashMap de Tuberías]
+Contenido del HashMap de tuberías: - Clave: SG3012-JD3006 | Valor: [Caudal mínimo: 43.0 - Caudal maximo: 317.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 443.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-SG3012 | Valor: [Caudal mínimo: 86.0 - Caudal maximo: 338.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: JD3006-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 419.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: CA3003-CI3004 | Valor: [Caudal mínimo: 35.0 - Caudal maximo: 225.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-LG3007 | Valor: [Caudal mínimo: 46.0 - Caudal maximo: 281.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-SG3012 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 368.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: CA3003-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 238.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VT3014 | Valor: [Caudal mínimo: 33.0 - Caudal maximo: 311.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: CI3004-VI3013 | Valor: [Caudal mínimo: 90.0 - Caudal maximo: 400.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-VI3013 | Valor: [Caudal mínimo: 72.0 - Caudal maximo: 243.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: PP3010-JD3006 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 175.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-CA3003 | Valor: [Caudal mínimo: 25.0 - Caudal maximo: 156.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: BA3002-VI3013 | Valor: [Caudal mínimo: 51.0 - Caudal maximo: 319.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-BA3002 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 443.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: NE3008-VT3014 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 451.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VI3013 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 195.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-PD3009 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 246.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: AL3001-SM3011 | Valor: [Caudal mínimo: 42.0 - Caudal maximo: 360.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VI3013 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 165.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-BA3002 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 279.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VE3015-CA3003 | Valor: [Caudal mínimo: 65.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: BA3002-CI3004 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 406.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: PD3009-JD3006 | Valor: [Caudal mínimo: 10.0 - Caudal maximo: 322.0 - Diametro: 100.0 - Estado: INACTIVO]
+- Clave: NE3008-VE3015 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 487.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: NE3008-SM3011 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 330.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: VE3015-VT3014 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 351.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: JD3006-PP3010 | Valor: [Caudal mínimo: 61.0 - Caudal maximo: 464.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-NE3008 | Valor: [Caudal mínimo: 49.0 - Caudal maximo: 238.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SG3012 | Valor: [Caudal mínimo: 45.0 - Caudal maximo: 446.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: EB3005-LG3007 | Valor: [Caudal mínimo: 41.0 - Caudal maximo: 249.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: CA3003-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 333.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-SM3011 | Valor: [Caudal mínimo: 53.0 - Caudal maximo: 413.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: SG3012-VT3014 | Valor: [Caudal mínimo: 80.0 - Caudal maximo: 170.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-EB3005 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 308.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: VT3014-VE3015 | Valor: [Caudal mínimo: 58.0 - Caudal maximo: 444.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: JD3006-PD3009 | Valor: [Caudal mínimo: 37.0 - Caudal maximo: 161.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VT3014-NE3008 | Valor: [Caudal mínimo: 38.0 - Caudal maximo: 144.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-JD3006 | Valor: [Caudal mínimo: 14.0 - Caudal maximo: 381.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: PP3010-SM3011 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: VT3014-EB3005 | Valor: [Caudal mínimo: 26.0 - Caudal maximo: 412.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-NE3008 | Valor: [Caudal mínimo: 95.0 - Caudal maximo: 408.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 263.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: CI3004-LG3007 | Valor: [Caudal mínimo: 60.0 - Caudal maximo: 123.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: PP3010-VT3014 | Valor: [Caudal mínimo: 75.0 - Caudal maximo: 220.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: LG3007-CI3004 | Valor: [Caudal mínimo: 63.0 - Caudal maximo: 208.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: VI3013-LG3007 | Valor: [Caudal mínimo: 66.0 - Caudal maximo: 187.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: LG3007-AL3001 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 467.0 - Diametro: 400.0 - Estado: INACTIVO]
+- Clave: AL3001-EB3005 | Valor: [Caudal mínimo: 36.0 - Caudal maximo: 143.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-NE3008 | Valor: [Caudal mínimo: 74.0 - Caudal maximo: 301.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: NE3008-CI3004 | Valor: [Caudal mínimo: 11.0 - Caudal maximo: 202.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: VI3013-AL3001 | Valor: [Caudal mínimo: 52.0 - Caudal maximo: 124.0 - Diametro: 300.0 - Estado: INACTIVO]
+- Clave: LG3007-PD3009 | Valor: [Caudal mínimo: 84.0 - Caudal maximo: 351.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: NE3008-PD3009 | Valor: [Caudal mínimo: 88.0 - Caudal maximo: 310.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: SG3012-AL3001 | Valor: [Caudal mínimo: 55.0 - Caudal maximo: 190.0 - Diametro: 200.0 - Estado: INACTIVO]
+- Clave: VE3015-LG3007 | Valor: [Caudal mínimo: 81.0 - Caudal maximo: 123.0 - Diametro: 400.0 - Estado: EN REPARACIÓN]
+- Clave: CA3003-LG3007 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 205.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: AL3001-CI3004 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 348.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: JD3006-SM3011 | Valor: [Caudal mínimo: 89.0 - Caudal maximo: 239.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: EB3005-VT3014 | Valor: [Caudal mínimo: 78.0 - Caudal maximo: 136.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-VI3013 | Valor: [Caudal mínimo: 17.0 - Caudal maximo: 130.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-PP3010 | Valor: [Caudal mínimo: 48.0 - Caudal maximo: 250.0 - Diametro: 200.0 - Estado: ACTIVO]
+- Clave: NE3008-VI3013 | Valor: [Caudal mínimo: 18.0 - Caudal maximo: 424.0 - Diametro: 400.0 - Estado: ACTIVO]
+- Clave: BA3002-PP3010 | Valor: [Caudal mínimo: 87.0 - Caudal maximo: 212.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: SM3011-AL3001 | Valor: [Caudal mínimo: 91.0 - Caudal maximo: 279.0 - Diametro: 200.0 - Estado: EN DISEÑO]
+- Clave: EB3005-SM3011 | Valor: [Caudal mínimo: 13.0 - Caudal maximo: 153.0 - Diametro: 100.0 - Estado: ACTIVO]
+- Clave: VE3015-PP3010 | Valor: [Caudal mínimo: 76.0 - Caudal maximo: 330.0 - Diametro: 300.0 - Estado: EN REPARACIÓN]
+- Clave: PP3010-VE3015 | Valor: [Caudal mínimo: 24.0 - Caudal maximo: 438.0 - Diametro: 300.0 - Estado: ACTIVO]
+- Clave: CA3003-PD3009 | Valor: [Caudal mínimo: 68.0 - Caudal maximo: 297.0 - Diametro: 400.0 - Estado: EN DISEÑO]
+- Clave: SM3011-CA3003 | Valor: [Caudal mínimo: 31.0 - Caudal maximo: 265.0 - Diametro: 100.0 - Estado: EN DISEÑO]
+- Clave: LG3007-VE3015 | Valor: [Caudal mínimo: 50.0 - Caudal maximo: 231.0 - Diametro: 100.0 - Estado: EN REPARACIÓN]
+- Clave: PD3009-SG3012 | Valor: [Caudal mínimo: 32.0 - Caudal maximo: 495.0 - Diametro: 300.0 - Estado: EN DISEÑO]
+- Clave: BA3002-SG3012 | Valor: [Caudal mínimo: 79.0 - Caudal maximo: 273.0 - Diametro: 200.0 - Estado: EN REPARACIÓN]
+- Clave: AL3001-RO3016 | Valor: [Caudal mínimo: 200.0 - Caudal maximo: 20.0 - Diametro: 200.0 - Estado: ACTIVO]
+
+
+[2025-08-05 01:24:00][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 200.0 - ConsumoDiarioProm: 10.0]
+
+[2025-08-05 01:24:35][ÉXITO al cargar una nueva tubería en el sistema]
+[Caudal mínimo: 100.0 - Caudal maximo: 200.0 - Diametro: 200.0 - Estado: ACTIVO]
+
+[2025-08-05 01:26:15][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 200.0 - ConsumoDiarioProm: 50.0]
+
+[2025-08-05 01:32:08][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 200.0 - ConsumoDiarioProm: 10.0]
+
+[2025-08-05 01:33:31][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 200.0 - ConsumoDiarioProm: 40.0]
+
+[2025-08-05 01:34:37][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 100.0 - ConsumoDiarioProm: 100.0]
+
+[2025-08-05 01:38:44][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 100.0 - ConsumoDiarioProm: 100.0]
+
+[2025-08-05 01:42:26][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 100.0 - ConsumoDiarioProm: 100.0]
+
+[2025-08-05 01:59:41][ÉXITO al cargar una nueva ciudad en el sistema]
+[Nombre: Roma - Nomenclatura: RO3016 - Superficie: 200.0 - ConsumoDiarioProm: 10.0]
+
+[2025-08-05 02:00:12][ÉXITO al cargar una nueva tubería en el sistema]
+[Caudal mínimo: 200.0 - Caudal maximo: 100.0 - Diametro: 100.0 - Estado: ACTIVO]
+
+[2025-08-05 02:01:04][ÉXITO al modificar la cantidad de habitantes por fecha de la ciudad: Roma]
+La nueva cantidad de habitantes para la fecha 2000-01 es: 200
+

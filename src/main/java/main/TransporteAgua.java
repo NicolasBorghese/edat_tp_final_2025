@@ -128,7 +128,7 @@ public class TransporteAgua {
                         RUTA_SEED_TUBERIA,
                         grafoCiudades
                         );
-                GestorOperaciones.reiniciarRegistrosConSeed(arbolCiudades, hashTuberias,  grafoCiudades);
+                GestorOperaciones.reiniciarRegistrosConSeed(arbolCiudades, hashTuberias);
                 Imprimir.exitoCargarEstructurasConSeed();
                 break;
             case 3:// 3. Iniciar programa con registros vacios
@@ -169,12 +169,16 @@ public class TransporteAgua {
                 GestorOperaciones.modificarCiudad(arbolCiudades, sc);
                 break;
             case 4:// 4. Ciudad - Actualizar población por fecha.
+                GestorOperaciones.modificarPoblacionPorFechaCiudad(arbolCiudades, sc);
                 break;
             case 5:// 5. Tubería - Alta
+                GestorOperaciones.altaTuberia(arbolCiudades, hashTuberias, grafoCiudades, sc);
                 break;
             case 6:// 6. Tubería - Baja
+                GestorOperaciones.bajaTuberia(arbolCiudades, hashTuberias, grafoCiudades, sc);
                 break;
             case 7:// 7. Tubería - Modificar
+                GestorOperaciones.modificarTuberia(arbolCiudades, hashTuberias, sc);
                 break;
             case 8:// 8. Cantidad habitantes y agua consumida por fecha
                 break;
@@ -187,14 +191,13 @@ public class TransporteAgua {
             case 12:// 12. Ciudades ordenadas por consumo de agua
                 break;
             case 13:// 13. Visualizar arbolAVL de ciudades
-                System.out.println(arbolCiudades.toStringTipoCiudad());
-              break;
-            case 14:// 14. Visualizar HashMap de tuberias
-                Imprimir.hashMapTuberias(hashTuberias);
-                System.out.println();
+                GestorOperaciones.visualizarEstructuraArbolDeCiudades(arbolCiudades);
+                break;
+            case 14:// 14. Visualizar HashMap de tuberías
+                GestorOperaciones.visualizarEstructuraHashMapTuberias(hashTuberias);
                 break;
             case 15:// 15. Visualizar Grafo (Ciudad-Tubería)
-                System.out.println(grafoCiudades.toString());
+                GestorOperaciones.visualizarEstructuraGrafo(grafoCiudades);
                 break;
             default:
                 break;
