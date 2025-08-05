@@ -3,13 +3,17 @@ package funciones;
 import clases.ClaveTuberia;
 import clases.Tuberia;
 import constantes.Rutas;
+import consultas.ConsultasCiudad;
+import consultas.ConsultasTuberia;
 import controladores.*;
 import clases.Ciudad;
 import estructuras.conjuntistas.ArbolAVL;
 import estructuras.grafos.Grafo;
 import formularios.Formulario;
 import mensajesPorConsola.Imprimir;
+import validaciones.Validar;
 
+import java.time.Year;
 import java.time.YearMonth;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -394,6 +398,96 @@ public class GestorOperaciones {
             RegistraEstructuras.registrarComoLog(titulo, contenido);
             Imprimir.errorMensaje("No pudo modificarse la tubería del sistema, la misma no fue encontrada");
         }
+    }
+
+    /**
+     * Muestra la cantidad de habitantes y agua consumida en una fecha
+     *
+     * @param arbolCiudades ArbolAVL
+     * @param sc Scaner
+     */
+    public static void cantidadHabitantesYAguaConsumidaPorFecha(ArbolAVL arbolCiudades, Scanner sc){
+
+        int anio = Formulario.generarAnioValido(sc);
+        int mes = Formulario.generarMesValido(sc);
+        String nombreCiudad = Formulario.nombreCiudadValido(sc);
+        YearMonth fecha = YearMonth.of(anio, mes);
+
+        ConsultasCiudad.getPobYConsEnFecha(arbolCiudades, nombreCiudad, fecha);
+    }
+
+    /**
+     * Dadas dos subcadenas minNomb y maxNomb (nombres de ciudades), y dos volúmenes de agua (minVol y maxVol)
+     * devolver todas las ciudades cuyo nombre esté en el rango [minNomb, maxNomb] que en un mes y año determinado hayan
+     * consumido un volumen de agua en el rango [minVol, maxVol].
+     *
+     * @param arbolCiudades ArbolAVL
+     * @param sc Scanner
+     */
+    public static void consumoDeAguaEntreRangoDeNombres(ArbolAVL arbolCiudades, Scanner sc){
+
+        String nombreMin = Formulario.nombreCiudadValido(sc);
+        String nombreMax = Formulario.nombreCiudadValido(sc);
+        Double consumoMin = Validar.numeroRealNoNegativo(sc);
+        Double consumoMax = Validar.numeroRealNoNegativo(sc);
+        int anio = Formulario.generarAnioValido(sc);
+        int mes = Formulario.generarMesValido(sc);
+        YearMonth fecha = YearMonth.of(anio, mes);
+
+        ConsultasCiudad.getCiudadesEnRango(arbolCiudades, nombreMin, nombreMax, consumoMin, consumoMax, fecha);
+    }
+
+    /**
+     * Obtener el camino que llegue de A a B tal que el caudal pleno del camino completo sea el mínimo entre los
+     * caminos posibles. El caudal pleno es el caudal definido por la tubería más pequeña del camino.
+     * Decir en qué estado se encuentra el camino.
+     *
+     * @param arbolCiudades ArbolAVL
+     * @param grafoCiudades Grafo
+     * @param hashTuberias HashMap<ClaveTuberia, Tuberia>
+     * @param sc Scanner
+     */
+    public static void caminoDeAaBconCaudalPlenoMinimo(
+            ArbolAVL arbolCiudades,
+            HashMap<ClaveTuberia, Tuberia> hashTuberias,
+            Grafo grafoCiudades,
+            Scanner sc
+    ){
+        String ciudadOrigen = Formulario.nombreCiudadValido(sc);
+        String ciudadDestino = Formulario.nombreCiudadValido(sc);
+
+        ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades, grafoCiudades, hashTuberias, ciudadOrigen, ciudadDestino);
+    }
+
+    /**
+     * Obtener el camino que llegue de A a B pasando por la mínima cantidad de ciudades.
+     * Una vez obtenido el camino decir cuál es el estado.
+     *
+     * @param arbolCiudades ArbolAVL
+     * @param grafoCiudades Grafo
+     * @param hashTuberias HashMap<ClaveTuberia, Tuberia>
+     * @param sc Scanner
+     */
+    public static void caminoDeAaBconMenorRecorrido(
+            ArbolAVL arbolCiudades,
+            HashMap<ClaveTuberia, Tuberia> hashTuberias,
+            Grafo grafoCiudades,
+            Scanner sc
+    ){
+        String ciudadOrigen = Formulario.nombreCiudadValido(sc);
+        String ciudadDestino = Formulario.nombreCiudadValido(sc);
+
+        String resultadoCamino = ConsultasTuberia.getCaminoMasCorto(arbolCiudades, grafoCiudades, hashTuberias, ciudadOrigen, ciudadDestino);
+        System.out.println(resultadoCamino);
+    }
+
+    public static void ciudadesOrdenadasPorConsumoDeAgua(ArbolAVL arbolCiudades, Scanner sc){
+
+        int anio = Formulario.generarAnioValido(sc);
+
+        String ciudades = ConsultasCiudad.generarListaConsumoAnual(arbolCiudades, Year.of(anio));
+        System.out.println(ciudades);
+
     }
 
     /**

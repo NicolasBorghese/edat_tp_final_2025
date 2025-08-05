@@ -21,9 +21,9 @@ public class ConsultasTuberia {
     private static String REPARACIÓN = Estilos.RED;
     private static String BLUE = Estilos.BLUE;
 
-    public static String getCaminoConMayorCaudalPleno(ArbolAVL arbol, Grafo grafo, HashMap<ClaveTuberia, Tuberia> hash,
-            String cOrigen,
-            String cDestino) {
+    public static String getCaminoConMenorCaudalPleno(ArbolAVL arbol, Grafo grafo, HashMap<ClaveTuberia, Tuberia> hash,
+                                                      String cOrigen,
+                                                      String cDestino) {
         String retorno = BOLD + ERROR + "Una o ambas ciudades no existen" + RESET;
         double caudalPleno = Double.MAX_VALUE;
         String estado = ACTIVO + "ACTIVO" + RESET;

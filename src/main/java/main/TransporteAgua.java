@@ -8,7 +8,6 @@ import clases.Tuberia;
 import estructuras.grafos.Grafo;
 import funciones.GestorOperaciones;
 import validaciones.Validar;
-import funciones.CargaEstructuras;
 import mensajesPorConsola.Imprimir;
 import estructuras.conjuntistas.ArbolAVL;
 import java.util.HashMap;
@@ -181,14 +180,19 @@ public class TransporteAgua {
                 GestorOperaciones.modificarTuberia(arbolCiudades, hashTuberias, sc);
                 break;
             case 8:// 8. Cantidad habitantes y agua consumida por fecha
+                GestorOperaciones.cantidadHabitantesYAguaConsumidaPorFecha(arbolCiudades, sc);
                 break;
             case 9:// 9. Consumo de agua entre rango de nombres
+                GestorOperaciones.consumoDeAguaEntreRangoDeNombres(arbolCiudades, sc);
                 break;
             case 10:// 10. Camino de A a B con caudal pleno mínimo
+                GestorOperaciones.caminoDeAaBconCaudalPlenoMinimo(arbolCiudades, hashTuberias, grafoCiudades, sc);
                 break;
             case 11:// 11. Camino de A a B con menor recorrido
+                GestorOperaciones.caminoDeAaBconMenorRecorrido(arbolCiudades, hashTuberias, grafoCiudades, sc);
                 break;
             case 12:// 12. Ciudades ordenadas por consumo de agua
+                GestorOperaciones.ciudadesOrdenadasPorConsumoDeAgua(arbolCiudades, sc);
                 break;
             case 13:// 13. Visualizar arbolAVL de ciudades
                 GestorOperaciones.visualizarEstructuraArbolDeCiudades(arbolCiudades);

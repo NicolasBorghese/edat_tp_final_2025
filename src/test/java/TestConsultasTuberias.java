@@ -93,7 +93,7 @@ public class TestConsultasTuberias {
                                                 + BOLD + "Caudal: "
                                                 + RESET + BLUE + "123" + RESET);
                 System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
+                                + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Caviahue", "San Martín de los andes"));
                 // Camino con menor caudal pleno con Ciudad Origen inexistente.
 
@@ -103,7 +103,7 @@ public class TestConsultasTuberias {
                 System.out.println(
                                 BOLD + "Predicción: \n" + RED + "Una o ambas ciudades inexistentes." + RESET);
                 System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
+                                + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Springfield", "San Martín de los andes"));
                 // Camino con menor caudal pleno con Ciudad Destino inexistente.
                 System.out.println(
@@ -113,7 +113,7 @@ public class TestConsultasTuberias {
                 System.out.println(
                                 BOLD + "Predicción: \n" + RED + "Una o ambas ciudades inexistentes." + RESET);
                 System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
+                                + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Caviahue", "Springfield"));
                 // Camino con menor caudal pleno con ambas Ciudades inexistentes.
 
@@ -123,7 +123,7 @@ public class TestConsultasTuberias {
                 System.out.println(
                                 BOLD + "Predicción: \n" + RED + "Una o ambas ciudades inexistentes." + RESET);
                 System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
+                                + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Springfield", "South Park"));
                 // Camino con menor caudal pleno entre ciudades no conectadas.
 
@@ -132,7 +132,7 @@ public class TestConsultasTuberias {
                 System.out.println(
                                 BOLD + "Predicción: \n" + RED + "Camino inexistente." + RESET);
                 System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
+                                + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Bariloche", "Caviahue"));
                 // TESTEANDO.
                 System.out.println("");
