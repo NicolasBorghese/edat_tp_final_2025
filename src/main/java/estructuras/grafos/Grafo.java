@@ -3,7 +3,6 @@ package estructuras.grafos;
 import estructuras.lineales.dinamicas.Cola;
 import estructuras.lineales.dinamicas.Lista;
 
-// Grafo Dirigido, Etiquetado, NO permite ciclos, con listas de Adyacencia.
 public class Grafo {
     private NodoVert inicio;
 
@@ -21,7 +20,6 @@ public class Grafo {
                 insertado = true;
             }
         }
-
         return insertado;
     }
 
@@ -50,7 +48,7 @@ public class Grafo {
                     anterior.setSigVertice(actual.getSigVertice());
                 }
                 eliminado = true;
-                // Sigo recorriendo para eliminar el resto de arcos.
+                // Sigue recorriendo para eliminar el resto de arcos.
                 if (anterior == null) {
                     actual = this.inicio;
                 } else {
@@ -68,7 +66,6 @@ public class Grafo {
     private void eliminarVerticeAux(NodoVert origen, Object vertAEliminar) {
         NodoAdy actual = origen.getPrimerAdy();
         NodoAdy anterior = null;
-
         while (actual != null) {
             if (actual.getVertice().getElemento().equals(vertAEliminar)) {
                 // Es el que quiero eliminar.
@@ -77,12 +74,10 @@ public class Grafo {
                     origen.setPrimerAdy(actual.getSigAdyacente());
                     actual = origen.getPrimerAdy();
                 } else {
-                    // No es el primer ady.
                     anterior.setSigAdyacente(actual.getSigAdyacente());
                     actual = anterior.getSigAdyacente();
                 }
             } else {
-                // No es el que hay que eliminar.
                 anterior = actual;
                 actual = actual.getSigAdyacente();
             }
@@ -107,8 +102,8 @@ public class Grafo {
 
     public boolean eliminarArco(Object ori, Object dest) {
         /*
-         * Como suponemos, por ahora, que solo hay un arco entre 2 vertices no importa
-         * la etiqueta.
+         * Como suponemos, por ahora, que solo se puede poner un arco entre 2 vertices,
+         * asi que, no importa la etiqueta.
          */
         boolean eliminado = false;
         NodoVert origen = ubicarVertice(ori);
@@ -137,10 +132,12 @@ public class Grafo {
     }
 
     public boolean existeArco(Object origen, Object destino, Object etiqueta) {
-        // Para que exista el arco tiene que:
-        // Existir el vertice de Origen y Destino.
-        // Existir una relación entre los 2.
-        // Que esa relación tenga la misma etiqueta.
+        /*
+         * Para que exista el arco tiene que:
+         * - Existir el vertice de Origen y Destino.
+         * - Existir una relación entre los 2.
+         * - Que esa relación tenga la misma etiqueta.
+         */
         boolean existe = false;
         NodoVert nOrigen = ubicarVertice(origen);
         NodoVert nDestino = ubicarVertice(destino);
@@ -264,27 +261,30 @@ public class Grafo {
         return this.inicio == null;
     }
 
+    /**
+     * Retorna una lista con el camino de vértices más corto entre 2 vértices (si
+     * existen)
+     * 
+     * @param origen
+     * @param destino
+     * @return
+     */
     public Lista caminoMasCorto(Object origen, Object destino) {
         NodoVert vOrigen = ubicarVertice(origen);
         NodoVert vDestino = ubicarVertice(destino);
-        Lista caminoMasCorto = new Lista();
+        Lista[] caminoMasCorto = { new Lista() };
         if (vOrigen != null && vDestino != null) {
             Lista caminoActual = new Lista();
             caminoMasCortoAux(vOrigen, vDestino, caminoActual, caminoMasCorto);
         }
-        return caminoMasCorto;
+        return caminoMasCorto[0];
     }
 
-    private void caminoMasCortoAux(NodoVert actual, NodoVert destino, Lista caminoActual, Lista caminoMasCorto) {
+    private void caminoMasCortoAux(NodoVert actual, NodoVert destino, Lista caminoActual, Lista[] caminoMasCorto) {
         caminoActual.insertar(actual.getElemento(), caminoActual.longitud() + 1);
-        if (caminoMasCorto.esVacia() || caminoMasCorto.longitud() >= caminoActual.longitud()) {
+        if (caminoMasCorto[0].esVacia() || caminoMasCorto[0].longitud() > caminoActual.longitud()) {
             if (actual.getElemento().equals(destino.getElemento())) {
-                if (caminoMasCorto.esVacia() || caminoMasCorto.longitud() > caminoActual.longitud()) {
-                    caminoMasCorto.vaciar();
-                    for (int i = 1; i <= caminoActual.longitud(); i++) {
-                        caminoMasCorto.insertar(caminoActual.recuperar(i), i);
-                    }
-                }
+                caminoMasCorto[0] = caminoActual.clone();
             } else {
                 NodoAdy ady = actual.getPrimerAdy();
                 while (ady != null) {
@@ -295,32 +295,36 @@ public class Grafo {
                 }
             }
         }
-
         caminoActual.eliminar(caminoActual.longitud());
     }
 
+    /**
+     * Retorna una lista con el camino entre 2 vértices (si existen) que tiene la
+     * etiqueta más pequeña entre todos los caminos.
+     * 
+     * @param origen
+     * @param destino
+     * @return
+     */
     public Lista caminoMasLiviano(Object origen, Object destino) {
         NodoVert vOrigen = ubicarVertice(origen);
         NodoVert vDestino = ubicarVertice(destino);
-        Lista caminoMasLiviano = new Lista();
+        Lista[] caminoMasLiviano = { new Lista() };
         if (vOrigen != null && vDestino != null) {
             Lista caminoActual = new Lista();
-            double[] pesoMin = { Integer.MAX_VALUE };
+            double[] pesoMin = { Double.MAX_VALUE };
             caminoMasLivianoAux(vOrigen, vDestino, caminoActual, caminoMasLiviano, -1, pesoMin);
         }
-        return caminoMasLiviano;
+        return caminoMasLiviano[0];
     }
 
-    private void caminoMasLivianoAux(NodoVert actual, NodoVert destino, Lista caminoActual, Lista caminoMasLiviano,
+    private void caminoMasLivianoAux(NodoVert actual, NodoVert destino, Lista caminoActual, Lista[] caminoMasLiviano,
             double pesoActual, double[] pesoMin) {
         caminoActual.insertar(actual.getElemento(), caminoActual.longitud() + 1);
         if (actual.getElemento().equals(destino.getElemento())) {
             if (pesoActual < pesoMin[0]) {
                 pesoMin[0] = pesoActual;
-                caminoMasLiviano.vaciar();
-                for (int i = 1; i <= caminoActual.longitud(); i++) {
-                    caminoMasLiviano.insertar(caminoActual.recuperar(i), i);
-                }
+                caminoMasLiviano[0] = caminoActual.clone();
             }
         } else {
             NodoAdy ady = actual.getPrimerAdy();

@@ -88,7 +88,7 @@ public class TestConsultasTuberias {
 
                 System.out.println(
                                 BOLD + "Predicción: \n" + "Camino:" + YELLOW
-                                                + "Caviahue->Neuquén->Cipolletti->Allen->Chocón->Bariloche->San Martín. \n"
+                                                + "Caviahue->Neuquén->Cipolletti->Allen->Viedma ->Chocón->Bariloche->San Martín. \n"
                                                 + RESET + BOLD + "Estado: " + RESET + CYAN + "EN DISEÑO \n" + RESET
                                                 + BOLD + "Caudal: "
                                                 + RESET + BLUE + "123" + RESET);
@@ -116,9 +116,9 @@ public class TestConsultasTuberias {
                                 + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Caviahue", "Springfield"));
                 // Camino con menor caudal pleno con ambas Ciudades inexistentes.
-
+          
                 System.out.println(BOLD + PURPLE + "Camino con menor caudal pleno entre Springfield y South Park."
-                                   
+
                                 + RESET);
                 System.out.println(
                                 BOLD + "Predicción: \n" + RED + "Una o ambas ciudades inexistentes." + RESET);
