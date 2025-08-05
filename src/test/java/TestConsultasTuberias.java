@@ -32,7 +32,8 @@ public class TestConsultasTuberias {
                 ArbolAVL arbolCiudades = new ArbolAVL();
                 HashMap<ClaveTuberia, Tuberia> hashTuberias = new HashMap<>();
                 Grafo grafoCiudades = new Grafo();
-                String rutaTuberias = "src/main/java/datos/registro_tuberia2.txt";
+
+                String rutaTuberias = "src/main/java/datos/seed_tuberia.txt";
 
                 GestorOperaciones.cargarEstructurasCompleto(
                                 arbolCiudades,
@@ -82,7 +83,9 @@ public class TestConsultasTuberias {
                                 grafoCiudades, hashTuberias, "Bariloche", "Caviahue"));
                 // Camino con menor caudal pleno entre Caviahue y San Martín.
                 System.out.println(
+
                                 BOLD + PURPLE + "Camino con menor caudal pleno entre Caviahue y San Martín." + RESET);
+
                 System.out.println(
                                 BOLD + "Predicción: \n" + "Camino:" + YELLOW
                                                 + "Caviahue->Neuquén->Cipolletti->Allen->Viedma ->Chocón->Bariloche->San Martín. \n"
@@ -90,38 +93,46 @@ public class TestConsultasTuberias {
                                                 + BOLD + "Caudal: "
                                                 + RESET + BLUE + "123" + RESET);
                 System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
+                                + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Caviahue", "San Martín de los andes"));
                 // Camino con menor caudal pleno con Ciudad Origen inexistente.
+
                 System.out.println(BOLD + PURPLE + "Camino con menor caudal pleno entre Springfield y San Martín."
+
                                 + RESET);
                 System.out.println(
                                 BOLD + "Predicción: \n" + RED + "Una o ambas ciudades inexistentes." + RESET);
                 System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
+                                + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Springfield", "San Martín de los andes"));
                 // Camino con menor caudal pleno con Ciudad Destino inexistente.
                 System.out.println(
+
                                 BOLD + PURPLE + "Camino con menor caudal pleno entre Caviahue y Springfield." + RESET);
+
                 System.out.println(
                                 BOLD + "Predicción: \n" + RED + "Una o ambas ciudades inexistentes." + RESET);
                 System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
+                                + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Caviahue", "Springfield"));
                 // Camino con menor caudal pleno con ambas Ciudades inexistentes.
+          
                 System.out.println(BOLD + PURPLE + "Camino con menor caudal pleno entre Springfield y South Park."
+
                                 + RESET);
                 System.out.println(
                                 BOLD + "Predicción: \n" + RED + "Una o ambas ciudades inexistentes." + RESET);
                 System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
+                                + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Springfield", "South Park"));
                 // Camino con menor caudal pleno entre ciudades no conectadas.
+
                 System.out.println(BOLD + PURPLE + "Camino con menor caudal pleno entre Bariloche y Caviahue." + RESET);
+
                 System.out.println(
                                 BOLD + "Predicción: \n" + RED + "Camino inexistente." + RESET);
                 System.out.println(BOLD + "Resultado: \n" + RESET
-                                + ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades,
+                                + ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades,
                                                 grafoCiudades, hashTuberias, "Bariloche", "Caviahue"));
                 // TESTEANDO.
                 System.out.println("");
@@ -129,6 +140,7 @@ public class TestConsultasTuberias {
                 System.out.println(BOLD + GREEN
                                 + "Todas las consultas que se hacen a las tuberías están testeadas y funcionan \n :)"
                                 + RESET);
+
         }
 
 }

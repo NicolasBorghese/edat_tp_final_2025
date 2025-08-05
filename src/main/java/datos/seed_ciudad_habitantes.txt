@@ -458,236 +458,236 @@ Cipolletti;2025-04;109657
 Cipolletti;2025-05;109861
 Cipolletti;2025-06;110080
 Cipolletti;2025-07;110323
-El Bolsón;2016-01;19000
-El Bolsón;2016-02;19032
-El Bolsón;2016-03;19081
-El Bolsón;2016-04;19137
-El Bolsón;2016-05;19187
-El Bolsón;2016-06;19217
-El Bolsón;2016-07;19256
-El Bolsón;2016-08;19309
-El Bolsón;2016-09;19352
-El Bolsón;2016-10;19398
-El Bolsón;2016-11;19430
-El Bolsón;2016-12;19479
-El Bolsón;2017-01;19531
-El Bolsón;2017-02;19588
-El Bolsón;2017-03;19630
-El Bolsón;2017-04;19686
-El Bolsón;2017-05;19719
-El Bolsón;2017-06;19762
-El Bolsón;2017-07;19807
-El Bolsón;2017-08;19865
-El Bolsón;2017-09;19907
-El Bolsón;2017-10;19965
-El Bolsón;2017-11;20013
-El Bolsón;2017-12;20047
-El Bolsón;2018-01;20088
-El Bolsón;2018-02;20133
-El Bolsón;2018-03;20188
-El Bolsón;2018-04;20243
-El Bolsón;2018-05;20288
-El Bolsón;2018-06;20338
-El Bolsón;2018-07;20374
-El Bolsón;2018-08;20407
-El Bolsón;2018-09;20437
-El Bolsón;2018-10;20496
-El Bolsón;2018-11;20555
-El Bolsón;2018-12;20590
-El Bolsón;2019-01;20643
-El Bolsón;2019-02;20699
-El Bolsón;2019-03;20739
-El Bolsón;2019-04;20791
-El Bolsón;2019-05;20826
-El Bolsón;2019-06;20860
-El Bolsón;2019-07;20892
-El Bolsón;2019-08;20942
-El Bolsón;2019-09;20982
-El Bolsón;2019-10;21038
-El Bolsón;2019-11;21088
-El Bolsón;2019-12;21145
-El Bolsón;2020-01;21177
-El Bolsón;2020-02;21232
-El Bolsón;2020-03;21268
-El Bolsón;2020-04;21312
-El Bolsón;2020-05;21347
-El Bolsón;2020-06;21394
-El Bolsón;2020-07;21449
-El Bolsón;2020-08;21496
-El Bolsón;2020-09;21550
-El Bolsón;2020-10;21584
-El Bolsón;2020-11;21633
-El Bolsón;2020-12;21693
-El Bolsón;2021-01;21752
-El Bolsón;2021-02;21804
-El Bolsón;2021-03;21860
-El Bolsón;2021-04;21904
-El Bolsón;2021-05;21954
-El Bolsón;2021-06;21989
-El Bolsón;2021-07;22049
-El Bolsón;2021-08;22083
-El Bolsón;2021-09;22117
-El Bolsón;2021-10;22179
-El Bolsón;2021-11;22231
-El Bolsón;2021-12;22275
-El Bolsón;2022-01;22313
-El Bolsón;2022-02;22358
-El Bolsón;2022-03;22394
-El Bolsón;2022-04;22428
-El Bolsón;2022-05;22462
-El Bolsón;2022-06;22503
-El Bolsón;2022-07;22547
-El Bolsón;2022-08;22592
-El Bolsón;2022-09;22638
-El Bolsón;2022-10;22701
-El Bolsón;2022-11;22748
-El Bolsón;2022-12;22794
-El Bolsón;2023-01;22842
-El Bolsón;2023-02;22878
-El Bolsón;2023-03;22941
-El Bolsón;2023-04;22994
-El Bolsón;2023-05;23046
-El Bolsón;2023-06;23084
-El Bolsón;2023-07;23142
-El Bolsón;2023-08;23194
-El Bolsón;2023-09;23255
-El Bolsón;2023-10;23298
-El Bolsón;2023-11;23362
-El Bolsón;2023-12;23423
-El Bolsón;2024-01;23468
-El Bolsón;2024-02;23529
-El Bolsón;2024-03;23595
-El Bolsón;2024-04;23633
-El Bolsón;2024-05;23688
-El Bolsón;2024-06;23733
-El Bolsón;2024-07;23776
-El Bolsón;2024-08;23816
-El Bolsón;2024-09;23878
-El Bolsón;2024-10;23935
-El Bolsón;2024-11;23989
-El Bolsón;2024-12;24038
-El Bolsón;2025-01;24086
-El Bolsón;2025-02;24152
-El Bolsón;2025-03;24213
-El Bolsón;2025-04;24254
-El Bolsón;2025-05;24316
-El Bolsón;2025-06;24374
-El Bolsón;2025-07;24440
-Junín de los Andes;2016-01;13000
-Junín de los Andes;2016-02;13018
-Junín de los Andes;2016-03;13042
-Junín de los Andes;2016-04;13061
-Junín de los Andes;2016-05;13084
-Junín de los Andes;2016-06;13101
-Junín de los Andes;2016-07;13132
-Junín de los Andes;2016-08;13149
-Junín de los Andes;2016-09;13179
-Junín de los Andes;2016-10;13197
-Junín de los Andes;2016-11;13229
-Junín de los Andes;2016-12;13260
-Junín de los Andes;2017-01;13281
-Junín de los Andes;2017-02;13300
-Junín de los Andes;2017-03;13326
-Junín de los Andes;2017-04;13357
-Junín de los Andes;2017-05;13385
-Junín de los Andes;2017-06;13403
-Junín de los Andes;2017-07;13427
-Junín de los Andes;2017-08;13459
-Junín de los Andes;2017-09;13491
-Junín de los Andes;2017-10;13526
-Junín de los Andes;2017-11;13557
-Junín de los Andes;2017-12;13585
-Junín de los Andes;2018-01;13619
-Junín de los Andes;2018-02;13651
-Junín de los Andes;2018-03;13670
-Junín de los Andes;2018-04;13697
-Junín de los Andes;2018-05;13721
-Junín de los Andes;2018-06;13755
-Junín de los Andes;2018-07;13782
-Junín de los Andes;2018-08;13806
-Junín de los Andes;2018-09;13828
-Junín de los Andes;2018-10;13857
-Junín de los Andes;2018-11;13892
-Junín de los Andes;2018-12;13927
-Junín de los Andes;2019-01;13958
-Junín de los Andes;2019-02;13990
-Junín de los Andes;2019-03;14011
-Junín de los Andes;2019-04;14030
-Junín de los Andes;2019-05;14058
-Junín de los Andes;2019-06;14094
-Junín de los Andes;2019-07;14114
-Junín de los Andes;2019-08;14146
-Junín de los Andes;2019-09;14169
-Junín de los Andes;2019-10;14198
-Junín de los Andes;2019-11;14224
-Junín de los Andes;2019-12;14247
-Junín de los Andes;2020-01;14277
-Junín de los Andes;2020-02;14298
-Junín de los Andes;2020-03;14317
-Junín de los Andes;2020-04;14344
-Junín de los Andes;2020-05;14371
-Junín de los Andes;2020-06;14405
-Junín de los Andes;2020-07;14436
-Junín de los Andes;2020-08;14464
-Junín de los Andes;2020-09;14490
-Junín de los Andes;2020-10;14517
-Junín de los Andes;2020-11;14546
-Junín de los Andes;2020-12;14580
-Junín de los Andes;2021-01;14603
-Junín de los Andes;2021-02;14627
-Junín de los Andes;2021-03;14658
-Junín de los Andes;2021-04;14688
-Junín de los Andes;2021-05;14713
-Junín de los Andes;2021-06;14740
-Junín de los Andes;2021-07;14766
-Junín de los Andes;2021-08;14801
-Junín de los Andes;2021-09;14820
-Junín de los Andes;2021-10;14842
-Junín de los Andes;2021-11;14864
-Junín de los Andes;2021-12;14887
-Junín de los Andes;2022-01;14923
-Junín de los Andes;2022-02;14948
-Junín de los Andes;2022-03;14981
-Junín de los Andes;2022-04;15011
-Junín de los Andes;2022-05;15030
-Junín de los Andes;2022-06;15068
-Junín de los Andes;2022-07;15103
-Junín de los Andes;2022-08;15128
-Junín de los Andes;2022-09;15159
-Junín de los Andes;2022-10;15181
-Junín de los Andes;2022-11;15203
-Junín de los Andes;2022-12;15227
-Junín de los Andes;2023-01;15264
-Junín de los Andes;2023-02;15294
-Junín de los Andes;2023-03;15319
-Junín de los Andes;2023-04;15347
-Junín de los Andes;2023-05;15384
-Junín de los Andes;2023-06;15409
-Junín de los Andes;2023-07;15430
-Junín de los Andes;2023-08;15461
-Junín de los Andes;2023-09;15492
-Junín de los Andes;2023-10;15528
-Junín de los Andes;2023-11;15566
-Junín de los Andes;2023-12;15593
-Junín de los Andes;2024-01;15621
-Junín de los Andes;2024-02;15647
-Junín de los Andes;2024-03;15667
-Junín de los Andes;2024-04;15689
-Junín de los Andes;2024-05;15721
-Junín de los Andes;2024-06;15757
-Junín de los Andes;2024-07;15777
-Junín de los Andes;2024-08;15802
-Junín de los Andes;2024-09;15827
-Junín de los Andes;2024-10;15858
-Junín de los Andes;2024-11;15890
-Junín de los Andes;2024-12;15922
-Junín de los Andes;2025-01;15956
-Junín de los Andes;2025-02;15991
-Junín de los Andes;2025-03;16021
-Junín de los Andes;2025-04;16045
-Junín de los Andes;2025-05;16068
-Junín de los Andes;2025-06;16090
-Junín de los Andes;2025-07;16128
+El Bolson;2016-01;19000
+El Bolson;2016-02;19032
+El Bolson;2016-03;19081
+El Bolson;2016-04;19137
+El Bolson;2016-05;19187
+El Bolson;2016-06;19217
+El Bolson;2016-07;19256
+El Bolson;2016-08;19309
+El Bolson;2016-09;19352
+El Bolson;2016-10;19398
+El Bolson;2016-11;19430
+El Bolson;2016-12;19479
+El Bolson;2017-01;19531
+El Bolson;2017-02;19588
+El Bolson;2017-03;19630
+El Bolson;2017-04;19686
+El Bolson;2017-05;19719
+El Bolson;2017-06;19762
+El Bolson;2017-07;19807
+El Bolson;2017-08;19865
+El Bolson;2017-09;19907
+El Bolson;2017-10;19965
+El Bolson;2017-11;20013
+El Bolson;2017-12;20047
+El Bolson;2018-01;20088
+El Bolson;2018-02;20133
+El Bolson;2018-03;20188
+El Bolson;2018-04;20243
+El Bolson;2018-05;20288
+El Bolson;2018-06;20338
+El Bolson;2018-07;20374
+El Bolson;2018-08;20407
+El Bolson;2018-09;20437
+El Bolson;2018-10;20496
+El Bolson;2018-11;20555
+El Bolson;2018-12;20590
+El Bolson;2019-01;20643
+El Bolson;2019-02;20699
+El Bolson;2019-03;20739
+El Bolson;2019-04;20791
+El Bolson;2019-05;20826
+El Bolson;2019-06;20860
+El Bolson;2019-07;20892
+El Bolson;2019-08;20942
+El Bolson;2019-09;20982
+El Bolson;2019-10;21038
+El Bolson;2019-11;21088
+El Bolson;2019-12;21145
+El Bolson;2020-01;21177
+El Bolson;2020-02;21232
+El Bolson;2020-03;21268
+El Bolson;2020-04;21312
+El Bolson;2020-05;21347
+El Bolson;2020-06;21394
+El Bolson;2020-07;21449
+El Bolson;2020-08;21496
+El Bolson;2020-09;21550
+El Bolson;2020-10;21584
+El Bolson;2020-11;21633
+El Bolson;2020-12;21693
+El Bolson;2021-01;21752
+El Bolson;2021-02;21804
+El Bolson;2021-03;21860
+El Bolson;2021-04;21904
+El Bolson;2021-05;21954
+El Bolson;2021-06;21989
+El Bolson;2021-07;22049
+El Bolson;2021-08;22083
+El Bolson;2021-09;22117
+El Bolson;2021-10;22179
+El Bolson;2021-11;22231
+El Bolson;2021-12;22275
+El Bolson;2022-01;22313
+El Bolson;2022-02;22358
+El Bolson;2022-03;22394
+El Bolson;2022-04;22428
+El Bolson;2022-05;22462
+El Bolson;2022-06;22503
+El Bolson;2022-07;22547
+El Bolson;2022-08;22592
+El Bolson;2022-09;22638
+El Bolson;2022-10;22701
+El Bolson;2022-11;22748
+El Bolson;2022-12;22794
+El Bolson;2023-01;22842
+El Bolson;2023-02;22878
+El Bolson;2023-03;22941
+El Bolson;2023-04;22994
+El Bolson;2023-05;23046
+El Bolson;2023-06;23084
+El Bolson;2023-07;23142
+El Bolson;2023-08;23194
+El Bolson;2023-09;23255
+El Bolson;2023-10;23298
+El Bolson;2023-11;23362
+El Bolson;2023-12;23423
+El Bolson;2024-01;23468
+El Bolson;2024-02;23529
+El Bolson;2024-03;23595
+El Bolson;2024-04;23633
+El Bolson;2024-05;23688
+El Bolson;2024-06;23733
+El Bolson;2024-07;23776
+El Bolson;2024-08;23816
+El Bolson;2024-09;23878
+El Bolson;2024-10;23935
+El Bolson;2024-11;23989
+El Bolson;2024-12;24038
+El Bolson;2025-01;24086
+El Bolson;2025-02;24152
+El Bolson;2025-03;24213
+El Bolson;2025-04;24254
+El Bolson;2025-05;24316
+El Bolson;2025-06;24374
+El Bolson;2025-07;24440
+Junin de los Andes;2016-01;13000
+Junin de los Andes;2016-02;13018
+Junin de los Andes;2016-03;13042
+Junin de los Andes;2016-04;13061
+Junin de los Andes;2016-05;13084
+Junin de los Andes;2016-06;13101
+Junin de los Andes;2016-07;13132
+Junin de los Andes;2016-08;13149
+Junin de los Andes;2016-09;13179
+Junin de los Andes;2016-10;13197
+Junin de los Andes;2016-11;13229
+Junin de los Andes;2016-12;13260
+Junin de los Andes;2017-01;13281
+Junin de los Andes;2017-02;13300
+Junin de los Andes;2017-03;13326
+Junin de los Andes;2017-04;13357
+Junin de los Andes;2017-05;13385
+Junin de los Andes;2017-06;13403
+Junin de los Andes;2017-07;13427
+Junin de los Andes;2017-08;13459
+Junin de los Andes;2017-09;13491
+Junin de los Andes;2017-10;13526
+Junin de los Andes;2017-11;13557
+Junin de los Andes;2017-12;13585
+Junin de los Andes;2018-01;13619
+Junin de los Andes;2018-02;13651
+Junin de los Andes;2018-03;13670
+Junin de los Andes;2018-04;13697
+Junin de los Andes;2018-05;13721
+Junin de los Andes;2018-06;13755
+Junin de los Andes;2018-07;13782
+Junin de los Andes;2018-08;13806
+Junin de los Andes;2018-09;13828
+Junin de los Andes;2018-10;13857
+Junin de los Andes;2018-11;13892
+Junin de los Andes;2018-12;13927
+Junin de los Andes;2019-01;13958
+Junin de los Andes;2019-02;13990
+Junin de los Andes;2019-03;14011
+Junin de los Andes;2019-04;14030
+Junin de los Andes;2019-05;14058
+Junin de los Andes;2019-06;14094
+Junin de los Andes;2019-07;14114
+Junin de los Andes;2019-08;14146
+Junin de los Andes;2019-09;14169
+Junin de los Andes;2019-10;14198
+Junin de los Andes;2019-11;14224
+Junin de los Andes;2019-12;14247
+Junin de los Andes;2020-01;14277
+Junin de los Andes;2020-02;14298
+Junin de los Andes;2020-03;14317
+Junin de los Andes;2020-04;14344
+Junin de los Andes;2020-05;14371
+Junin de los Andes;2020-06;14405
+Junin de los Andes;2020-07;14436
+Junin de los Andes;2020-08;14464
+Junin de los Andes;2020-09;14490
+Junin de los Andes;2020-10;14517
+Junin de los Andes;2020-11;14546
+Junin de los Andes;2020-12;14580
+Junin de los Andes;2021-01;14603
+Junin de los Andes;2021-02;14627
+Junin de los Andes;2021-03;14658
+Junin de los Andes;2021-04;14688
+Junin de los Andes;2021-05;14713
+Junin de los Andes;2021-06;14740
+Junin de los Andes;2021-07;14766
+Junin de los Andes;2021-08;14801
+Junin de los Andes;2021-09;14820
+Junin de los Andes;2021-10;14842
+Junin de los Andes;2021-11;14864
+Junin de los Andes;2021-12;14887
+Junin de los Andes;2022-01;14923
+Junin de los Andes;2022-02;14948
+Junin de los Andes;2022-03;14981
+Junin de los Andes;2022-04;15011
+Junin de los Andes;2022-05;15030
+Junin de los Andes;2022-06;15068
+Junin de los Andes;2022-07;15103
+Junin de los Andes;2022-08;15128
+Junin de los Andes;2022-09;15159
+Junin de los Andes;2022-10;15181
+Junin de los Andes;2022-11;15203
+Junin de los Andes;2022-12;15227
+Junin de los Andes;2023-01;15264
+Junin de los Andes;2023-02;15294
+Junin de los Andes;2023-03;15319
+Junin de los Andes;2023-04;15347
+Junin de los Andes;2023-05;15384
+Junin de los Andes;2023-06;15409
+Junin de los Andes;2023-07;15430
+Junin de los Andes;2023-08;15461
+Junin de los Andes;2023-09;15492
+Junin de los Andes;2023-10;15528
+Junin de los Andes;2023-11;15566
+Junin de los Andes;2023-12;15593
+Junin de los Andes;2024-01;15621
+Junin de los Andes;2024-02;15647
+Junin de los Andes;2024-03;15667
+Junin de los Andes;2024-04;15689
+Junin de los Andes;2024-05;15721
+Junin de los Andes;2024-06;15757
+Junin de los Andes;2024-07;15777
+Junin de los Andes;2024-08;15802
+Junin de los Andes;2024-09;15827
+Junin de los Andes;2024-10;15858
+Junin de los Andes;2024-11;15890
+Junin de los Andes;2024-12;15922
+Junin de los Andes;2025-01;15956
+Junin de los Andes;2025-02;15991
+Junin de los Andes;2025-03;16021
+Junin de los Andes;2025-04;16045
+Junin de los Andes;2025-05;16068
+Junin de los Andes;2025-06;16090
+Junin de los Andes;2025-07;16128
 Las Grutas;2016-01;8500
 Las Grutas;2016-02;8511
 Las Grutas;2016-03;8527
@@ -803,121 +803,121 @@ Las Grutas;2025-04;10285
 Las Grutas;2025-05;10300
 Las Grutas;2025-06;10324
 Las Grutas;2025-07;10343
-Neuquén;2016-01;300000
-Neuquén;2016-02;300650
-Neuquén;2016-03;301351
-Neuquén;2016-04;302048
-Neuquén;2016-05;302778
-Neuquén;2016-06;303437
-Neuquén;2016-07;304155
-Neuquén;2016-08;304878
-Neuquén;2016-09;305570
-Neuquén;2016-10;306265
-Neuquén;2016-11;307020
-Neuquén;2016-12;307780
-Neuquén;2017-01;308518
-Neuquén;2017-02;309225
-Neuquén;2017-03;309921
-Neuquén;2017-04;310626
-Neuquén;2017-05;311353
-Neuquén;2017-06;312031
-Neuquén;2017-07;312757
-Neuquén;2017-08;313447
-Neuquén;2017-09;314191
-Neuquén;2017-10;314926
-Neuquén;2017-11;315614
-Neuquén;2017-12;316392
-Neuquén;2018-01;317172
-Neuquén;2018-02;317917
-Neuquén;2018-03;318624
-Neuquén;2018-04;319362
-Neuquén;2018-05;320078
-Neuquén;2018-06;320852
-Neuquén;2018-07;321633
-Neuquén;2018-08;322345
-Neuquén;2018-09;323111
-Neuquén;2018-10;323888
-Neuquén;2018-11;324642
-Neuquén;2018-12;325385
-Neuquén;2019-01;326156
-Neuquén;2019-02;326963
-Neuquén;2019-03;327712
-Neuquén;2019-04;328474
-Neuquén;2019-05;329286
-Neuquén;2019-06;330084
-Neuquén;2019-07;330832
-Neuquén;2019-08;331630
-Neuquén;2019-09;332442
-Neuquén;2019-10;333216
-Neuquén;2019-11;334004
-Neuquén;2019-12;334829
-Neuquén;2020-01;335610
-Neuquén;2020-02;336378
-Neuquén;2020-03;337207
-Neuquén;2020-04;338029
-Neuquén;2020-05;338844
-Neuquén;2020-06;339612
-Neuquén;2020-07;340403
-Neuquén;2020-08;341225
-Neuquén;2020-09;341973
-Neuquén;2020-10;342747
-Neuquén;2020-11;343498
-Neuquén;2020-12;344257
-Neuquén;2021-01;345063
-Neuquén;2021-02;345832
-Neuquén;2021-03;346660
-Neuquén;2021-04;347433
-Neuquén;2021-05;348275
-Neuquén;2021-06;349123
-Neuquén;2021-07;349953
-Neuquén;2021-08;350750
-Neuquén;2021-09;351521
-Neuquén;2021-10;352341
-Neuquén;2021-11;353176
-Neuquén;2021-12;354024
-Neuquén;2022-01;354840
-Neuquén;2022-02;355690
-Neuquén;2022-03;356490
-Neuquén;2022-04;357323
-Neuquén;2022-05;358183
-Neuquén;2022-06;359060
-Neuquén;2022-07;359919
-Neuquén;2022-08;360721
-Neuquén;2022-09;361517
-Neuquén;2022-10;362311
-Neuquén;2022-11;363107
-Neuquén;2022-12;363957
-Neuquén;2023-01;364778
-Neuquén;2023-02;365642
-Neuquén;2023-03;366537
-Neuquén;2023-04;367406
-Neuquén;2023-05;368237
-Neuquén;2023-06;369135
-Neuquén;2023-07;369975
-Neuquén;2023-08;370834
-Neuquén;2023-09;371706
-Neuquén;2023-10;372570
-Neuquén;2023-11;373404
-Neuquén;2023-12;374242
-Neuquén;2024-01;375066
-Neuquén;2024-02;375969
-Neuquén;2024-03;376884
-Neuquén;2024-04;377751
-Neuquén;2024-05;378639
-Neuquén;2024-06;379490
-Neuquén;2024-07;380342
-Neuquén;2024-08;381245
-Neuquén;2024-09;382081
-Neuquén;2024-10;382923
-Neuquén;2024-11;383774
-Neuquén;2024-12;384705
-Neuquén;2025-01;385594
-Neuquén;2025-02;386473
-Neuquén;2025-03;387369
-Neuquén;2025-04;388296
-Neuquén;2025-05;389238
-Neuquén;2025-06;390137
-Neuquén;2025-07;391020
+Neuquen;2016-01;300000
+Neuquen;2016-02;300650
+Neuquen;2016-03;301351
+Neuquen;2016-04;302048
+Neuquen;2016-05;302778
+Neuquen;2016-06;303437
+Neuquen;2016-07;304155
+Neuquen;2016-08;304878
+Neuquen;2016-09;305570
+Neuquen;2016-10;306265
+Neuquen;2016-11;307020
+Neuquen;2016-12;307780
+Neuquen;2017-01;308518
+Neuquen;2017-02;309225
+Neuquen;2017-03;309921
+Neuquen;2017-04;310626
+Neuquen;2017-05;311353
+Neuquen;2017-06;312031
+Neuquen;2017-07;312757
+Neuquen;2017-08;313447
+Neuquen;2017-09;314191
+Neuquen;2017-10;314926
+Neuquen;2017-11;315614
+Neuquen;2017-12;316392
+Neuquen;2018-01;317172
+Neuquen;2018-02;317917
+Neuquen;2018-03;318624
+Neuquen;2018-04;319362
+Neuquen;2018-05;320078
+Neuquen;2018-06;320852
+Neuquen;2018-07;321633
+Neuquen;2018-08;322345
+Neuquen;2018-09;323111
+Neuquen;2018-10;323888
+Neuquen;2018-11;324642
+Neuquen;2018-12;325385
+Neuquen;2019-01;326156
+Neuquen;2019-02;326963
+Neuquen;2019-03;327712
+Neuquen;2019-04;328474
+Neuquen;2019-05;329286
+Neuquen;2019-06;330084
+Neuquen;2019-07;330832
+Neuquen;2019-08;331630
+Neuquen;2019-09;332442
+Neuquen;2019-10;333216
+Neuquen;2019-11;334004
+Neuquen;2019-12;334829
+Neuquen;2020-01;335610
+Neuquen;2020-02;336378
+Neuquen;2020-03;337207
+Neuquen;2020-04;338029
+Neuquen;2020-05;338844
+Neuquen;2020-06;339612
+Neuquen;2020-07;340403
+Neuquen;2020-08;341225
+Neuquen;2020-09;341973
+Neuquen;2020-10;342747
+Neuquen;2020-11;343498
+Neuquen;2020-12;344257
+Neuquen;2021-01;345063
+Neuquen;2021-02;345832
+Neuquen;2021-03;346660
+Neuquen;2021-04;347433
+Neuquen;2021-05;348275
+Neuquen;2021-06;349123
+Neuquen;2021-07;349953
+Neuquen;2021-08;350750
+Neuquen;2021-09;351521
+Neuquen;2021-10;352341
+Neuquen;2021-11;353176
+Neuquen;2021-12;354024
+Neuquen;2022-01;354840
+Neuquen;2022-02;355690
+Neuquen;2022-03;356490
+Neuquen;2022-04;357323
+Neuquen;2022-05;358183
+Neuquen;2022-06;359060
+Neuquen;2022-07;359919
+Neuquen;2022-08;360721
+Neuquen;2022-09;361517
+Neuquen;2022-10;362311
+Neuquen;2022-11;363107
+Neuquen;2022-12;363957
+Neuquen;2023-01;364778
+Neuquen;2023-02;365642
+Neuquen;2023-03;366537
+Neuquen;2023-04;367406
+Neuquen;2023-05;368237
+Neuquen;2023-06;369135
+Neuquen;2023-07;369975
+Neuquen;2023-08;370834
+Neuquen;2023-09;371706
+Neuquen;2023-10;372570
+Neuquen;2023-11;373404
+Neuquen;2023-12;374242
+Neuquen;2024-01;375066
+Neuquen;2024-02;375969
+Neuquen;2024-03;376884
+Neuquen;2024-04;377751
+Neuquen;2024-05;378639
+Neuquen;2024-06;379490
+Neuquen;2024-07;380342
+Neuquen;2024-08;381245
+Neuquen;2024-09;382081
+Neuquen;2024-10;382923
+Neuquen;2024-11;383774
+Neuquen;2024-12;384705
+Neuquen;2025-01;385594
+Neuquen;2025-02;386473
+Neuquen;2025-03;387369
+Neuquen;2025-04;388296
+Neuquen;2025-05;389238
+Neuquen;2025-06;390137
+Neuquen;2025-07;391020
 Playas Doradas;2016-01;400
 Playas Doradas;2016-02;398
 Playas Doradas;2016-03;397
@@ -1148,121 +1148,121 @@ Primeros Pinos;2025-04;146
 Primeros Pinos;2025-05;147
 Primeros Pinos;2025-06;148
 Primeros Pinos;2025-07;149
-San Martín de los andes;2016-01;26000
-San Martín de los andes;2016-02;26045
-San Martín de los andes;2016-03;26090
-San Martín de los andes;2016-04;26157
-San Martín de los andes;2016-05;26209
-San Martín de los andes;2016-06;26277
-San Martín de los andes;2016-07;26323
-San Martín de los andes;2016-08;26384
-San Martín de los andes;2016-09;26436
-San Martín de los andes;2016-10;26507
-San Martín de los andes;2016-11;26559
-San Martín de los andes;2016-12;26609
-San Martín de los andes;2017-01;26657
-San Martín de los andes;2017-02;26705
-San Martín de los andes;2017-03;26755
-San Martín de los andes;2017-04;26820
-San Martín de los andes;2017-05;26877
-San Martín de los andes;2017-06;26945
-San Martín de los andes;2017-07;27001
-San Martín de los andes;2017-08;27055
-San Martín de los andes;2017-09;27110
-San Martín de los andes;2017-10;27179
-San Martín de los andes;2017-11;27235
-San Martín de los andes;2017-12;27286
-San Martín de los andes;2018-01;27359
-San Martín de los andes;2018-02;27420
-San Martín de los andes;2018-03;27488
-San Martín de los andes;2018-04;27532
-San Martín de los andes;2018-05;27591
-San Martín de los andes;2018-06;27643
-San Martín de los andes;2018-07;27715
-San Martín de los andes;2018-08;27770
-San Martín de los andes;2018-09;27826
-San Martín de los andes;2018-10;27882
-San Martín de los andes;2018-11;27930
-San Martín de los andes;2018-12;27990
-San Martín de los andes;2019-01;28038
-San Martín de los andes;2019-02;28088
-San Martín de los andes;2019-03;28157
-San Martín de los andes;2019-04;28207
-San Martín de los andes;2019-05;28260
-San Martín de los andes;2019-06;28315
-San Martín de los andes;2019-07;28377
-San Martín de los andes;2019-08;28450
-San Martín de los andes;2019-09;28521
-San Martín de los andes;2019-10;28576
-San Martín de los andes;2019-11;28644
-San Martín de los andes;2019-12;28709
-San Martín de los andes;2020-01;28784
-San Martín de los andes;2020-02;28844
-San Martín de los andes;2020-03;28898
-San Martín de los andes;2020-04;28953
-San Martín de los andes;2020-05;29021
-San Martín de los andes;2020-06;29079
-San Martín de los andes;2020-07;29149
-San Martín de los andes;2020-08;29197
-San Martín de los andes;2020-09;29258
-San Martín de los andes;2020-10;29310
-San Martín de los andes;2020-11;29378
-San Martín de los andes;2020-12;29451
-San Martín de los andes;2021-01;29512
-San Martín de los andes;2021-02;29564
-San Martín de los andes;2021-03;29634
-San Martín de los andes;2021-04;29705
-San Martín de los andes;2021-05;29778
-San Martín de los andes;2021-06;29827
-San Martín de los andes;2021-07;29897
-San Martín de los andes;2021-08;29968
-San Martín de los andes;2021-09;30035
-San Martín de los andes;2021-10;30092
-San Martín de los andes;2021-11;30156
-San Martín de los andes;2021-12;30226
-San Martín de los andes;2022-01;30290
-San Martín de los andes;2022-02;30348
-San Martín de los andes;2022-03;30418
-San Martín de los andes;2022-04;30476
-San Martín de los andes;2022-05;30535
-San Martín de los andes;2022-06;30605
-San Martín de los andes;2022-07;30680
-San Martín de los andes;2022-08;30751
-San Martín de los andes;2022-09;30827
-San Martín de los andes;2022-10;30886
-San Martín de los andes;2022-11;30939
-San Martín de los andes;2022-12;31009
-San Martín de los andes;2023-01;31085
-San Martín de los andes;2023-02;31162
-San Martín de los andes;2023-03;31224
-San Martín de los andes;2023-04;31281
-San Martín de los andes;2023-05;31334
-San Martín de los andes;2023-06;31392
-San Martín de los andes;2023-07;31461
-San Martín de los andes;2023-08;31539
-San Martín de los andes;2023-09;31593
-San Martín de los andes;2023-10;31672
-San Martín de los andes;2023-11;31741
-San Martín de los andes;2023-12;31804
-San Martín de los andes;2024-01;31883
-San Martín de los andes;2024-02;31947
-San Martín de los andes;2024-03;32026
-San Martín de los andes;2024-04;32098
-San Martín de los andes;2024-05;32173
-San Martín de los andes;2024-06;32250
-San Martín de los andes;2024-07;32328
-San Martín de los andes;2024-08;32388
-San Martín de los andes;2024-09;32461
-San Martín de los andes;2024-10;32520
-San Martín de los andes;2024-11;32595
-San Martín de los andes;2024-12;32673
-San Martín de los andes;2025-01;32728
-San Martín de los andes;2025-02;32799
-San Martín de los andes;2025-03;32882
-San Martín de los andes;2025-04;32947
-San Martín de los andes;2025-05;33023
-San Martín de los andes;2025-06;33104
-San Martín de los andes;2025-07;33187
+San Martin de los andes;2016-01;26000
+San Martin de los andes;2016-02;26045
+San Martin de los andes;2016-03;26090
+San Martin de los andes;2016-04;26157
+San Martin de los andes;2016-05;26209
+San Martin de los andes;2016-06;26277
+San Martin de los andes;2016-07;26323
+San Martin de los andes;2016-08;26384
+San Martin de los andes;2016-09;26436
+San Martin de los andes;2016-10;26507
+San Martin de los andes;2016-11;26559
+San Martin de los andes;2016-12;26609
+San Martin de los andes;2017-01;26657
+San Martin de los andes;2017-02;26705
+San Martin de los andes;2017-03;26755
+San Martin de los andes;2017-04;26820
+San Martin de los andes;2017-05;26877
+San Martin de los andes;2017-06;26945
+San Martin de los andes;2017-07;27001
+San Martin de los andes;2017-08;27055
+San Martin de los andes;2017-09;27110
+San Martin de los andes;2017-10;27179
+San Martin de los andes;2017-11;27235
+San Martin de los andes;2017-12;27286
+San Martin de los andes;2018-01;27359
+San Martin de los andes;2018-02;27420
+San Martin de los andes;2018-03;27488
+San Martin de los andes;2018-04;27532
+San Martin de los andes;2018-05;27591
+San Martin de los andes;2018-06;27643
+San Martin de los andes;2018-07;27715
+San Martin de los andes;2018-08;27770
+San Martin de los andes;2018-09;27826
+San Martin de los andes;2018-10;27882
+San Martin de los andes;2018-11;27930
+San Martin de los andes;2018-12;27990
+San Martin de los andes;2019-01;28038
+San Martin de los andes;2019-02;28088
+San Martin de los andes;2019-03;28157
+San Martin de los andes;2019-04;28207
+San Martin de los andes;2019-05;28260
+San Martin de los andes;2019-06;28315
+San Martin de los andes;2019-07;28377
+San Martin de los andes;2019-08;28450
+San Martin de los andes;2019-09;28521
+San Martin de los andes;2019-10;28576
+San Martin de los andes;2019-11;28644
+San Martin de los andes;2019-12;28709
+San Martin de los andes;2020-01;28784
+San Martin de los andes;2020-02;28844
+San Martin de los andes;2020-03;28898
+San Martin de los andes;2020-04;28953
+San Martin de los andes;2020-05;29021
+San Martin de los andes;2020-06;29079
+San Martin de los andes;2020-07;29149
+San Martin de los andes;2020-08;29197
+San Martin de los andes;2020-09;29258
+San Martin de los andes;2020-10;29310
+San Martin de los andes;2020-11;29378
+San Martin de los andes;2020-12;29451
+San Martin de los andes;2021-01;29512
+San Martin de los andes;2021-02;29564
+San Martin de los andes;2021-03;29634
+San Martin de los andes;2021-04;29705
+San Martin de los andes;2021-05;29778
+San Martin de los andes;2021-06;29827
+San Martin de los andes;2021-07;29897
+San Martin de los andes;2021-08;29968
+San Martin de los andes;2021-09;30035
+San Martin de los andes;2021-10;30092
+San Martin de los andes;2021-11;30156
+San Martin de los andes;2021-12;30226
+San Martin de los andes;2022-01;30290
+San Martin de los andes;2022-02;30348
+San Martin de los andes;2022-03;30418
+San Martin de los andes;2022-04;30476
+San Martin de los andes;2022-05;30535
+San Martin de los andes;2022-06;30605
+San Martin de los andes;2022-07;30680
+San Martin de los andes;2022-08;30751
+San Martin de los andes;2022-09;30827
+San Martin de los andes;2022-10;30886
+San Martin de los andes;2022-11;30939
+San Martin de los andes;2022-12;31009
+San Martin de los andes;2023-01;31085
+San Martin de los andes;2023-02;31162
+San Martin de los andes;2023-03;31224
+San Martin de los andes;2023-04;31281
+San Martin de los andes;2023-05;31334
+San Martin de los andes;2023-06;31392
+San Martin de los andes;2023-07;31461
+San Martin de los andes;2023-08;31539
+San Martin de los andes;2023-09;31593
+San Martin de los andes;2023-10;31672
+San Martin de los andes;2023-11;31741
+San Martin de los andes;2023-12;31804
+San Martin de los andes;2024-01;31883
+San Martin de los andes;2024-02;31947
+San Martin de los andes;2024-03;32026
+San Martin de los andes;2024-04;32098
+San Martin de los andes;2024-05;32173
+San Martin de los andes;2024-06;32250
+San Martin de los andes;2024-07;32328
+San Martin de los andes;2024-08;32388
+San Martin de los andes;2024-09;32461
+San Martin de los andes;2024-10;32520
+San Martin de los andes;2024-11;32595
+San Martin de los andes;2024-12;32673
+San Martin de los andes;2025-01;32728
+San Martin de los andes;2025-02;32799
+San Martin de los andes;2025-03;32882
+San Martin de los andes;2025-04;32947
+San Martin de los andes;2025-05;33023
+San Martin de los andes;2025-06;33104
+San Martin de los andes;2025-07;33187
 Sierra Grande;2016-01;7500
 Sierra Grande;2016-02;7507
 Sierra Grande;2016-03;7517
@@ -1493,233 +1493,233 @@ Viedma;2025-04;66493
 Viedma;2025-05;66640
 Viedma;2025-06;66782
 Viedma;2025-07;66913
-Villa Trafúl;2016-01;450
-Villa Trafúl;2016-02;448
-Villa Trafúl;2016-03;448
-Villa Trafúl;2016-04;450
-Villa Trafúl;2016-05;451
-Villa Trafúl;2016-06;451
-Villa Trafúl;2016-07;450
-Villa Trafúl;2016-08;452
-Villa Trafúl;2016-09;454
-Villa Trafúl;2016-10;454
-Villa Trafúl;2016-11;454
-Villa Trafúl;2016-12;455
-Villa Trafúl;2017-01;453
-Villa Trafúl;2017-02;453
-Villa Trafúl;2017-03;453
-Villa Trafúl;2017-04;452
-Villa Trafúl;2017-05;454
-Villa Trafúl;2017-06;452
-Villa Trafúl;2017-07;451
-Villa Trafúl;2017-08;452
-Villa Trafúl;2017-09;453
-Villa Trafúl;2017-10;453
-Villa Trafúl;2017-11;453
-Villa Trafúl;2017-12;454
-Villa Trafúl;2018-01;454
-Villa Trafúl;2018-02;452
-Villa Trafúl;2018-03;452
-Villa Trafúl;2018-04;454
-Villa Trafúl;2018-05;454
-Villa Trafúl;2018-06;453
-Villa Trafúl;2018-07;451
-Villa Trafúl;2018-08;450
-Villa Trafúl;2018-09;449
-Villa Trafúl;2018-10;451
-Villa Trafúl;2018-11;449
-Villa Trafúl;2018-12;447
-Villa Trafúl;2019-01;445
-Villa Trafúl;2019-02;443
-Villa Trafúl;2019-03;441
-Villa Trafúl;2019-04;443
-Villa Trafúl;2019-05;443
-Villa Trafúl;2019-06;442
-Villa Trafúl;2019-07;440
-Villa Trafúl;2019-08;440
-Villa Trafúl;2019-09;440
-Villa Trafúl;2019-10;439
-Villa Trafúl;2019-11;441
-Villa Trafúl;2019-12;442
-Villa Trafúl;2020-01;443
-Villa Trafúl;2020-02;443
-Villa Trafúl;2020-03;442
-Villa Trafúl;2020-04;443
-Villa Trafúl;2020-05;443
-Villa Trafúl;2020-06;445
-Villa Trafúl;2020-07;446
-Villa Trafúl;2020-08;446
-Villa Trafúl;2020-09;446
-Villa Trafúl;2020-10;444
-Villa Trafúl;2020-11;446
-Villa Trafúl;2020-12;444
-Villa Trafúl;2021-01;443
-Villa Trafúl;2021-02;441
-Villa Trafúl;2021-03;439
-Villa Trafúl;2021-04;440
-Villa Trafúl;2021-05;440
-Villa Trafúl;2021-06;442
-Villa Trafúl;2021-07;440
-Villa Trafúl;2021-08;442
-Villa Trafúl;2021-09;440
-Villa Trafúl;2021-10;439
-Villa Trafúl;2021-11;437
-Villa Trafúl;2021-12;438
-Villa Trafúl;2022-01;438
-Villa Trafúl;2022-02;437
-Villa Trafúl;2022-03;435
-Villa Trafúl;2022-04;437
-Villa Trafúl;2022-05;436
-Villa Trafúl;2022-06;435
-Villa Trafúl;2022-07;433
-Villa Trafúl;2022-08;432
-Villa Trafúl;2022-09;434
-Villa Trafúl;2022-10;433
-Villa Trafúl;2022-11;435
-Villa Trafúl;2022-12;433
-Villa Trafúl;2023-01;433
-Villa Trafúl;2023-02;432
-Villa Trafúl;2023-03;432
-Villa Trafúl;2023-04;434
-Villa Trafúl;2023-05;433
-Villa Trafúl;2023-06;434
-Villa Trafúl;2023-07;434
-Villa Trafúl;2023-08;433
-Villa Trafúl;2023-09;433
-Villa Trafúl;2023-10;432
-Villa Trafúl;2023-11;430
-Villa Trafúl;2023-12;430
-Villa Trafúl;2024-01;431
-Villa Trafúl;2024-02;432
-Villa Trafúl;2024-03;434
-Villa Trafúl;2024-04;433
-Villa Trafúl;2024-05;433
-Villa Trafúl;2024-06;435
-Villa Trafúl;2024-07;435
-Villa Trafúl;2024-08;434
-Villa Trafúl;2024-09;435
-Villa Trafúl;2024-10;433
-Villa Trafúl;2024-11;434
-Villa Trafúl;2024-12;436
-Villa Trafúl;2025-01;434
-Villa Trafúl;2025-02;436
-Villa Trafúl;2025-03;435
-Villa Trafúl;2025-04;433
-Villa Trafúl;2025-05;435
-Villa Trafúl;2025-06;434
-Villa Trafúl;2025-07;435
-Villa el Chocón;2016-01;1200
-Villa el Chocón;2016-02;1203
-Villa el Chocón;2016-03;1202
-Villa el Chocón;2016-04;1206
-Villa el Chocón;2016-05;1206
-Villa el Chocón;2016-06;1205
-Villa el Chocón;2016-07;1204
-Villa el Chocón;2016-08;1207
-Villa el Chocón;2016-09;1207
-Villa el Chocón;2016-10;1211
-Villa el Chocón;2016-11;1213
-Villa el Chocón;2016-12;1215
-Villa el Chocón;2017-01;1214
-Villa el Chocón;2017-02;1214
-Villa el Chocón;2017-03;1214
-Villa el Chocón;2017-04;1218
-Villa el Chocón;2017-05;1221
-Villa el Chocón;2017-06;1222
-Villa el Chocón;2017-07;1224
-Villa el Chocón;2017-08;1227
-Villa el Chocón;2017-09;1225
-Villa el Chocón;2017-10;1227
-Villa el Chocón;2017-11;1230
-Villa el Chocón;2017-12;1232
-Villa el Chocón;2018-01;1233
-Villa el Chocón;2018-02;1231
-Villa el Chocón;2018-03;1232
-Villa el Chocón;2018-04;1236
-Villa el Chocón;2018-05;1234
-Villa el Chocón;2018-06;1233
-Villa el Chocón;2018-07;1236
-Villa el Chocón;2018-08;1234
-Villa el Chocón;2018-09;1238
-Villa el Chocón;2018-10;1242
-Villa el Chocón;2018-11;1243
-Villa el Chocón;2018-12;1245
-Villa el Chocón;2019-01;1243
-Villa el Chocón;2019-02;1246
-Villa el Chocón;2019-03;1244
-Villa el Chocón;2019-04;1244
-Villa el Chocón;2019-05;1246
-Villa el Chocón;2019-06;1249
-Villa el Chocón;2019-07;1252
-Villa el Chocón;2019-08;1251
-Villa el Chocón;2019-09;1252
-Villa el Chocón;2019-10;1251
-Villa el Chocón;2019-11;1254
-Villa el Chocón;2019-12;1256
-Villa el Chocón;2020-01;1254
-Villa el Chocón;2020-02;1252
-Villa el Chocón;2020-03;1254
-Villa el Chocón;2020-04;1257
-Villa el Chocón;2020-05;1261
-Villa el Chocón;2020-06;1259
-Villa el Chocón;2020-07;1263
-Villa el Chocón;2020-08;1261
-Villa el Chocón;2020-09;1259
-Villa el Chocón;2020-10;1260
-Villa el Chocón;2020-11;1261
-Villa el Chocón;2020-12;1261
-Villa el Chocón;2021-01;1260
-Villa el Chocón;2021-02;1262
-Villa el Chocón;2021-03;1264
-Villa el Chocón;2021-04;1266
-Villa el Chocón;2021-05;1266
-Villa el Chocón;2021-06;1267
-Villa el Chocón;2021-07;1270
-Villa el Chocón;2021-08;1274
-Villa el Chocón;2021-09;1278
-Villa el Chocón;2021-10;1281
-Villa el Chocón;2021-11;1281
-Villa el Chocón;2021-12;1284
-Villa el Chocón;2022-01;1286
-Villa el Chocón;2022-02;1285
-Villa el Chocón;2022-03;1283
-Villa el Chocón;2022-04;1287
-Villa el Chocón;2022-05;1288
-Villa el Chocón;2022-06;1289
-Villa el Chocón;2022-07;1289
-Villa el Chocón;2022-08;1290
-Villa el Chocón;2022-09;1292
-Villa el Chocón;2022-10;1296
-Villa el Chocón;2022-11;1299
-Villa el Chocón;2022-12;1301
-Villa el Chocón;2023-01;1301
-Villa el Chocón;2023-02;1303
-Villa el Chocón;2023-03;1306
-Villa el Chocón;2023-04;1305
-Villa el Chocón;2023-05;1305
-Villa el Chocón;2023-06;1304
-Villa el Chocón;2023-07;1302
-Villa el Chocón;2023-08;1301
-Villa el Chocón;2023-09;1299
-Villa el Chocón;2023-10;1297
-Villa el Chocón;2023-11;1296
-Villa el Chocón;2023-12;1296
-Villa el Chocón;2024-01;1299
-Villa el Chocón;2024-02;1301
-Villa el Chocón;2024-03;1303
-Villa el Chocón;2024-04;1306
-Villa el Chocón;2024-05;1310
-Villa el Chocón;2024-06;1314
-Villa el Chocón;2024-07;1312
-Villa el Chocón;2024-08;1310
-Villa el Chocón;2024-09;1310
-Villa el Chocón;2024-10;1311
-Villa el Chocón;2024-11;1310
-Villa el Chocón;2024-12;1308
-Villa el Chocón;2025-01;1310
-Villa el Chocón;2025-02;1310
-Villa el Chocón;2025-03;1309
-Villa el Chocón;2025-04;1309
-Villa el Chocón;2025-05;1308
-Villa el Chocón;2025-06;1307
-Villa el Chocón;2025-07;1310
+Villa Traful;2016-01;450
+Villa Traful;2016-02;448
+Villa Traful;2016-03;448
+Villa Traful;2016-04;450
+Villa Traful;2016-05;451
+Villa Traful;2016-06;451
+Villa Traful;2016-07;450
+Villa Traful;2016-08;452
+Villa Traful;2016-09;454
+Villa Traful;2016-10;454
+Villa Traful;2016-11;454
+Villa Traful;2016-12;455
+Villa Traful;2017-01;453
+Villa Traful;2017-02;453
+Villa Traful;2017-03;453
+Villa Traful;2017-04;452
+Villa Traful;2017-05;454
+Villa Traful;2017-06;452
+Villa Traful;2017-07;451
+Villa Traful;2017-08;452
+Villa Traful;2017-09;453
+Villa Traful;2017-10;453
+Villa Traful;2017-11;453
+Villa Traful;2017-12;454
+Villa Traful;2018-01;454
+Villa Traful;2018-02;452
+Villa Traful;2018-03;452
+Villa Traful;2018-04;454
+Villa Traful;2018-05;454
+Villa Traful;2018-06;453
+Villa Traful;2018-07;451
+Villa Traful;2018-08;450
+Villa Traful;2018-09;449
+Villa Traful;2018-10;451
+Villa Traful;2018-11;449
+Villa Traful;2018-12;447
+Villa Traful;2019-01;445
+Villa Traful;2019-02;443
+Villa Traful;2019-03;441
+Villa Traful;2019-04;443
+Villa Traful;2019-05;443
+Villa Traful;2019-06;442
+Villa Traful;2019-07;440
+Villa Traful;2019-08;440
+Villa Traful;2019-09;440
+Villa Traful;2019-10;439
+Villa Traful;2019-11;441
+Villa Traful;2019-12;442
+Villa Traful;2020-01;443
+Villa Traful;2020-02;443
+Villa Traful;2020-03;442
+Villa Traful;2020-04;443
+Villa Traful;2020-05;443
+Villa Traful;2020-06;445
+Villa Traful;2020-07;446
+Villa Traful;2020-08;446
+Villa Traful;2020-09;446
+Villa Traful;2020-10;444
+Villa Traful;2020-11;446
+Villa Traful;2020-12;444
+Villa Traful;2021-01;443
+Villa Traful;2021-02;441
+Villa Traful;2021-03;439
+Villa Traful;2021-04;440
+Villa Traful;2021-05;440
+Villa Traful;2021-06;442
+Villa Traful;2021-07;440
+Villa Traful;2021-08;442
+Villa Traful;2021-09;440
+Villa Traful;2021-10;439
+Villa Traful;2021-11;437
+Villa Traful;2021-12;438
+Villa Traful;2022-01;438
+Villa Traful;2022-02;437
+Villa Traful;2022-03;435
+Villa Traful;2022-04;437
+Villa Traful;2022-05;436
+Villa Traful;2022-06;435
+Villa Traful;2022-07;433
+Villa Traful;2022-08;432
+Villa Traful;2022-09;434
+Villa Traful;2022-10;433
+Villa Traful;2022-11;435
+Villa Traful;2022-12;433
+Villa Traful;2023-01;433
+Villa Traful;2023-02;432
+Villa Traful;2023-03;432
+Villa Traful;2023-04;434
+Villa Traful;2023-05;433
+Villa Traful;2023-06;434
+Villa Traful;2023-07;434
+Villa Traful;2023-08;433
+Villa Traful;2023-09;433
+Villa Traful;2023-10;432
+Villa Traful;2023-11;430
+Villa Traful;2023-12;430
+Villa Traful;2024-01;431
+Villa Traful;2024-02;432
+Villa Traful;2024-03;434
+Villa Traful;2024-04;433
+Villa Traful;2024-05;433
+Villa Traful;2024-06;435
+Villa Traful;2024-07;435
+Villa Traful;2024-08;434
+Villa Traful;2024-09;435
+Villa Traful;2024-10;433
+Villa Traful;2024-11;434
+Villa Traful;2024-12;436
+Villa Traful;2025-01;434
+Villa Traful;2025-02;436
+Villa Traful;2025-03;435
+Villa Traful;2025-04;433
+Villa Traful;2025-05;435
+Villa Traful;2025-06;434
+Villa Traful;2025-07;435
+Villa el Chocon;2016-01;1200
+Villa el Chocon;2016-02;1203
+Villa el Chocon;2016-03;1202
+Villa el Chocon;2016-04;1206
+Villa el Chocon;2016-05;1206
+Villa el Chocon;2016-06;1205
+Villa el Chocon;2016-07;1204
+Villa el Chocon;2016-08;1207
+Villa el Chocon;2016-09;1207
+Villa el Chocon;2016-10;1211
+Villa el Chocon;2016-11;1213
+Villa el Chocon;2016-12;1215
+Villa el Chocon;2017-01;1214
+Villa el Chocon;2017-02;1214
+Villa el Chocon;2017-03;1214
+Villa el Chocon;2017-04;1218
+Villa el Chocon;2017-05;1221
+Villa el Chocon;2017-06;1222
+Villa el Chocon;2017-07;1224
+Villa el Chocon;2017-08;1227
+Villa el Chocon;2017-09;1225
+Villa el Chocon;2017-10;1227
+Villa el Chocon;2017-11;1230
+Villa el Chocon;2017-12;1232
+Villa el Chocon;2018-01;1233
+Villa el Chocon;2018-02;1231
+Villa el Chocon;2018-03;1232
+Villa el Chocon;2018-04;1236
+Villa el Chocon;2018-05;1234
+Villa el Chocon;2018-06;1233
+Villa el Chocon;2018-07;1236
+Villa el Chocon;2018-08;1234
+Villa el Chocon;2018-09;1238
+Villa el Chocon;2018-10;1242
+Villa el Chocon;2018-11;1243
+Villa el Chocon;2018-12;1245
+Villa el Chocon;2019-01;1243
+Villa el Chocon;2019-02;1246
+Villa el Chocon;2019-03;1244
+Villa el Chocon;2019-04;1244
+Villa el Chocon;2019-05;1246
+Villa el Chocon;2019-06;1249
+Villa el Chocon;2019-07;1252
+Villa el Chocon;2019-08;1251
+Villa el Chocon;2019-09;1252
+Villa el Chocon;2019-10;1251
+Villa el Chocon;2019-11;1254
+Villa el Chocon;2019-12;1256
+Villa el Chocon;2020-01;1254
+Villa el Chocon;2020-02;1252
+Villa el Chocon;2020-03;1254
+Villa el Chocon;2020-04;1257
+Villa el Chocon;2020-05;1261
+Villa el Chocon;2020-06;1259
+Villa el Chocon;2020-07;1263
+Villa el Chocon;2020-08;1261
+Villa el Chocon;2020-09;1259
+Villa el Chocon;2020-10;1260
+Villa el Chocon;2020-11;1261
+Villa el Chocon;2020-12;1261
+Villa el Chocon;2021-01;1260
+Villa el Chocon;2021-02;1262
+Villa el Chocon;2021-03;1264
+Villa el Chocon;2021-04;1266
+Villa el Chocon;2021-05;1266
+Villa el Chocon;2021-06;1267
+Villa el Chocon;2021-07;1270
+Villa el Chocon;2021-08;1274
+Villa el Chocon;2021-09;1278
+Villa el Chocon;2021-10;1281
+Villa el Chocon;2021-11;1281
+Villa el Chocon;2021-12;1284
+Villa el Chocon;2022-01;1286
+Villa el Chocon;2022-02;1285
+Villa el Chocon;2022-03;1283
+Villa el Chocon;2022-04;1287
+Villa el Chocon;2022-05;1288
+Villa el Chocon;2022-06;1289
+Villa el Chocon;2022-07;1289
+Villa el Chocon;2022-08;1290
+Villa el Chocon;2022-09;1292
+Villa el Chocon;2022-10;1296
+Villa el Chocon;2022-11;1299
+Villa el Chocon;2022-12;1301
+Villa el Chocon;2023-01;1301
+Villa el Chocon;2023-02;1303
+Villa el Chocon;2023-03;1306
+Villa el Chocon;2023-04;1305
+Villa el Chocon;2023-05;1305
+Villa el Chocon;2023-06;1304
+Villa el Chocon;2023-07;1302
+Villa el Chocon;2023-08;1301
+Villa el Chocon;2023-09;1299
+Villa el Chocon;2023-10;1297
+Villa el Chocon;2023-11;1296
+Villa el Chocon;2023-12;1296
+Villa el Chocon;2024-01;1299
+Villa el Chocon;2024-02;1301
+Villa el Chocon;2024-03;1303
+Villa el Chocon;2024-04;1306
+Villa el Chocon;2024-05;1310
+Villa el Chocon;2024-06;1314
+Villa el Chocon;2024-07;1312
+Villa el Chocon;2024-08;1310
+Villa el Chocon;2024-09;1310
+Villa el Chocon;2024-10;1311
+Villa el Chocon;2024-11;1310
+Villa el Chocon;2024-12;1308
+Villa el Chocon;2025-01;1310
+Villa el Chocon;2025-02;1310
+Villa el Chocon;2025-03;1309
+Villa el Chocon;2025-04;1309
+Villa el Chocon;2025-05;1308
+Villa el Chocon;2025-06;1307
+Villa el Chocon;2025-07;1310

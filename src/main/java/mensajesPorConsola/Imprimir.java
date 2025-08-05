@@ -89,9 +89,23 @@ public class Imprimir {
     // ███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║
     // ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
 
+    /**
+     * Imprime en pantalla un mensaje estilado como error
+     *
+     * @param mensaje String
+     */
+    public static void errorMensaje(String mensaje) {
+        System.out.println(BOLD + ERROR + mensaje + RESET);
+    }
+
     public static void errorOpcionExcedeRango(int cantOpciones) {
-        System.out.println(BOLD + ERROR + "La opción debe estar entre 0 y " + (cantOpciones - 1) + "." + RESET);
+        System.out.println(BOLD + ERROR + "La opción elegida debe estar entre 0 y " + (cantOpciones - 1) + "." + RESET);
         System.out.print(BOLD + "Elija una opción nuevamente: " + RESET);
+    }
+
+    public static void errorOpcionFueraDeRango(int rangoInferior, int rangoSuperior) {
+        System.out.println(BOLD + ERROR + "El valor ingresado debe estar entre "+ rangoInferior +" y " + rangoSuperior + "." + RESET);
+        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
     }
 
     public static void errorTextoVacio2Caracteres() {
@@ -109,6 +123,11 @@ public class Imprimir {
         System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
     }
 
+    public static void errorNoEsMayorOIgualACero() {
+        System.out.println(BOLD + ERROR + "El valor ingresado debe ser un número MAYOR o IGUAL a CERO." + RESET);
+        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
+    }
+
     public static void errorAltaCiudad() {
         System.out.println(BOLD + ERROR + "No fue posible cargar la ciudad, nombre duplicado." + RESET);
     }
@@ -117,12 +136,47 @@ public class Imprimir {
         System.out.println(BOLD + ERROR + "No fue posible dar de baja la ciudad, nombre inexistente en el sistema." + RESET);
     }
 
+    public static void errorModificarCiudad() {
+        System.out.println(BOLD + ERROR + "No fue posible modificar la ciudad, nombre inexistente en el sistema." + RESET);
+    }
+
+    public static void errorCiudadNoEncontrada() {
+        System.out.println(BOLD + ERROR + "El nombre de ciudad ingresado no existe en el sistema." + RESET);
+    }
+
+    public static void errorAltaTuberia() {
+        System.out.println(BOLD + ERROR + "No fue posible cargar la tubería en el sistema." + RESET);
+    }
+
+    public static void errorAltaTuberiaRepetida() {
+        System.out.println(BOLD + ERROR + "No fue posible cargar la tubería en el sistema." + RESET);
+        System.out.println(BOLD + ERROR + "Ya existe una tubería que conecta las mismas ciudades en la misma dirección." + RESET);
+    }
+
+    public static void errorAltaTuberiaSinCiudades() {
+        System.out.println(BOLD + ERROR + "El sistema actualmente no cuenta con ciudades." + RESET);
+        System.out.println(BOLD + ERROR + "Ingrese al menos dos ciudades al sistema para conectarlas con una nueva tubería." + RESET);
+    }
+
+    public static void errorAnioInvalido() {
+        System.out.println(BOLD + ERROR + "Debe ingresar un año comprendido entre las fechas 2000 y 2025." + RESET);
+    }
+
     // ███████╗██╗  ██╗██╗████████╗ ██████╗
     // ██╔════╝╚██╗██╔╝██║╚══██╔══╝██╔═══██╗
     // █████╗   ╚███╔╝ ██║   ██║   ██║   ██║
     // ██╔══╝   ██╔██╗ ██║   ██║   ██║   ██║
     // ███████╗██╔╝ ██╗██║   ██║   ╚██████╔╝
     // ╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+
+    /**
+     * Imprime en pantalla un mensaje estilado como éxito
+     *
+     * @param mensaje String
+     */
+    public static void exitoMensaje(String mensaje) {
+        System.out.println(BOLD + EXITO + mensaje + RESET);
+    }
 
     public static void exitoCargarEstructurasUltimosRegistros(){
         System.out.println(BOLD + EXITO + "Éxito al cargar las estructuras con los últimos registros." + RESET);
@@ -137,11 +191,23 @@ public class Imprimir {
     }
 
     public static void exitoAltaCiudad(){
-        System.out.println(BOLD + EXITO + "La ciudad se cargo con éxito al sistema." + RESET);
+        System.out.println(BOLD + EXITO + "La ciudad se cargo con éxito en el sistema." + RESET);
     }
 
     public static void exitoBajaCiudad(){
         System.out.println(BOLD + EXITO + "La ciudad se dio de baja con éxito del sistema." + RESET);
+    }
+
+    public static void exitoModificarCiudad(){
+        System.out.println(BOLD + EXITO + "La ciudad fue modificada con éxito." + RESET);
+    }
+
+    public static void exitoModificarPoblacionCiudad(){
+        System.out.println(BOLD + EXITO + "La ciudad fue modificada con éxito." + RESET);
+    }
+
+    public static void exitoAltaTuberia(){
+        System.out.println(BOLD + EXITO + "La tubería se cargo con éxito en el sistema." + RESET);
     }
 
     // ██╗   ██╗ █████╗ ██████╗ ██╗ ██████╗ ███████╗
@@ -153,23 +219,34 @@ public class Imprimir {
 
     /**
      * Imprime en pantalla el contenido de la estructura del HashMap de tuberías
+     * y a su vez la retorna
+     *
      * @param hashTuberias HashMap<ClaveTuberia, Tuberia>
+     * @return String
      */
-    public static void hashMapTuberias(HashMap<ClaveTuberia, Tuberia> hashTuberias){
+    public static String hashMapTuberias(HashMap<ClaveTuberia, Tuberia> hashTuberias){
+
+        String estructura;
 
         if (hashTuberias.isEmpty()) {
-            System.out.print("La estructura HashMap de tuberías se encuentra vacía.");
+            estructura = "La estructura HashMap de tuberías se encuentra vacía.";
+            System.out.print(estructura);
         } else {
-            System.out.println("Contenido del HashMap de tuberías: ");
+            estructura = "Contenido del HashMap de tuberías: ";
+            System.out.println(estructura);
             for (Map.Entry<ClaveTuberia, Tuberia> entry : hashTuberias.entrySet()) {
-                System.out.println("- Clave: " + entry.getKey() + " | Valor: " + entry.getValue().toString());
+                String claveValor = "- Clave: " + entry.getKey() + " | Valor: " + entry.getValue().toString() + "\n";
+                System.out.print(claveValor);
+                estructura += claveValor;
             }
         }
 
+        return estructura;
     }
 
     /**
      * Imprime en pantalla el contenido de la estructura del ArbolAVL de Ciudades
+     *
      * @param arbolCiudades ArbolAVL
      */
     public static void arbolAVLCiudadesAlfabetico(ArbolAVL arbolCiudades){

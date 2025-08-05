@@ -5,7 +5,6 @@ import java.time.YearMonth;
 import clases.*;
 import constantes.Rutas;
 import consultas.*;
-import estructuras.*;
 import estructuras.conjuntistas.ArbolAVL;
 import estructuras.grafos.Grafo;
 import estructuras.lineales.dinamicas.Lista;
@@ -45,7 +44,7 @@ public class TestConsultas {
         System.out.println("Ciudades ordenadas por consumo anual");
         System.out.println(ConsultasCiudad.generarListaConsumoAnual(arbolCiudades, Year.of(2024)));
         System.out.println("");
-        System.out.println(ConsultasTuberia.getCaminoConMayorCaudalPleno(arbolCiudades, grafoCiudades, hashTuberias,
+        System.out.println(ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades, grafoCiudades, hashTuberias,
                 "El Bolsón", "Neuquén"));
         System.out.println("");
         System.out.println("Camino con menor cantidad de ciudades: ");

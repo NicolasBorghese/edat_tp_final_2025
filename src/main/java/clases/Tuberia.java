@@ -6,7 +6,15 @@ public class Tuberia {
     private double caudalMaximo;
     private double diametro;
     private String estado;
-
+    
+    /**
+     * Constructor
+     * @param nomenclatura Tipo String de mínimo 6 carácterers
+     * @param caudalMinimo
+     * @param caudalMaximo
+     * @param diametro
+     * @param estado
+     */
     public Tuberia(String nomenclatura, double caudalMinimo, double caudalMaximo,
             double diametro, String estado) {
 
@@ -17,7 +25,7 @@ public class Tuberia {
         this.estado = estado;
     }
   
-      public Tuberia(String nomenclatura, double caudalMinimo, double caudalMaximo, double diametro) {
+    public Tuberia(String nomenclatura, double caudalMinimo, double caudalMaximo, double diametro) {
         
         this.nomenclatura = nomenclatura;
         this.caudalMinimo = caudalMinimo;
@@ -26,7 +34,7 @@ public class Tuberia {
         this.estado = "ACTIVO";
     }
 
-    public String crearNomenclatura(Ciudad cOri, Ciudad cDest) {
+    public static String crearNomenclatura(Ciudad cOri, Ciudad cDest) {
         String nom = "";
         nom = cOri.getNomenclatura();
         nom += "-" + cDest.getNomenclatura();
@@ -35,13 +43,13 @@ public class Tuberia {
 
     public String getCiudadOrigen(){
         String[] partes = this.nomenclatura.split("-");
-        String cOrigen = partes[1];
+        String cOrigen = partes[0];
         return cOrigen;
     }
 
     public String getCiudadDestino(){
         String[] partes = this.nomenclatura.split("-");
-        String cDestino = partes[2];
+        String cDestino = partes[1];
         return cDestino;
     }
 
@@ -77,6 +85,10 @@ public class Tuberia {
         this.diametro = nuevoDiametro;
     }
 
+    public void setEstado(String nuevoEstado) {
+        this.estado = nuevoEstado;
+    }
+
     public void setActivo() {
         this.estado = "ACTIVO";
     }
@@ -90,7 +102,7 @@ public class Tuberia {
     }
 
     public void setEnRep() {
-        this.estado = "EN REPARACION";
+        this.estado = "EN REPARACIÓN";
     }
 
     public String toString(){
