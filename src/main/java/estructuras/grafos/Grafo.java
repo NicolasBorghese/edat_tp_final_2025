@@ -315,7 +315,7 @@ public class Grafo {
             double pesoActual, double[] pesoMin) {
         caminoActual.insertar(actual.getElemento(), caminoActual.longitud() + 1);
         if (actual.getElemento().equals(destino.getElemento())) {
-            if (pesoActual > pesoMin[0]) {
+            if (pesoActual < pesoMin[0]) {
                 pesoMin[0] = pesoActual;
                 caminoMasLiviano.vaciar();
                 for (int i = 1; i <= caminoActual.longitud(); i++) {
