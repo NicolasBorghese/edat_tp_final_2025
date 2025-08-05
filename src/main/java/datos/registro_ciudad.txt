@@ -2,15 +2,15 @@ C;Allen;AL3001;60.0;0.27
 C;Bariloche;BA3002;150.0;0.4
 C;Caviahue;CA3003;20.0;0.55
 C;Cipolletti;CI3004;120.0;0.3
-C;El Bolsón;EB3005;45.0;0.35
-C;Junín de los Andes;JD3006;25.0;0.33
+C;El Bolson;EB3005;45.0;0.35
+C;Junin de los Andes;JD3006;25.0;0.33
 C;Las Grutas;LG3007;10.0;0.25
-C;Neuquén;NE3008;200.0;0.28
+C;Neuquen;NE3008;200.0;0.28
 C;Playas Doradas;PD3009;8.0;0.22
 C;Primeros Pinos;PP3010;6.0;0.3
 C;Roma;RO3016;200.0;10.0
-C;San Martín de los andes;SM3011;40.0;0.36
+C;San Martin de los andes;SM3011;40.0;0.36
 C;Sierra Grande;SG3012;15.0;0.32
 C;Viedma;VI3013;110.0;0.26
-C;Villa Trafúl;VT3014;5.0;0.38
-C;Villa el Chocón;VE3015;20.0;0.34
+C;Villa Traful;VT3014;5.0;0.38
+C;Villa el Chocon;VE3015;20.0;0.34
