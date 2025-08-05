@@ -152,7 +152,7 @@ public class ArbolAVL {
 			hijo.setClave(nuevoNodo.getClave());
 			hijo.setObjeto(nuevoNodo.getObjeto());
 			// Eliminamos al candidato
-			eliminarAux(padreNuevoNodo, nuevoNodo, nuevoNodo.getClave());
+			eliminarAux(hijo, hijo.getDerecho(), nuevoNodo.getClave());
 		} else {
 			hijo.setClave(padreNuevoNodo.getClave());
 			hijo.setObjeto(padreNuevoNodo.getObjeto());
