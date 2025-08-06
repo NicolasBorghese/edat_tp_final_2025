@@ -132,7 +132,7 @@ public class Ciudad implements Comparable<Ciudad> {
 
     /**
      * Si existe un registro para la fecha indicada entonces sobreescribe la
-     * cantidad de poblacion para esa fecha
+     * cantidad de poblacion para esa fecha.
      * 
      * @param fecha
      * @param cantPoblacion
