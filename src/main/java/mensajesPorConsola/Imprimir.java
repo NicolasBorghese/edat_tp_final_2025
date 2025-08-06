@@ -147,6 +147,7 @@ public class Imprimir {
 
     public static void errorCiudadNoEncontrada() {
         System.out.println(BOLD + ERROR + "El nombre de ciudad ingresado no existe en el sistema." + RESET);
+        System.out.print(BOLD  + "Ingrese alguno de los nombres de la lista: " + RESET);
     }
 
     public static void errorAltaTuberia() {
@@ -231,6 +232,25 @@ public class Imprimir {
      */
     public static void titulo(String mensaje) {
         System.out.println(BOLD + DESTACADO + mensaje + RESET);
+    }
+
+    /**
+     * Imprime en pantalla un mensaje estilado como mensaje de formulario con salto de línea
+     *
+     * @param mensaje String
+     */
+    public static void mensajeFormularioConSalto(String mensaje) {
+        System.out.println(BOLD + mensaje + RESET);
+    }
+
+    /**
+     * Imprime en pantalla un mensaje estilado como mensaje de formulario sin salto de línea
+     *
+     * @param mensaje String
+     */
+    public static void mensajeFormularioSinSalto(String mensaje) {
+
+        System.out.print(BOLD + mensaje + RESET);
     }
 
     /**

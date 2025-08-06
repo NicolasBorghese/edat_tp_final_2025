@@ -1,16 +1,16 @@
 package main;
 
-import java.util.Scanner;
-
-import constantes.Rutas;
 import clases.ClaveTuberia;
 import clases.Tuberia;
+import constantes.Rutas;
+import estructuras.conjuntistas.ArbolAVL;
 import estructuras.grafos.Grafo;
 import funciones.GestorOperaciones;
-import validaciones.Validar;
 import mensajesPorConsola.Imprimir;
-import estructuras.conjuntistas.ArbolAVL;
+import validaciones.Validar;
+
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class TransporteAgua {
 
@@ -35,7 +35,6 @@ public class TransporteAgua {
      */
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
         int opcionElegida;
         ArbolAVL arbolCiudades = new ArbolAVL();
         HashMap<ClaveTuberia, Tuberia> hashTuberias = new HashMap<>();
@@ -44,18 +43,17 @@ public class TransporteAgua {
         Imprimir.portada();
 
         // Controlar carga inicial de datos
-        opcionElegida = mostrarMenuDeOpciones("cargaDeDatosInicial", sc);
-        controlCargaDeDatosInicial(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades, sc);
+        opcionElegida = mostrarMenuDeOpciones("cargaDeDatosInicial");
+        controlCargaDeDatosInicial(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades);
 
         // Mostrar menú principal
         while (opcionElegida != 0) {
-            opcionElegida = mostrarMenuDeOpciones("menuPrincipal", sc);
-            controlOperacionesMenuPrincipal(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades, sc);
+            opcionElegida = mostrarMenuDeOpciones("menuPrincipal");
+            controlOperacionesMenuPrincipal(opcionElegida, arbolCiudades, hashTuberias, grafoCiudades);
         }
 
         System.out.println();
         Imprimir.finDeEjecucion();
-        sc.close();
     }
 
     /**
@@ -63,33 +61,28 @@ public class TransporteAgua {
      * @param nombreMenu - nombre del menú que hay que cargar
      * @return int
      */
-    public static int mostrarMenuDeOpciones(String nombreMenu, Scanner sc) {
+    public static int mostrarMenuDeOpciones(String nombreMenu) {
 
         int opcionElegida;
         int cantOpciones;
 
         cantOpciones = Imprimir.menuDeOpciones(nombreMenu);
-        opcionElegida = Validar.opcionDeMenu(cantOpciones, sc);
-        System.out.println();
+        opcionElegida = Validar.opcionDeMenu(cantOpciones);
 
         return opcionElegida;
     };
 
-    public static void detenerEjecucion(Scanner sc){
+    public static void detenerEjecucion(){
         String presionarEnter;
 
-        //System.out.println();
-
-        sc.nextLine();
         do {
             // Mensaje de parada para leer los resultados
             Imprimir.continuarEjecucion();
             // Obligación de ingresar un valor para continuar la ejecución del código
-            presionarEnter = sc.nextLine();
+            presionarEnter = utiles.TecladoIn.readLine();
 
         }while (!presionarEnter.equals(""));
 
-        System.out.println();
     }
 
     /**
@@ -100,8 +93,7 @@ public class TransporteAgua {
             int opcion,
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Grafo grafoCiudades,
-            Scanner sc
+            Grafo grafoCiudades
     ) {
 
         switch(opcion) {
@@ -139,7 +131,7 @@ public class TransporteAgua {
         }
 
         if (opcion != 0) {
-            detenerEjecucion(sc);
+            detenerEjecucion();
         }
     }
 
@@ -151,48 +143,47 @@ public class TransporteAgua {
             int opcion,
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Grafo grafoCiudades,
-            Scanner sc
+            Grafo grafoCiudades
     ) {
 
         switch(opcion) {
             case 0:// 0. Salir.
                 break;
             case 1:// 1. Ciudad - Alta
-                GestorOperaciones.altaCiudad(arbolCiudades, grafoCiudades, RUTA_REGISTRO_CONTADOR_CIUDAD, sc);
+                GestorOperaciones.altaCiudad(arbolCiudades, grafoCiudades, RUTA_REGISTRO_CONTADOR_CIUDAD);
                 break;
             case 2:// 2. Ciudad - Baja
-                GestorOperaciones.bajaCiudad(arbolCiudades, hashTuberias, grafoCiudades, sc);
+                GestorOperaciones.bajaCiudad(arbolCiudades, hashTuberias, grafoCiudades);
                 break;
             case 3:// 3. Ciudad - Modificar
-                GestorOperaciones.modificarCiudad(arbolCiudades, sc);
+                GestorOperaciones.modificarCiudad(arbolCiudades);
                 break;
             case 4:// 4. Ciudad - Actualizar población por fecha.
-                GestorOperaciones.modificarPoblacionPorFechaCiudad(arbolCiudades, sc);
+                GestorOperaciones.modificarPoblacionPorFechaCiudad(arbolCiudades);
                 break;
             case 5:// 5. Tubería - Alta
-                GestorOperaciones.altaTuberia(arbolCiudades, hashTuberias, grafoCiudades, sc);
+                GestorOperaciones.altaTuberia(arbolCiudades, hashTuberias, grafoCiudades);
                 break;
             case 6:// 6. Tubería - Baja
-                GestorOperaciones.bajaTuberia(arbolCiudades, hashTuberias, grafoCiudades, sc);
+                GestorOperaciones.bajaTuberia(arbolCiudades, hashTuberias, grafoCiudades);
                 break;
             case 7:// 7. Tubería - Modificar
-                GestorOperaciones.modificarTuberia(arbolCiudades, hashTuberias, sc);
+                GestorOperaciones.modificarTuberia(arbolCiudades, hashTuberias);
                 break;
             case 8:// 8. Cantidad habitantes y agua consumida por fecha
-                GestorOperaciones.cantidadHabitantesYAguaConsumidaPorFecha(arbolCiudades, sc);
+                GestorOperaciones.cantidadHabitantesYAguaConsumidaPorFecha(arbolCiudades);
                 break;
             case 9:// 9. Consumo de agua entre rango de nombres
-                GestorOperaciones.consumoDeAguaEntreRangoDeNombres(arbolCiudades, sc);
+                GestorOperaciones.consumoDeAguaEntreRangoDeNombres(arbolCiudades);
                 break;
             case 10:// 10. Camino de A a B con caudal pleno mínimo
-                GestorOperaciones.caminoDeAaBconCaudalPlenoMinimo(arbolCiudades, hashTuberias, grafoCiudades, sc);
+                GestorOperaciones.caminoDeAaBconCaudalPlenoMinimo(arbolCiudades, hashTuberias, grafoCiudades);
                 break;
             case 11:// 11. Camino de A a B con menor recorrido
-                GestorOperaciones.caminoDeAaBconMenorRecorrido(arbolCiudades, hashTuberias, grafoCiudades, sc);
+                GestorOperaciones.caminoDeAaBconMenorRecorrido(arbolCiudades, hashTuberias, grafoCiudades);
                 break;
             case 12:// 12. Ciudades ordenadas por consumo de agua
-                GestorOperaciones.ciudadesOrdenadasPorConsumoDeAgua(arbolCiudades, sc);
+                GestorOperaciones.ciudadesOrdenadasPorConsumoDeAgua(arbolCiudades);
                 break;
             case 13:// 13. Visualizar arbolAVL de ciudades
                 GestorOperaciones.visualizarEstructuraArbolDeCiudades(arbolCiudades);
@@ -208,7 +199,7 @@ public class TransporteAgua {
         }
 
         if (opcion != 0) {
-            detenerEjecucion(sc);
+            detenerEjecucion();
         }
     }
 }

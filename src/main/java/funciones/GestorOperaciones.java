@@ -88,15 +88,14 @@ public class GestorOperaciones {
      * @param arbolCiudades      ArbolAVL
      * @param grafoCiudades      Grafo
      * @param rutaContadorCiudad String
-     * @param sc                 Scanner
      */
     public static void altaCiudad(
             ArbolAVL arbolCiudades,
             Grafo grafoCiudades,
-            String rutaContadorCiudad,
-            Scanner sc) {
+            String rutaContadorCiudad
+    ) {
         int numCiudad = CargaEstructuras.recuperarContadorCiudad(rutaContadorCiudad);
-        Ciudad nuevaCiudad = Formulario.altaCiudad(numCiudad, sc);
+        Ciudad nuevaCiudad = Formulario.altaCiudad(numCiudad);
 
         boolean exito = ControladorCiudad.alta(arbolCiudades, grafoCiudades, nuevaCiudad);
 
@@ -122,16 +121,15 @@ public class GestorOperaciones {
      * @param arbolCiudades
      * @param hashTuberias
      * @param grafoCiudades
-     * @param sc
      */
     public static void bajaCiudad(
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Grafo grafoCiudades,
-            Scanner sc) {
+            Grafo grafoCiudades
+    ) {
         Imprimir.arbolAVLCiudadesAlfabetico(arbolCiudades);
 
-        String nombreCiudad = Formulario.bajaCiudad(sc);
+        String nombreCiudad = Formulario.bajaCiudad();
 
         boolean exito = ControladorCiudad.baja(
                 arbolCiudades,
@@ -159,15 +157,13 @@ public class GestorOperaciones {
      * Función para modificar los datos de una ciudad
      *
      * @param arbolCiudades ArbolAVL
-     * @param sc            Scanner
      */
     public static void modificarCiudad(
-            ArbolAVL arbolCiudades,
-            Scanner sc) {
+            ArbolAVL arbolCiudades) {
         Imprimir.arbolAVLCiudadesAlfabetico(arbolCiudades);
 
-        String nombreCiudad = Formulario.modificarCiudadNombreCiudad(sc);
-        double[] datosCiudad = Formulario.modificarCiudadDatos(sc);
+        String nombreCiudad = Formulario.modificarCiudadNombreCiudad();
+        double[] datosCiudad = Formulario.modificarCiudadDatos();
 
         boolean intentaModificar = false;
         boolean exito = false;
@@ -212,16 +208,15 @@ public class GestorOperaciones {
      * Función para modificar la población de una ciudad en una fecha determinada
      *
      * @param arbolCiudades ArbolAVL
-     * @param sc            Scanner
      */
     public static void modificarPoblacionPorFechaCiudad(
-            ArbolAVL arbolCiudades,
-            Scanner sc) {
-        int anio = Formulario.generarAnioValido(sc);
-        int mes = Formulario.generarMesValido(sc);
-        String nombreCiudad = Formulario.nombreCiudadValido(sc);
+            ArbolAVL arbolCiudades
+    ) {
+        int anio = Formulario.generarAnioValido();
+        int mes = Formulario.generarMesValido();
+        String nombreCiudad = Formulario.nombreCiudadValido();
         YearMonth fecha = YearMonth.of(anio, mes);
-        int cantPoblacion = Formulario.cantidadPoblacionValido(sc);
+        int cantPoblacion = Formulario.cantidadPoblacionValido();
 
         boolean exito = ControladorCiudad.modificarPoblacionPorFecha(arbolCiudades, nombreCiudad, fecha, cantPoblacion);
 
@@ -246,26 +241,25 @@ public class GestorOperaciones {
      * @param arbolCiudades ArbolAVL
      * @param hashTuberias  HashMap<ClaveTuberia, Tuberia>
      * @param grafoCiudades Grafo
-     * @param sc            Scanner
      */
     public static void altaTuberia(
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Grafo grafoCiudades,
-            Scanner sc) {
+            Grafo grafoCiudades
+    ) {
         int cantidadCiudades = (arbolCiudades.listar()).longitud();
 
         if (cantidadCiudades >= 2) {
 
             Imprimir.arbolAVLCiudadesAlfabetico(arbolCiudades);
 
-            Ciudad ciudadOrigen = Formulario.existeCiudadOrigen(arbolCiudades, sc);
-            Ciudad ciudadDestino = Formulario.existeCiudadDestino(arbolCiudades, ciudadOrigen, sc);
+            Ciudad ciudadOrigen = Formulario.existeCiudadOrigen(arbolCiudades);
+            Ciudad ciudadDestino = Formulario.existeCiudadDestino(arbolCiudades, ciudadOrigen);
             ClaveTuberia claveTub = new ClaveTuberia(ciudadOrigen.getNomenclatura(), ciudadDestino.getNomenclatura());
 
             if (!hashTuberias.containsKey(claveTub)) {
 
-                Tuberia nuevaTuberia = Formulario.altaTuberia(ciudadOrigen, ciudadDestino, sc);
+                Tuberia nuevaTuberia = Formulario.altaTuberia(ciudadOrigen, ciudadDestino);
 
                 boolean exito = ControladorTuberia.alta(hashTuberias, grafoCiudades, nuevaTuberia);
 
@@ -301,17 +295,16 @@ public class GestorOperaciones {
      * @param arbolCiudades ArbolAVL
      * @param hashTuberias  HashMap<ClaveTuberia, Tuberia>
      * @param grafoCiudades Grafo
-     * @param sc            Scanner
      */
     public static void bajaTuberia(
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Grafo grafoCiudades,
-            Scanner sc) {
+            Grafo grafoCiudades
+    ) {
         Imprimir.arbolAVLCiudadesAlfabetico(arbolCiudades);
 
-        Ciudad ciudadOrigen = Formulario.existeCiudadOrigen(arbolCiudades, sc);
-        Ciudad ciudadDestino = Formulario.existeCiudadDestino(arbolCiudades, ciudadOrigen, sc);
+        Ciudad ciudadOrigen = Formulario.existeCiudadOrigen(arbolCiudades);
+        Ciudad ciudadDestino = Formulario.existeCiudadDestino(arbolCiudades, ciudadOrigen);
 
         ClaveTuberia claveTub = new ClaveTuberia(ciudadOrigen.getNomenclatura(), ciudadDestino.getNomenclatura());
 
@@ -345,16 +338,15 @@ public class GestorOperaciones {
      *
      * @param arbolCiudades
      * @param hashTuberias
-     * @param sc
      */
     public static void modificarTuberia(
             ArbolAVL arbolCiudades,
-            HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Scanner sc) {
+            HashMap<ClaveTuberia, Tuberia> hashTuberias
+    ) {
         Imprimir.arbolAVLCiudadesAlfabetico(arbolCiudades);
 
-        Ciudad ciudadOrigen = Formulario.existeCiudadOrigen(arbolCiudades, sc);
-        Ciudad ciudadDestino = Formulario.existeCiudadDestino(arbolCiudades, ciudadOrigen, sc);
+        Ciudad ciudadOrigen = Formulario.existeCiudadOrigen(arbolCiudades);
+        Ciudad ciudadDestino = Formulario.existeCiudadDestino(arbolCiudades, ciudadOrigen);
 
         ClaveTuberia claveTub = new ClaveTuberia(ciudadOrigen.getNomenclatura(), ciudadDestino.getNomenclatura());
 
@@ -362,8 +354,8 @@ public class GestorOperaciones {
 
             Tuberia tuberiaAModificar = hashTuberias.get(claveTub);
 
-            double[] datosDouble = Formulario.modificarTuberiaDatosDouble(sc);
-            String[] datosString = Formulario.modificarTuberiaDatosString(sc);
+            double[] datosDouble = Formulario.modificarTuberiaDatosDouble();
+            String[] datosString = Formulario.modificarTuberiaDatosString();
 
             boolean exito = ControladorTuberia.modificar(
                     hashTuberias,
@@ -396,13 +388,12 @@ public class GestorOperaciones {
      * Muestra la cantidad de habitantes y agua consumida en una fecha
      *
      * @param arbolCiudades ArbolAVL
-     * @param sc            Scaner
      */
-    public static void cantidadHabitantesYAguaConsumidaPorFecha(ArbolAVL arbolCiudades, Scanner sc) {
+    public static void cantidadHabitantesYAguaConsumidaPorFecha(ArbolAVL arbolCiudades) {
 
-        int anio = Formulario.generarAnioValido(sc);
-        int mes = Formulario.generarMesValido(sc);
-        String nombreCiudad = Formulario.nombreCiudadValido(sc);
+        int anio = Formulario.generarAnioValido();
+        int mes = Formulario.generarMesValido();
+        String nombreCiudad = Formulario.nombreCiudadValido();
         YearMonth fecha = YearMonth.of(anio, mes);
 
         String respuesta = ConsultasCiudad.getPobYConsEnFecha(arbolCiudades, nombreCiudad, fecha);
@@ -415,22 +406,23 @@ public class GestorOperaciones {
      * consumido un volumen de agua en el rango [minVol, maxVol].
      *
      * @param arbolCiudades ArbolAVL
-     * @param sc Scanner
      */
-    public static void consumoDeAguaEntreRangoDeNombres(ArbolAVL arbolCiudades, Scanner sc){
+    public static void consumoDeAguaEntreRangoDeNombres(ArbolAVL arbolCiudades){
 
-        String nombreMin = Formulario.nombreCiudadValido(sc);
-        String nombreMax = Formulario.nombreCiudadValido(sc);
-        Double consumoMin = Validar.numeroRealNoNegativo(sc);
-        Double consumoMax = Validar.numeroRealNoNegativo(sc);
-        int anio = Formulario.generarAnioValido(sc);
-        int mes = Formulario.generarMesValido(sc);
+        Imprimir.arbolAVLCiudadesAlfabetico(arbolCiudades);
+
+        String nombreMin = Formulario.nombreCiudadLimiteInferior();
+        String nombreMax = Formulario.nombreCiudadLimiteSuperior();
+        Double consumoMin = Formulario.consumoMinimo();
+        Double consumoMax = Formulario.consumoMaximo();
+        int anio = Formulario.generarAnioValido();
+        int mes = Formulario.generarMesValido();
         YearMonth fecha = YearMonth.of(anio, mes);
 
         Lista listaCiudades = ConsultasCiudad.getCiudadesEnRango(arbolCiudades, nombreMin, nombreMax, consumoMin, consumoMax, fecha);
-        String titulo = "Lista de ciudades entre " + nombreMin + " y " + nombreMax + ", con consumo entre:" + consumoMin + " - " + consumoMax + " en " + fecha;
+        String titulo = "Lista de ciudades entre " + nombreMin + " y " + nombreMax + ", con consumo entre: " + consumoMin + " - " + consumoMax + " en " + fecha;
         Imprimir.titulo(titulo);
-        System.out.println(listaCiudades.toStringVertical());
+        System.out.print(listaCiudades.toStringVertical());
     }
 
     /**
@@ -443,15 +435,17 @@ public class GestorOperaciones {
      * @param arbolCiudades ArbolAVL
      * @param grafoCiudades Grafo
      * @param hashTuberias  HashMap<ClaveTuberia, Tuberia>
-     * @param sc            Scanner
      */
     public static void caminoDeAaBconCaudalPlenoMinimo(
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Grafo grafoCiudades,
-            Scanner sc) {
-        String ciudadOrigen = Formulario.nombreCiudadValido(sc);
-        String ciudadDestino = Formulario.nombreCiudadValido(sc);
+            Grafo grafoCiudades
+    ) {
+
+        Imprimir.arbolAVLCiudadesAlfabetico(arbolCiudades);
+
+        String ciudadOrigen = Formulario.nombreCiudadOrigen();
+        String ciudadDestino = Formulario.nombreCiudadDestino();
 
         String respuesta = ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades, grafoCiudades, hashTuberias,
                 ciudadOrigen, ciudadDestino);
@@ -466,24 +460,31 @@ public class GestorOperaciones {
      * @param arbolCiudades ArbolAVL
      * @param grafoCiudades Grafo
      * @param hashTuberias  HashMap<ClaveTuberia, Tuberia>
-     * @param sc            Scanner
      */
     public static void caminoDeAaBconMenorRecorrido(
             ArbolAVL arbolCiudades,
             HashMap<ClaveTuberia, Tuberia> hashTuberias,
-            Grafo grafoCiudades,
-            Scanner sc) {
-        String ciudadOrigen = Formulario.nombreCiudadValido(sc);
-        String ciudadDestino = Formulario.nombreCiudadValido(sc);
+            Grafo grafoCiudades
+    ) {
+
+        Imprimir.arbolAVLCiudadesAlfabetico(arbolCiudades);
+
+        String ciudadOrigen = Formulario.nombreCiudadOrigen();
+        String ciudadDestino = Formulario.nombreCiudadDestino();
 
         String resultadoCamino = ConsultasTuberia.getCaminoMasCorto(arbolCiudades, grafoCiudades, hashTuberias,
                 ciudadOrigen, ciudadDestino);
         System.out.println(resultadoCamino);
     }
 
-    public static void ciudadesOrdenadasPorConsumoDeAgua(ArbolAVL arbolCiudades, Scanner sc) {
+    /**
+     * Imprime las ciudades ordenadas por consumo según un año indicado
+     *
+     * @param arbolCiudades
+     */
+    public static void ciudadesOrdenadasPorConsumoDeAgua(ArbolAVL arbolCiudades) {
 
-        int anio = Formulario.generarAnioValido(sc);
+        int anio = Formulario.generarAnioValido();
 
         String ciudades = ConsultasCiudad.generarListaConsumoAnual(arbolCiudades, Year.of(anio));
         Imprimir.titulo("Listado de Ciudades ordenadas por consumo anual en " + anio + ":");
