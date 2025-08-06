@@ -9,7 +9,6 @@ import estructuras.lineales.dinamicas.Lista;
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class Imprimir {
 
     // VARIABLES GLOBALES
@@ -24,19 +23,19 @@ public class Imprimir {
 
     private static final int ANCHO_MENU = 60;
 
-    // ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
-    // ████╗ ████║██╔════╝████╗  ██║██║   ██║
-    // ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
-    // ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
+    // ███╗ ███╗███████╗███╗ ██╗██╗ ██╗
+    // ████╗ ████║██╔════╝████╗ ██║██║ ██║
+    // ██╔████╔██║█████╗ ██╔██╗ ██║██║ ██║
+    // ██║╚██╔╝██║██╔══╝ ██║╚██╗██║██║ ██║
     // ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
-    // ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝
+    // ╚═╝ ╚═╝╚══════╝╚═╝ ╚═══╝ ╚═════╝
     //
-    // ██████╗ ██████╗ ██╗███╗   ██╗ ██████╗██╗██████╗  █████╗ ██╗
-    // ██╔══██╗██╔══██╗██║████╗  ██║██╔════╝██║██╔══██╗██╔══██╗██║
-    // ██████╔╝██████╔╝██║██╔██╗ ██║██║     ██║██████╔╝███████║██║
-    // ██╔═══╝ ██╔══██╗██║██║╚██╗██║██║     ██║██╔═══╝ ██╔══██║██║
-    // ██║     ██║  ██║██║██║ ╚████║╚██████╗██║██║     ██║  ██║███████╗
-    // ╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝╚═╝╚═╝     ╚═╝  ╚═╝╚══════╝
+    // ██████╗ ██████╗ ██╗███╗ ██╗ ██████╗██╗██████╗ █████╗ ██╗
+    // ██╔══██╗██╔══██╗██║████╗ ██║██╔════╝██║██╔══██╗██╔══██╗██║
+    // ██████╔╝██████╔╝██║██╔██╗ ██║██║ ██║██████╔╝███████║██║
+    // ██╔═══╝ ██╔══██╗██║██║╚██╗██║██║ ██║██╔═══╝ ██╔══██║██║
+    // ██║ ██║ ██║██║██║ ╚████║╚██████╗██║██║ ██║ ██║███████╗
+    // ╚═╝ ╚═╝ ╚═╝╚═╝╚═╝ ╚═══╝ ╚═════╝╚═╝╚═╝ ╚═╝ ╚═╝╚══════╝
 
     public static int menuDeOpciones(String nombreMenu) {
 
@@ -67,14 +66,15 @@ public class Imprimir {
 
     private static String centrar(String texto) {
         int espacios = (ANCHO_MENU - texto.length()) / 2;
-        return "║" + " ".repeat(Math.max(0, espacios)) + texto + " ".repeat(Math.max(0, ANCHO_MENU - texto.length() - espacios)) + "║";
+        return "║" + " ".repeat(Math.max(0, espacios)) + texto
+                + " ".repeat(Math.max(0, ANCHO_MENU - texto.length() - espacios)) + "║";
     }
 
     private static String alinear(String texto) {
         return "║ " + texto + " ".repeat(ANCHO_MENU - texto.length() - 1) + "║";
     }
 
-    public static void continuarEjecucion(){
+    public static void continuarEjecucion() {
         System.out.print(BOLD + DESTACADO + "Presione [ENTER] para continuar." + RESET);
     }
 
@@ -82,12 +82,12 @@ public class Imprimir {
         System.out.println(BOLD + DESTACADO + "EL PROGRAMA HA FINALIZADO" + RESET);
     }
 
-    // ███████╗██████╗ ██████╗  ██████╗ ██████╗
+    // ███████╗██████╗ ██████╗ ██████╗ ██████╗
     // ██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗
-    // █████╗  ██████╔╝██████╔╝██║   ██║██████╔╝
-    // ██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗
-    // ███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║
-    // ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+    // █████╗ ██████╔╝██████╔╝██║ ██║██████╔╝
+    // ██╔══╝ ██╔══██╗██╔══██╗██║ ██║██╔══██╗
+    // ███████╗██║ ██║██║ ██║╚██████╔╝██║ ██║
+    // ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═╝
 
     /**
      * Imprime en pantalla un mensaje estilado como error
@@ -104,12 +104,15 @@ public class Imprimir {
     }
 
     public static void errorOpcionFueraDeRango(int rangoInferior, int rangoSuperior) {
-        System.out.println(BOLD + ERROR + "El valor ingresado debe estar entre "+ rangoInferior +" y " + rangoSuperior + "." + RESET);
+        System.out.println(BOLD + ERROR + "El valor ingresado debe estar entre " + rangoInferior + " y " + rangoSuperior
+                + "." + RESET);
         System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
     }
 
     public static void errorTextoVacio2Caracteres() {
-        System.out.println(BOLD + ERROR + "El valor ingresado no debe ser una cadena de texto vacía y debe contener al menos 2 carácteres." + RESET);
+        System.out.println(BOLD + ERROR
+                + "El valor ingresado no debe ser una cadena de texto vacía y debe contener al menos 2 carácteres."
+                + RESET);
         System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
     }
 
@@ -133,11 +136,13 @@ public class Imprimir {
     }
 
     public static void errorBajaCiudad() {
-        System.out.println(BOLD + ERROR + "No fue posible dar de baja la ciudad, nombre inexistente en el sistema." + RESET);
+        System.out.println(
+                BOLD + ERROR + "No fue posible dar de baja la ciudad, nombre inexistente en el sistema." + RESET);
     }
 
     public static void errorModificarCiudad() {
-        System.out.println(BOLD + ERROR + "No fue posible modificar la ciudad, nombre inexistente en el sistema." + RESET);
+        System.out.println(
+                BOLD + ERROR + "No fue posible modificar la ciudad, nombre inexistente en el sistema." + RESET);
     }
 
     public static void errorCiudadNoEncontrada() {
@@ -150,24 +155,26 @@ public class Imprimir {
 
     public static void errorAltaTuberiaRepetida() {
         System.out.println(BOLD + ERROR + "No fue posible cargar la tubería en el sistema." + RESET);
-        System.out.println(BOLD + ERROR + "Ya existe una tubería que conecta las mismas ciudades en la misma dirección." + RESET);
+        System.out.println(
+                BOLD + ERROR + "Ya existe una tubería que conecta las mismas ciudades en la misma dirección." + RESET);
     }
 
     public static void errorAltaTuberiaSinCiudades() {
         System.out.println(BOLD + ERROR + "El sistema actualmente no cuenta con ciudades." + RESET);
-        System.out.println(BOLD + ERROR + "Ingrese al menos dos ciudades al sistema para conectarlas con una nueva tubería." + RESET);
+        System.out.println(BOLD + ERROR
+                + "Ingrese al menos dos ciudades al sistema para conectarlas con una nueva tubería." + RESET);
     }
 
     public static void errorAnioInvalido() {
         System.out.println(BOLD + ERROR + "Debe ingresar un año comprendido entre las fechas 2000 y 2025." + RESET);
     }
 
-    // ███████╗██╗  ██╗██╗████████╗ ██████╗
+    // ███████╗██╗ ██╗██╗████████╗ ██████╗
     // ██╔════╝╚██╗██╔╝██║╚══██╔══╝██╔═══██╗
-    // █████╗   ╚███╔╝ ██║   ██║   ██║   ██║
-    // ██╔══╝   ██╔██╗ ██║   ██║   ██║   ██║
-    // ███████╗██╔╝ ██╗██║   ██║   ╚██████╔╝
-    // ╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+    // █████╗ ╚███╔╝ ██║ ██║ ██║ ██║
+    // ██╔══╝ ██╔██╗ ██║ ██║ ██║ ██║
+    // ███████╗██╔╝ ██╗██║ ██║ ╚██████╔╝
+    // ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═════╝
 
     /**
      * Imprime en pantalla un mensaje estilado como éxito
@@ -178,44 +185,53 @@ public class Imprimir {
         System.out.println(BOLD + EXITO + mensaje + RESET);
     }
 
-    public static void exitoCargarEstructurasUltimosRegistros(){
+    public static void exitoCargarEstructurasUltimosRegistros() {
         System.out.println(BOLD + EXITO + "Éxito al cargar las estructuras con los últimos registros." + RESET);
     }
 
-    public static void exitoCargarEstructurasConSeed(){
+    public static void exitoCargarEstructurasConSeed() {
         System.out.println(BOLD + EXITO + "Éxito al cargar las estructuras con los los registros de base." + RESET);
     }
 
-    public static void exitoVaciarRegistros(){
+    public static void exitoVaciarRegistros() {
         System.out.println(BOLD + EXITO + "Éxito al vaciar los registros." + RESET);
     }
 
-    public static void exitoAltaCiudad(){
+    public static void exitoAltaCiudad() {
         System.out.println(BOLD + EXITO + "La ciudad se cargo con éxito en el sistema." + RESET);
     }
 
-    public static void exitoBajaCiudad(){
+    public static void exitoBajaCiudad() {
         System.out.println(BOLD + EXITO + "La ciudad se dio de baja con éxito del sistema." + RESET);
     }
 
-    public static void exitoModificarCiudad(){
+    public static void exitoModificarCiudad() {
         System.out.println(BOLD + EXITO + "La ciudad fue modificada con éxito." + RESET);
     }
 
-    public static void exitoModificarPoblacionCiudad(){
+    public static void exitoModificarPoblacionCiudad() {
         System.out.println(BOLD + EXITO + "La ciudad fue modificada con éxito." + RESET);
     }
 
-    public static void exitoAltaTuberia(){
+    public static void exitoAltaTuberia() {
         System.out.println(BOLD + EXITO + "La tubería se cargo con éxito en el sistema." + RESET);
     }
 
-    // ██╗   ██╗ █████╗ ██████╗ ██╗ ██████╗ ███████╗
-    // ██║   ██║██╔══██╗██╔══██╗██║██╔═══██╗██╔════╝
-    // ██║   ██║███████║██████╔╝██║██║   ██║███████╗
-    // ╚██╗ ██╔╝██╔══██║██╔══██╗██║██║   ██║╚════██║
-    //  ╚████╔╝ ██║  ██║██║  ██║██║╚██████╔╝███████║
-    //   ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝ ╚═════╝ ╚══════╝
+    // ██╗ ██╗ █████╗ ██████╗ ██╗ ██████╗ ███████╗
+    // ██║ ██║██╔══██╗██╔══██╗██║██╔═══██╗██╔════╝
+    // ██║ ██║███████║██████╔╝██║██║ ██║███████╗
+    // ╚██╗ ██╔╝██╔══██║██╔══██╗██║██║ ██║╚════██║
+    // ╚████╔╝ ██║ ██║██║ ██║██║╚██████╔╝███████║
+    // ╚═══╝ ╚═╝ ╚═╝╚═╝ ╚═╝╚═╝ ╚═════╝ ╚══════╝
+
+    /**
+     * Imprime en pantalla un mensaje estilado como titulo
+     *
+     * @param mensaje String
+     */
+    public static void titulo(String mensaje) {
+        System.out.println(BOLD + DESTACADO + mensaje + RESET);
+    }
 
     /**
      * Imprime en pantalla el contenido de la estructura del HashMap de tuberías
@@ -224,7 +240,7 @@ public class Imprimir {
      * @param hashTuberias HashMap<ClaveTuberia, Tuberia>
      * @return String
      */
-    public static String hashMapTuberias(HashMap<ClaveTuberia, Tuberia> hashTuberias){
+    public static String hashMapTuberias(HashMap<ClaveTuberia, Tuberia> hashTuberias) {
 
         String estructura;
 
@@ -249,7 +265,7 @@ public class Imprimir {
      *
      * @param arbolCiudades ArbolAVL
      */
-    public static void arbolAVLCiudadesAlfabetico(ArbolAVL arbolCiudades){
+    public static void arbolAVLCiudadesAlfabetico(ArbolAVL arbolCiudades) {
 
         if (arbolCiudades.vacio()) {
             System.out.println("La estructura ArbolAVL de ciudades se encuentra vacía.");
@@ -257,7 +273,7 @@ public class Imprimir {
             System.out.println("Contenido del ArbolAVL de ciudades: ");
             Lista listaCiudades = arbolCiudades.listar();
             int cantElem = listaCiudades.longitud();
-            for(int i = 1; i <= cantElem; i++){
+            for (int i = 1; i <= cantElem; i++) {
                 System.out.println(listaCiudades.recuperar(i).toString());
             }
         }
@@ -318,8 +334,7 @@ public class Imprimir {
                         "| |__    | | |  \\| |  /  \\  | |                      \n" +
                         "|  __|   | | | . ` | / /\\ \\ | |                      \n" +
                         "| |     _| |_| |\\  |/ ____ \\| |____                  \n" +
-                        "|_|    |_____|_| \\_/_/    \\_\\______|                 "
-        );
+                        "|_|    |_____|_| \\_/_/    \\_\\______|                 ");
         integrantes();
     }
 
