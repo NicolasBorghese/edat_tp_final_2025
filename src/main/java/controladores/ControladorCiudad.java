@@ -62,7 +62,6 @@ public class ControladorCiudad {
             ClaveTuberia clave = i.next();
             if(clave.getNomCOrigen().equals(nomenclaturaCiudad) || clave.getNomCDestino().equals(nomenclaturaCiudad)){
                 i.remove();
-                System.out.println("SE ELIMINO UNA TUBERÍA");
             }
         }
     }
