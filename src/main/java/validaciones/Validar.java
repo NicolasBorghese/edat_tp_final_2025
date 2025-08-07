@@ -3,8 +3,6 @@ package validaciones;
 import clases.Ciudad;
 import estructuras.conjuntistas.ArbolAVL;
 import mensajesPorConsola.Imprimir;
-import utiles.TecladoIn;
-
 import java.util.Scanner;
 
 public class Validar {
@@ -21,12 +19,12 @@ public class Validar {
         int opcionElegida = utiles.TecladoIn.readLineInt();
 
         while (opcionElegida < 0 || opcionElegida > (cantOpciones-1)) {
-            Imprimir.errorOpcionExcedeRango(cantOpciones);
+            Imprimir.mensajeError("La opción elegida debe estar entre 0 y " + (cantOpciones - 1) + ".\n");
+            Imprimir.mensajeDestacado("Elija una opción nuevamente: ");
             opcionElegida = utiles.TecladoIn.readLineInt();
         }
         return opcionElegida;
     };
-
 
     /**
      * Verifica si la opción elegida por el usuario se encuentra entre el rango de enteros indicado
@@ -41,7 +39,9 @@ public class Validar {
         do {
             opcionElegida = utiles.TecladoIn.readLineInt();
             if (opcionElegida < rangoInferior || opcionElegida > rangoSuperior) {
-                Imprimir.errorOpcionFueraDeRango(rangoInferior, rangoSuperior);
+                Imprimir.mensajeError("El valor ingresado debe estar entre " + rangoInferior + " y " + rangoSuperior
+                        + ".\n");
+                Imprimir.mensajeDestacado("Ingrese un valor nuevamente: ");
             }
         } while (opcionElegida < rangoInferior || opcionElegida > rangoSuperior);
 
@@ -58,7 +58,8 @@ public class Validar {
         do {
             input = utiles.TecladoIn.readLine();
             if (input.length() < 2) {
-                Imprimir.errorTextoVacio2Caracteres();
+                Imprimir.mensajeError("El valor ingresado no debe ser una cadena de texto vacía y debe contener al menos 2 carácteres.\n");
+                Imprimir.mensajeDestacado("Ingrese un valor nuevamente: ");
             }
         } while (input.length() < 2);
 
@@ -73,7 +74,8 @@ public class Validar {
     public static int numeroEntero(Scanner sc){
 
         while (!sc.hasNextInt()) {
-            Imprimir.errorNoEsEntero();
+            Imprimir.mensajeError("El valor ingresado no es un número ENTERO válido.\n");
+            Imprimir.mensajeDestacado("Ingrese un número nuevamente: ");
             sc.next();
         }
         return sc.nextInt();
@@ -81,7 +83,6 @@ public class Validar {
 
     /**
      * Controla que el siguiente valor ingresado por teclado sea un número entero mayor o igual a cero
-     *
      */
     public static int numeroEnteroNoNegativo() {
         int numeroEntero;
@@ -89,7 +90,8 @@ public class Validar {
         do {
             numeroEntero = utiles.TecladoIn.readLineInt();
             if (numeroEntero < 0) {
-                Imprimir.errorNoEsMayorOIgualACero();
+                Imprimir.mensajeError("El valor ingresado debe ser un número ENTERO MAYOR o IGUAL a CERO.\n");
+                Imprimir.mensajeDestacado("Ingrese un número nuevamente: ");
             }
         } while (numeroEntero < 0);
 
@@ -100,11 +102,13 @@ public class Validar {
      * Controla que el siguiente valor ingresado por teclado sea un número real
      *
      * @param sc
+     * @return
      */
     public static double numeroReal(Scanner sc){
 
         while (!sc.hasNextDouble()) {
-            Imprimir.errorNoEsReal();
+            Imprimir.mensajeError("El valor ingresado no es un número REAL válido.\n");
+            Imprimir.mensajeDestacado("Ingrese un número nuevamente: ");
             sc.next();
         }
         return sc.nextDouble();
@@ -119,7 +123,8 @@ public class Validar {
         do {
             numeroReal = utiles.TecladoIn.readDouble();
             if (numeroReal < 0) {
-                Imprimir.errorNoEsMayorOIgualACero();
+                Imprimir.mensajeError("El valor ingresado debe ser un número REAL MAYOR o IGUAL a CERO.\n");
+                Imprimir.mensajeDestacado("Ingrese un número nuevamente: ");
             }
         } while (numeroReal < 0);
 
@@ -138,7 +143,8 @@ public class Validar {
             String nombreCiudad = Validar.textoNoVacio2Caracteres();
             ciudadEncontrada = (Ciudad) arbolCiudades.getObjeto(nombreCiudad);
             if (ciudadEncontrada == null) {
-                Imprimir.errorCiudadNoEncontrada();
+                Imprimir.mensajeError("El nombre de ciudad ingresado no existe en el sistema.\n");
+                Imprimir.mensajeDestacado("Ingrese alguno de los nombres de la lista: ");
             }
         } while (ciudadEncontrada == null);
 
@@ -156,7 +162,8 @@ public class Validar {
         do {
             anio = utiles.TecladoIn.readInt();
             if (anio < 2000 || anio > 2025) {
-                Imprimir.errorAnioInvalido();
+                Imprimir.mensajeError("Debe ingresar un año comprendido entre las fechas 2000 y 2025.\n");
+                Imprimir.mensajeDestacado("Vuelva a ingresar la fecha: ");
             }
         } while (anio < 2000 || anio > 2025);
 
