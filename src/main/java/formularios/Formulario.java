@@ -2,18 +2,11 @@ package formularios;
 
 import clases.Ciudad;
 import clases.Tuberia;
-import constantes.Estilos;
 import estructuras.conjuntistas.ArbolAVL;
 import mensajesPorConsola.Imprimir;
 import validaciones.Validar;
 
-import java.util.Scanner;
-
 public class Formulario {
-
-    // VARIABLES GLOBALES
-    public static final String RESET = Estilos.RESET;
-    public static final String BOLD = Estilos.BOLD;
 
     /**
      * Solicita los datos necesarios para crear una nueva ciudad, los controla y la retorna.
@@ -22,39 +15,36 @@ public class Formulario {
      * @return Ciudad
      */
     public static Ciudad altaCiudad(int numeroCiudad) {
-
-        System.out.print(BOLD + "Ingrese el nombre de la ciudad que desea ingresar: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el nombre de la ciudad que desea ingresar: ");
         String nombre = utiles.TecladoIn.readLine();
-        System.out.print(BOLD + "Ingrese la superficie en m2 de esa ciudad: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese la superficie en m2 de esa ciudad: ");
         double superficie = utiles.TecladoIn.readDouble();
-        System.out.print(BOLD + "Ingrese el promedio de consumo diario de agua por día por habitante en M3: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el promedio de consumo diario de agua por día por habitante en M3: ");
         double consumoDiarioProm = utiles.TecladoIn.readDouble();
 
         return new Ciudad(nombre, numeroCiudad, superficie, consumoDiarioProm);
     }
 
     /**
-     * Valida si el valor ingresado es válido para un nombre de ciudad, mínimo debe tener 2 carácteres porque
-     * sino rompe la convención para generar nomenclaturas de ciudades
+     * Valída si el valor ingresado es válido para un nombre de ciudad, mínimo debe tener 2 carácteres porque
+     * si no rompe la convención para generar nomenclaturas de ciudades
      *
      * @return String
      */
     public static String bajaCiudad() {
-
-        System.out.print(BOLD + "Ingrese el nombre de la ciudad que desea dar de baja: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el nombre de la ciudad que desea dar de baja: ");
 
         return Validar.textoNoVacio2Caracteres();
     }
 
     /**
-     * Valida si el valor ingresado es válido para un nombre de ciudad, mínimo debe tener 2 carácteres porque
-     * sino rompe la convención para generar nomenclaturas de ciudades
+     * Valída si el valor ingresado es válido para un nombre de ciudad, mínimo debe tener 2 carácteres porque
+     * si no rompe la convención para generar nomenclaturas de ciudades
      *
      * @return String
      */
     public static String modificarCiudadNombreCiudad() {
-
-        System.out.print(BOLD + "Ingrese el nombre de la ciudad que desea modificar: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el nombre de la ciudad que desea modificar: ");
 
         return Validar.textoNoVacio2Caracteres();
     }
@@ -65,21 +55,20 @@ public class Formulario {
      * @return double[]
      */
     public static double[] modificarCiudadDatos() {
-
         double[] datosCiudad = new double[2];
 
-        System.out.print(BOLD + "Desea modificar la superficie?\nIngrese 'S' para SI, cualquier otra cosa para NO: " + RESET);
+        Imprimir.mensajeDestacado("Desea modificar la superficie?\nIngrese 'S' para SI, cualquier otra cosa para NO: ");
         String modSuperficie = utiles.TecladoIn.readLine();
         if (modSuperficie.equalsIgnoreCase("S")) {
-            System.out.print(BOLD + "Ingrese el nuevo valor para la superficie en m2: " + RESET);
+            Imprimir.mensajeDestacado("Ingrese el nuevo valor para la superficie en m2: ");
             datosCiudad[0] = Validar.numeroRealNoNegativo();
         } else {
             datosCiudad[0] = -1;
         }
-        System.out.print(BOLD + "Desea modificar la cantidad de consumo promedio por día?\nIngrese 'S' para SI, cualquier otra cosa para NO: " + RESET);
+        Imprimir.mensajeDestacado("Desea modificar la cantidad de consumo promedio por día?\nIngrese 'S' para SI, cualquier otra cosa para NO: ");
         String consumoPromDia = utiles.TecladoIn.readLine();
         if (consumoPromDia.equalsIgnoreCase("S")) {
-            System.out.print(BOLD + "Ingrese la nueva cantidad de consumo promedio por día por persona en m3: " + RESET);
+            Imprimir.mensajeDestacado("Ingrese la nueva cantidad de consumo promedio por día por persona en m3: ");
             datosCiudad[1] = Validar.numeroRealNoNegativo();
         } else {
             datosCiudad[1] = -1;
@@ -96,20 +85,21 @@ public class Formulario {
      * @return Tuberia
      */
     public static Tuberia altaTuberia(Ciudad ciudadOrigen, Ciudad ciudadDestino) {
-
         String nomenclatura = Tuberia.crearNomenclatura(ciudadOrigen, ciudadDestino);
 
-        System.out.print(BOLD + "Ingrese el caudal mínimo de la tubería: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el caudal mínimo de la tubería: ");
         double caudalMinimo = Validar.numeroRealNoNegativo();
-        System.out.print(BOLD + "Ingrese el caudal máximo de la tubería: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el caudal máximo de la tubería: ");
         double caudalMaximo = Validar.numeroRealNoNegativo();
-        System.out.print(BOLD + "Ingrese el diámetro de la tubería: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el diámetro de la tubería: ");
         double diametro = Validar.numeroRealNoNegativo();
-        System.out.println(BOLD + "Indique el Estado de la tubería ingresando un valor según las siguientes opciones: " + RESET);
-        System.out.println(BOLD + "[ [1] ACTIVO        ]" + RESET);
-        System.out.println(BOLD + "[ [2] INACTIVO      ]" + RESET);
-        System.out.println(BOLD + "[ [3] EN DISEÑO     ]" + RESET);
-        System.out.println(BOLD + "[ [4] EN REPARACIÓN ]" + RESET);
+
+        Imprimir.mensajeDestacado("Indique el Estado de la tubería ingresando un valor según las siguientes opciones: \n");
+        Imprimir.mensajeDestacado("[ [1] ACTIVO        ]\n");
+        Imprimir.mensajeDestacado("[ [2] INACTIVO      ]\n");
+        Imprimir.mensajeDestacado("[ [3] EN DISEÑO     ]\n");
+        Imprimir.mensajeDestacado("[ [4] EN REPARACIÓN ]\n");
+        Imprimir.mensajeDestacado("Elección: ");
         int opcionElegida = Validar.opcionEntreRango(1, 4);
 
         String estado;
@@ -139,8 +129,7 @@ public class Formulario {
      * @return Ciudad
      */
     public static Ciudad existeCiudadOrigen(ArbolAVL arbolCiudades){
-
-        System.out.print(BOLD + "Ingrese el nombre de la ciudad de origen de la tubería: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el nombre de la ciudad de origen de la tubería: ");
 
         return Validar.existeCiudad(arbolCiudades);
     }
@@ -154,8 +143,7 @@ public class Formulario {
      * @return Ciudad
      */
     public static Ciudad existeCiudadDestino(ArbolAVL arbolCiudades, Ciudad ciudadOrigen){
-
-        System.out.print(BOLD + "Ingrese el nombre de la ciudad de destino de la tubería: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el nombre de la ciudad de destino de la tubería: ");
 
         return Validar.existeCiudad(arbolCiudades);
     }
@@ -166,12 +154,10 @@ public class Formulario {
      * @return String
      */
     public static String nombreCiudadValido(){
-
-        System.out.print(BOLD + "Ingrese el nombre de la ciudad: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el nombre de la ciudad: ");
 
         return Validar.textoNoVacio2Caracteres();
     }
-
 
     /**
      * Formulario para validar un valor de año
@@ -179,8 +165,7 @@ public class Formulario {
      * @return int
      */
     public static int generarAnioValido(){
-
-        System.out.print(BOLD + "Ingrese el año con el formato AAAA numérico: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el año con el formato AAAA numérico: ");
 
         return Validar.anio();
     }
@@ -191,8 +176,7 @@ public class Formulario {
      * @return int
      */
     public static int generarMesValido(){
-
-        System.out.print(BOLD + "Ingrese el mes con formato MM: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el mes con formato MM: ");
 
         return Validar.opcionEntreRango(1, 12);
     }
@@ -203,8 +187,7 @@ public class Formulario {
      * @return int
      */
     public static int cantidadPoblacionValido(){
-
-        System.out.print(BOLD + "Ingrese la cantidad de población correspondiente a la fecha indicada: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese la cantidad de población correspondiente a la fecha indicada: ");
 
         return Validar.numeroEnteroNoNegativo();
     }
@@ -215,29 +198,28 @@ public class Formulario {
      * @return double[]
      */
     public static double[] modificarTuberiaDatosDouble() {
-
         double[] datosDouble = new double[3];
 
-        System.out.print(BOLD + "Desea modificar el caudal mínimo?\nIngrese 'S' para SI, cualquier otra cosa para NO: " + RESET);
+        Imprimir.mensajeDestacado("Desea modificar el caudal mínimo?\nIngrese 'S' para SI, cualquier otra cosa para NO: ");
         String modCaudalMinimo = utiles.TecladoIn.readLine();
         if (modCaudalMinimo.equalsIgnoreCase("S")) {
-            System.out.print(BOLD + "Ingrese el nuevo valor para el caudal mínimo: " + RESET);
+            Imprimir.mensajeDestacado("Ingrese el nuevo valor para el caudal mínimo: ");
             datosDouble[0] = Validar.numeroRealNoNegativo();
         } else {
             datosDouble[0] = -1;
         }
-        System.out.print(BOLD + "Desea modificar el caudal máximo?\nIngrese 'S' para SI, cualquier otra cosa para NO: " + RESET);
+        Imprimir.mensajeDestacado("Desea modificar el caudal máximo?\nIngrese 'S' para SI, cualquier otra cosa para NO: ");
         String modCaudalMaximo = utiles.TecladoIn.readLine();
         if (modCaudalMaximo.equalsIgnoreCase("S")) {
-            System.out.print(BOLD + "Ingrese el nuevo valor para el caudal máximo: " + RESET);
+            Imprimir.mensajeDestacado("Ingrese el nuevo valor para el caudal máximo: ");
             datosDouble[1] = Validar.numeroRealNoNegativo();
         } else {
             datosDouble[1] = -1;
         }
-        System.out.print(BOLD + "Desea modificar el diámetro?\nIngrese 'S' para SI, cualquier otra cosa para NO: " + RESET);
+        Imprimir.mensajeDestacado("Desea modificar el diámetro?\nIngrese 'S' para SI, cualquier otra cosa para NO: ");
         String modDiametro = utiles.TecladoIn.readLine();
         if (modDiametro.equalsIgnoreCase("S")) {
-            System.out.print(BOLD + "Ingrese el nuevo valor para el diámetro: " + RESET);
+            Imprimir.mensajeDestacado("Ingrese el nuevo valor para el diámetro: ");
             datosDouble[2] = Validar.numeroRealNoNegativo();
         } else {
             datosDouble[2] = -1;
@@ -255,14 +237,16 @@ public class Formulario {
 
         String[] datosString = new String[1];
 
-        System.out.print(BOLD + "Desea modificar el estado? Ingrese 'S' para SI, cualquier otra cosa para NO: " + RESET);
+        Imprimir.mensajeDestacado("Desea modificar el estado?\nIngrese 'S' para SI, cualquier otra cosa para NO: ");
         String modEstado = utiles.TecladoIn.readLine();
+
         if (modEstado.equalsIgnoreCase("S")) {
-            System.out.println(BOLD + "Indique el Estado de la tubería ingresando un valor según las siguientes opciones: " + RESET);
-            System.out.println(BOLD + "[ [1] ACTIVO        ]" + RESET);
-            System.out.println(BOLD + "[ [2] INACTIVO      ]" + RESET);
-            System.out.println(BOLD + "[ [3] EN DISEÑO     ]" + RESET);
-            System.out.println(BOLD + "[ [4] EN REPARACIÓN ]" + RESET);
+            Imprimir.mensajeDestacado("Indique el nuevo estado de la tubería ingresando un valor según las siguientes opciones: \n");
+            Imprimir.mensajeDestacado("[ [1] ACTIVO        ]\n");
+            Imprimir.mensajeDestacado("[ [2] INACTIVO      ]\n");
+            Imprimir.mensajeDestacado("[ [3] EN DISEÑO     ]\n");
+            Imprimir.mensajeDestacado("[ [4] EN REPARACIÓN ]\n");
+            Imprimir.mensajeDestacado("Elección: ");
             int opcionElegida = Validar.opcionEntreRango(1, 4);
 
             switch (opcionElegida) {
@@ -292,8 +276,7 @@ public class Formulario {
      * @return String
      */
     public static String nombreCiudadLimiteInferior(){
-
-        Imprimir.mensajeFormularioSinSalto("Ingrese el nombre de la ciudad que representa el límite inferior: ");
+        Imprimir.mensajeDestacado("Ingrese el nombre de la ciudad que representa el límite inferior: ");
 
         return Validar.textoNoVacio2Caracteres();
     }
@@ -304,8 +287,7 @@ public class Formulario {
      * @return String
      */
     public static String nombreCiudadLimiteSuperior(){
-
-        Imprimir.mensajeFormularioSinSalto("Ingrese el nombre de la ciudad que representa el límite superior: ");
+        Imprimir.mensajeDestacado("Ingrese el nombre de la ciudad que representa el límite superior: ");
 
         return Validar.textoNoVacio2Caracteres();
     }
@@ -316,8 +298,7 @@ public class Formulario {
      * @return double
      */
     public static Double consumoMinimo(){
-
-        Imprimir.mensajeFormularioSinSalto("Ingrese la cantidad de consumo de agua que representa el límite inferior: ");
+        Imprimir.mensajeDestacado("Ingrese la cantidad de consumo de agua que representa el límite inferior: ");
 
         return Validar.numeroRealNoNegativo();
     }
@@ -328,8 +309,7 @@ public class Formulario {
      * @return double
      */
     public static Double consumoMaximo(){
-
-        Imprimir.mensajeFormularioSinSalto("Ingrese la cantidad de consumo de agua que representa el límite superior: ");
+        Imprimir.mensajeDestacado("Ingrese la cantidad de consumo de agua que representa el límite superior: ");
 
         return Validar.numeroRealNoNegativo();
     }
@@ -340,8 +320,7 @@ public class Formulario {
      * @return String
      */
     public static String nombreCiudadOrigen(){
-
-        System.out.print(BOLD + "Ingrese el nombre de la ciudad de origen: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el nombre de la ciudad de origen: ");
 
         return Validar.textoNoVacio2Caracteres();
     }
@@ -352,8 +331,7 @@ public class Formulario {
      * @return String
      */
     public static String nombreCiudadDestino(){
-
-        System.out.print(BOLD + "Ingrese el nombre de la ciudad de destino: " + RESET);
+        Imprimir.mensajeDestacado("Ingrese el nombre de la ciudad de destino: ");
 
         return Validar.textoNoVacio2Caracteres();
     }

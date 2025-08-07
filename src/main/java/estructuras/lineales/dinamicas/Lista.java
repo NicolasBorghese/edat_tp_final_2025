@@ -189,7 +189,7 @@ public class Lista {
     }
 
     public String toStringVertical(){
-        String cad = "[]";
+        String cad = "[]\n";
         if(this.cabecera != null){
             Nodo aux = this.cabecera;
             cad = "";

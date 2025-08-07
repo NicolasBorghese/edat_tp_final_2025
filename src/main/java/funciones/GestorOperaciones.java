@@ -23,8 +23,6 @@ public class GestorOperaciones {
 
     // VARIABLES GLOBALES
     public static final String RUTA_SEED_CONTADOR_CIUDAD = Rutas.RUTA_SEED_CONTADOR_CIUDAD;
-    public static final String RUTA_REGISTRO_CONTADOR_CIUDAD = Rutas.RUTA_REGISTRO_CONTADOR_CIUDAD;
-    public static final String RUTA_LOG = Rutas.RUTA_LOG;
 
     /**
      * Hace una carga completa de todas las estructuras con las que trabaja el
@@ -105,12 +103,12 @@ public class GestorOperaciones {
             String titulo = "ÉXITO al cargar una nueva ciudad en el sistema";
             String contenido = nuevaCiudad.toString();
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.exitoAltaCiudad();
+            Imprimir.mensajeExito("La ciudad se cargo con éxito en el sistema.\n");
         } else {
             String titulo = "ERROR al intentar cargar una nueva ciudad en el sistema";
             String contenido = nuevaCiudad.toString();
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.errorAltaCiudad();
+            Imprimir.mensajeError("No fue posible cargar la ciudad, nombre duplicado.\n");
         }
 
     }
@@ -144,12 +142,12 @@ public class GestorOperaciones {
             String contenido = "Se elimina la ciudad " + nombreCiudad + " del sistema," +
                     " junto con todas las tuberías que la conectaban";
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.exitoBajaCiudad();
+            Imprimir.mensajeExito("La ciudad se dio de baja con éxito del sistema.\n");
         } else {
             String titulo = "ERROR al intentar eliminar una ciudad del sistema";
             String contenido = "La ciudad " + nombreCiudad + " no existe dentro el sistema.";
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.errorBajaCiudad();
+            Imprimir.mensajeError("No fue posible dar de baja la ciudad, nombre inexistente en el sistema.\n");
         }
     }
 
@@ -193,12 +191,12 @@ public class GestorOperaciones {
                     contenido += "Nuevo valor para consumoDiarioProm: " + datosCiudad[0];
                 }
                 RegistraEstructuras.registrarComoLog(titulo, contenido);
-                Imprimir.exitoModificarCiudad();
+                Imprimir.mensajeExito("La ciudad fue modificada con éxito.\n");
             } else {
                 String titulo = "ERROR al intentar modificar la ciudad: " + nombreCiudad;
                 String contenido = "La ciudad " + nombreCiudad + " no existe dentro el sistema";
                 RegistraEstructuras.registrarComoLog(titulo, contenido);
-                Imprimir.errorModificarCiudad();
+                Imprimir.mensajeError("No fue posible modificar la ciudad, nombre inexistente en el sistema.\n");
             }
 
         }
@@ -225,12 +223,12 @@ public class GestorOperaciones {
             String titulo = "ÉXITO al modificar la cantidad de habitantes por fecha de la ciudad: " + nombreCiudad;
             String contenido = "La nueva cantidad de habitantes para la fecha " + fecha + " es: " + cantPoblacion;
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.exitoMensaje("Población en fecha indicada actualizada con éxito.");
+            Imprimir.mensajeExito("Población en fecha indicada actualizada con éxito.\n");
         } else {
             String titulo = "ERROR al intentar la cantidad de habitantes por fecha de la ciudad: " + nombreCiudad;
             String contenido = "La ciudad " + nombreCiudad + " no existe dentro el sistema";
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.errorMensaje("La población no pudo ser actualizada en la fecha indicada, no existe la ciudad.");
+            Imprimir.mensajeError("La población no pudo ser actualizada en la fecha indicada, no existe la ciudad.\n");
         }
 
     }
@@ -268,24 +266,26 @@ public class GestorOperaciones {
                     String titulo = "ÉXITO al cargar una nueva tubería en el sistema";
                     String contenido = nuevaTuberia.toString();
                     RegistraEstructuras.registrarComoLog(titulo, contenido);
-                    Imprimir.exitoAltaTuberia();
+                    Imprimir.mensajeExito("La tubería se cargo con éxito en el sistema.\n");
                 } else {
                     String titulo = "ERROR al intentar cargar una nueva tubería en el sistema";
                     String contenido = nuevaTuberia.toString();
                     RegistraEstructuras.registrarComoLog(titulo, contenido);
-                    Imprimir.errorAltaTuberia();
+                    Imprimir.mensajeError("No fue posible cargar la tubería en el sistema.\n");
                 }
             } else {
                 String titulo = "ERROR al intentar cargar una nueva tubería en el sistema";
                 String contenido = "Ya existe una tubería en el sistema que conecta las mismas ciudades en la misma dirección";
                 RegistraEstructuras.registrarComoLog(titulo, contenido);
-                Imprimir.errorAltaTuberiaRepetida();
+                Imprimir.mensajeError("No fue posible cargar la tubería en el sistema.\n");
+                Imprimir.mensajeError("Ya existe una tubería que conecta las mismas ciudades en la misma dirección.\n");
             }
         } else {
             String titulo = "ERROR al intentar cargar una nueva tubería en el sistema";
             String contenido = "El sistema no cuenta con ciudades para conectar la tubería";
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.errorAltaTuberiaSinCiudades();
+            Imprimir.mensajeError("El sistema actualmente no cuenta con ciudades.\n");
+            Imprimir.mensajeError("Ingrese al menos dos ciudades al sistema para conectarlas con una nueva tubería.\n");
         }
     }
 
@@ -317,18 +317,18 @@ public class GestorOperaciones {
                 String titulo = "ÉXITO al eliminar una tubería en el sistema";
                 String contenido = tuberiaAEliminar.toString();
                 RegistraEstructuras.registrarComoLog(titulo, contenido);
-                Imprimir.exitoMensaje("La tubería se eliminó con éxito del sistema.");
+                Imprimir.mensajeExito("La tubería se eliminó con éxito del sistema.\n");
             } else {
                 String titulo = "ERROR al intentar eliminar una tubería en el sistema";
                 String contenido = tuberiaAEliminar.toString();
                 RegistraEstructuras.registrarComoLog(titulo, contenido);
-                Imprimir.errorMensaje("No pudo eliminarse la tubería del sistema, la misma no fue encontrada");
+                Imprimir.mensajeError("No pudo eliminarse la tubería del sistema, la misma no fue encontrada.\n");
             }
         } else {
             String titulo = "ERROR al intentar eliminar una tubería en el sistema";
             String contenido = "La tubería no existe en el sistema";
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.errorMensaje("No pudo eliminarse la tubería del sistema, la misma no fue encontrada");
+            Imprimir.mensajeError("No pudo eliminarse la tubería del sistema, la misma no fue encontrada.\n");
         }
 
     }
@@ -369,18 +369,18 @@ public class GestorOperaciones {
                 String titulo = "ÉXITO al modificar una tubería en el sistema";
                 String contenido = tuberiaAModificar.toString();
                 RegistraEstructuras.registrarComoLog(titulo, contenido);
-                Imprimir.exitoMensaje("La tubería se modificó con éxito en el sistema.");
+                Imprimir.mensajeExito("La tubería se modificó con éxito en el sistema.\n");
             } else {
                 String titulo = "ERROR al intentar modificar una tubería del sistema";
                 String contenido = tuberiaAModificar.toString();
                 RegistraEstructuras.registrarComoLog(titulo, contenido);
-                Imprimir.errorMensaje("No pudo modificarse la tubería del sistema, la misma no fue encontrada");
+                Imprimir.mensajeError("No pudo modificarse la tubería del sistema, la misma no fue encontrada.\n");
             }
         } else {
             String titulo = "ERROR al intentar modificar una tubería del sistema";
             String contenido = "La tubería no existe en el sistema";
             RegistraEstructuras.registrarComoLog(titulo, contenido);
-            Imprimir.errorMensaje("No pudo modificarse la tubería del sistema, la misma no fue encontrada");
+            Imprimir.mensajeError("No pudo modificarse la tubería del sistema, la misma no fue encontrada.\n");
         }
     }
 
@@ -420,8 +420,8 @@ public class GestorOperaciones {
         YearMonth fecha = YearMonth.of(anio, mes);
 
         Lista listaCiudades = ConsultasCiudad.getCiudadesEnRango(arbolCiudades, nombreMin, nombreMax, consumoMin, consumoMax, fecha);
-        String titulo = "Lista de ciudades entre " + nombreMin + " y " + nombreMax + ", con consumo entre: " + consumoMin + " - " + consumoMax + " en " + fecha;
-        Imprimir.titulo(titulo);
+        String titulo = "Lista de ciudades entre " + nombreMin + " y " + nombreMax + ", con consumo entre: (" + consumoMin + " - " + consumoMax + ") en " + fecha + "\n";
+        Imprimir.mensajeTitulo(titulo);
         System.out.print(listaCiudades.toStringVertical());
     }
 
@@ -447,9 +447,9 @@ public class GestorOperaciones {
         String ciudadOrigen = Formulario.nombreCiudadOrigen();
         String ciudadDestino = Formulario.nombreCiudadDestino();
 
-        String respuesta = ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades, grafoCiudades, hashTuberias,
+        String resultado = ConsultasTuberia.getCaminoConMenorCaudalPleno(arbolCiudades, grafoCiudades, hashTuberias,
                 ciudadOrigen, ciudadDestino);
-        System.out.println("Respuesta: " + respuesta);
+        System.out.println("Resultado: " + resultado);
     }
 
     /**
@@ -474,7 +474,7 @@ public class GestorOperaciones {
 
         String resultadoCamino = ConsultasTuberia.getCaminoMasCorto(arbolCiudades, grafoCiudades, hashTuberias,
                 ciudadOrigen, ciudadDestino);
-        System.out.println(resultadoCamino);
+        System.out.println("Resultado: " + resultadoCamino);
     }
 
     /**
@@ -487,7 +487,7 @@ public class GestorOperaciones {
         int anio = Formulario.generarAnioValido();
 
         String ciudades = ConsultasCiudad.generarListaConsumoAnual(arbolCiudades, Year.of(anio));
-        Imprimir.titulo("Listado de Ciudades ordenadas por consumo anual en " + anio + ":");
+        Imprimir.mensajeTitulo("Listado de Ciudades ordenadas por consumo anual en " + anio + ": \n");
         System.out.println(ciudades);
 
     }

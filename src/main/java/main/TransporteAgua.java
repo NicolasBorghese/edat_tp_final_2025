@@ -10,7 +10,6 @@ import mensajesPorConsola.Imprimir;
 import validaciones.Validar;
 
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class TransporteAgua {
 
@@ -108,7 +107,7 @@ public class TransporteAgua {
                         RUTA_REGISTRO_TUBERIA,
                         grafoCiudades
                 );
-                Imprimir.exitoCargarEstructurasUltimosRegistros();
+                Imprimir.mensajeExito("Éxito al cargar las estructuras con los últimos registros.\n");
                 break;
             case 2:// 2. Utilizar la carga inicial de datos
                 GestorOperaciones.cargarEstructurasCompleto(
@@ -120,11 +119,11 @@ public class TransporteAgua {
                         grafoCiudades
                         );
                 GestorOperaciones.reiniciarRegistrosConSeed(arbolCiudades, hashTuberias);
-                Imprimir.exitoCargarEstructurasConSeed();
+                Imprimir.mensajeExito("Éxito al cargar las estructuras con los los registros de base.\n");
                 break;
             case 3:// 3. Iniciar programa con registros vacios
                 GestorOperaciones.vaciarRegistros();
-                Imprimir.exitoVaciarRegistros();
+                Imprimir.mensajeExito("Éxito al vaciar los registros.\n");
                 break;
             default:
                 break;

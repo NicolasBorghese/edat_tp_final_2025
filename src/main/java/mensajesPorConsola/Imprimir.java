@@ -19,7 +19,7 @@ public class Imprimir {
     public static final String PRINCIPAL_1 = Estilos.BLUE;
     public static final String PRINCIPAL_2 = Estilos.CYAN;
     public static final String PORTADA = Estilos.PURPLE;
-    public static final String DESTACADO = Estilos.YELLOW;
+    public static final String RESALTADO = Estilos.YELLOW;
 
     private static final int ANCHO_MENU = 60;
 
@@ -75,147 +75,65 @@ public class Imprimir {
     }
 
     public static void continuarEjecucion() {
-        System.out.print(BOLD + DESTACADO + "Presione [ENTER] para continuar." + RESET);
+        System.out.print(BOLD + RESALTADO + "Presione [ENTER] para continuar. " + RESET);
     }
 
     public static void finDeEjecucion() {
-        System.out.println(BOLD + DESTACADO + "EL PROGRAMA HA FINALIZADO" + RESET);
+        System.out.println(BOLD + RESALTADO + "EL PROGRAMA HA FINALIZADO" + RESET);
     }
 
-    // ███████╗██████╗ ██████╗  ██████╗ ██████╗
-    // ██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗
-    // █████╗  ██████╔╝██████╔╝██║   ██║██████╔╝
-    // ██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗
-    // ███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║
-    // ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+    // ███╗   ███╗███████╗███╗   ██╗███████╗ █████╗      ██╗███████╗███████╗
+    // ████╗ ████║██╔════╝████╗  ██║██╔════╝██╔══██╗     ██║██╔════╝██╔════╝
+    // ██╔████╔██║█████╗  ██╔██╗ ██║███████╗███████║     ██║█████╗  ███████╗
+    // ██║╚██╔╝██║██╔══╝  ██║╚██╗██║╚════██║██╔══██║██   ██║██╔══╝  ╚════██║
+    // ██║ ╚═╝ ██║███████╗██║ ╚████║███████║██║  ██║╚█████╔╝███████╗███████║
+    // ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝ ╚════╝ ╚══════╝╚══════╝
+    //
+    // ███████╗███████╗████████╗██╗██╗      █████╗ ██████╗  ██████╗ ███████╗
+    // ██╔════╝██╔════╝╚══██╔══╝██║██║     ██╔══██╗██╔══██╗██╔═══██╗██╔════╝
+    // █████╗  ███████╗   ██║   ██║██║     ███████║██║  ██║██║   ██║███████╗
+    // ██╔══╝  ╚════██║   ██║   ██║██║     ██╔══██║██║  ██║██║   ██║╚════██║
+    // ███████╗███████║   ██║   ██║███████╗██║  ██║██████╔╝╚██████╔╝███████║
+    // ╚══════╝╚══════╝   ╚═╝   ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚══════╝
 
     /**
-     * Imprime en pantalla un mensaje estilado como error
+     * - Imprime en pantalla un mensaje estilado como error sin salto incorporado. <br>
+     * - Utilice "\n" si desea incorporar saltos de línea en su mensaje
+     *
+     * @param mensaje String: Es el contenido del mensaje
+     */
+    public static void mensajeError(String mensaje) {
+        System.out.print(BOLD + ERROR + mensaje + RESET);
+    }
+
+    /**
+     * - Imprime en pantalla un mensaje estilado como éxito sin salto incorporado. <br>
+     * - Utilice "\n" si desea incorporar saltos de línea en su mensaje
+     *
+     * @param mensaje String: Es el contenido del mensaje
+     */
+    public static void mensajeExito(String mensaje) {
+        System.out.print(BOLD + EXITO + mensaje + RESET);
+    }
+
+    /**
+     * - Imprime en pantalla un mensaje estilado como título sin salto incorporado. <br>
+     * - Utilice "\n" si desea incorporar saltos de línea en su mensaje
      *
      * @param mensaje String
      */
-    public static void errorMensaje(String mensaje) {
-        System.out.println(BOLD + ERROR + mensaje + RESET);
+    public static void mensajeTitulo(String mensaje) {
+        System.out.print(BOLD + RESALTADO + mensaje + RESET);
     }
-
-    public static void errorOpcionExcedeRango(int cantOpciones) {
-        System.out.println(BOLD + ERROR + "La opción elegida debe estar entre 0 y " + (cantOpciones - 1) + "." + RESET);
-        System.out.print(BOLD + "Elija una opción nuevamente: " + RESET);
-    }
-
-    public static void errorOpcionFueraDeRango(int rangoInferior, int rangoSuperior) {
-        System.out.println(BOLD + ERROR + "El valor ingresado debe estar entre " + rangoInferior + " y " + rangoSuperior
-                + "." + RESET);
-        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
-    }
-
-    public static void errorTextoVacio2Caracteres() {
-        System.out.println(BOLD + ERROR
-                + "El valor ingresado no debe ser una cadena de texto vacía y debe contener al menos 2 carácteres."
-                + RESET);
-        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
-    }
-
-    public static void errorNoEsEntero() {
-        System.out.println(BOLD + ERROR + "El valor ingresado no es un número ENTERO válido." + RESET);
-        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
-    }
-
-    public static void errorNoEsReal() {
-        System.out.println(BOLD + ERROR + "El valor ingresado no es un número REAL válido." + RESET);
-        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
-    }
-
-    public static void errorNoEsMayorOIgualACero() {
-        System.out.println(BOLD + ERROR + "El valor ingresado debe ser un número MAYOR o IGUAL a CERO." + RESET);
-        System.out.print(BOLD + "Ingrese un valor nuevamente: " + RESET);
-    }
-
-    public static void errorAltaCiudad() {
-        System.out.println(BOLD + ERROR + "No fue posible cargar la ciudad, nombre duplicado." + RESET);
-    }
-
-    public static void errorBajaCiudad() {
-        System.out.println(
-                BOLD + ERROR + "No fue posible dar de baja la ciudad, nombre inexistente en el sistema." + RESET);
-    }
-
-    public static void errorModificarCiudad() {
-        System.out.println(
-                BOLD + ERROR + "No fue posible modificar la ciudad, nombre inexistente en el sistema." + RESET);
-    }
-
-    public static void errorCiudadNoEncontrada() {
-        System.out.println(BOLD + ERROR + "El nombre de ciudad ingresado no existe en el sistema." + RESET);
-        System.out.print(BOLD  + "Ingrese alguno de los nombres de la lista: " + RESET);
-    }
-
-    public static void errorAltaTuberia() {
-        System.out.println(BOLD + ERROR + "No fue posible cargar la tubería en el sistema." + RESET);
-    }
-
-    public static void errorAltaTuberiaRepetida() {
-        System.out.println(BOLD + ERROR + "No fue posible cargar la tubería en el sistema." + RESET);
-        System.out.println(
-                BOLD + ERROR + "Ya existe una tubería que conecta las mismas ciudades en la misma dirección." + RESET);
-    }
-
-    public static void errorAltaTuberiaSinCiudades() {
-        System.out.println(BOLD + ERROR + "El sistema actualmente no cuenta con ciudades." + RESET);
-        System.out.println(BOLD + ERROR
-                + "Ingrese al menos dos ciudades al sistema para conectarlas con una nueva tubería." + RESET);
-    }
-
-    public static void errorAnioInvalido() {
-        System.out.println(BOLD + ERROR + "Debe ingresar un año comprendido entre las fechas 2000 y 2025." + RESET);
-    }
-
-    // ███████╗██╗  ██╗██╗████████╗ ██████╗
-    // ██╔════╝╚██╗██╔╝██║╚══██╔══╝██╔═══██╗
-    // █████╗   ╚███╔╝ ██║   ██║   ██║   ██║
-    // ██╔══╝   ██╔██╗ ██║   ██║   ██║   ██║
-    // ███████╗██╔╝ ██╗██║   ██║   ╚██████╔╝
-    // ╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
 
     /**
-     * Imprime en pantalla un mensaje estilado como éxito
+     * - Imprime en pantalla un mensaje estilado con bold sin salto incorporado. <br>
+     * - Utilice "\n" si desea incorporar saltos de línea en su mensaje
      *
      * @param mensaje String
      */
-    public static void exitoMensaje(String mensaje) {
-        System.out.println(BOLD + EXITO + mensaje + RESET);
-    }
-
-    public static void exitoCargarEstructurasUltimosRegistros() {
-        System.out.println(BOLD + EXITO + "Éxito al cargar las estructuras con los últimos registros." + RESET);
-    }
-
-    public static void exitoCargarEstructurasConSeed() {
-        System.out.println(BOLD + EXITO + "Éxito al cargar las estructuras con los los registros de base." + RESET);
-    }
-
-    public static void exitoVaciarRegistros() {
-        System.out.println(BOLD + EXITO + "Éxito al vaciar los registros." + RESET);
-    }
-
-    public static void exitoAltaCiudad() {
-        System.out.println(BOLD + EXITO + "La ciudad se cargo con éxito en el sistema." + RESET);
-    }
-
-    public static void exitoBajaCiudad() {
-        System.out.println(BOLD + EXITO + "La ciudad se dio de baja con éxito del sistema." + RESET);
-    }
-
-    public static void exitoModificarCiudad() {
-        System.out.println(BOLD + EXITO + "La ciudad fue modificada con éxito." + RESET);
-    }
-
-    public static void exitoModificarPoblacionCiudad() {
-        System.out.println(BOLD + EXITO + "La ciudad fue modificada con éxito." + RESET);
-    }
-
-    public static void exitoAltaTuberia() {
-        System.out.println(BOLD + EXITO + "La tubería se cargo con éxito en el sistema." + RESET);
+    public static void mensajeDestacado(String mensaje) {
+        System.out.print(BOLD + mensaje + RESET);
     }
 
     // ██╗   ██╗ █████╗ ██████╗ ██╗ ██████╗ ███████╗
@@ -224,34 +142,6 @@ public class Imprimir {
     // ╚██╗ ██╔╝██╔══██║██╔══██╗██║██║   ██║╚════██║
     //  ╚████╔╝ ██║  ██║██║  ██║██║╚██████╔╝███████║
     //   ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝ ╚═════╝ ╚══════╝
-
-    /**
-     * Imprime en pantalla un mensaje estilado como titulo
-     *
-     * @param mensaje String
-     */
-    public static void titulo(String mensaje) {
-        System.out.println(BOLD + DESTACADO + mensaje + RESET);
-    }
-
-    /**
-     * Imprime en pantalla un mensaje estilado como mensaje de formulario con salto de línea
-     *
-     * @param mensaje String
-     */
-    public static void mensajeFormularioConSalto(String mensaje) {
-        System.out.println(BOLD + mensaje + RESET);
-    }
-
-    /**
-     * Imprime en pantalla un mensaje estilado como mensaje de formulario sin salto de línea
-     *
-     * @param mensaje String
-     */
-    public static void mensajeFormularioSinSalto(String mensaje) {
-
-        System.out.print(BOLD + mensaje + RESET);
-    }
 
     /**
      * Imprime en pantalla el contenido de la estructura del HashMap de tuberías
@@ -297,7 +187,6 @@ public class Imprimir {
                 System.out.println(listaCiudades.recuperar(i).toString());
             }
         }
-
     }
 
     /**
@@ -391,9 +280,9 @@ public class Imprimir {
 
     public static void integrantes() {
         System.out.println();
-        System.out.println(BOLD + DESTACADO + "Alzuguren Santiago FAI-4691" + RESET);
-        System.out.println(BOLD + DESTACADO + "Borghese Nicolas FAI-997" + RESET);
-        System.out.println(BOLD + DESTACADO + "Piacentini Gonzalo FAI-2514" + RESET);
+        System.out.println(BOLD + RESALTADO + "Alzuguren Santiago FAI-4691" + RESET);
+        System.out.println(BOLD + RESALTADO + "Borghese Nicolas FAI-997" + RESET);
+        System.out.println(BOLD + RESALTADO + "Piacentini Gonzalo FAI-2514" + RESET);
         System.out.println();
     }
 }
